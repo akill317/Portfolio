@@ -1,0 +1,152 @@
+.animated-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.title-dots {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.char-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dot-row {
+  display: flex;
+  gap: 2px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6px;
+  color: var(--color-primary);
+  text-shadow: 0 0 8px var(--color-shadow);
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), filter 0.45s ease;
+  filter: hue-rotate(calc(var(--dot-hue, 0deg)));
+  will-change: transform, filter;
+}
+
+.dot-flight {
+  filter: hue-rotate(calc(var(--dot-hue, 0deg))) drop-shadow(0 0 12px var(--color-glow));
+  z-index: 5;
+}
+
+
+.dot-inner {
+  display: block;
+  position: relative;
+  transform-origin: center;
+  opacity: 0.85;
+  z-index: 1;
+  animation: dotIdle 3.6s ease-in-out infinite, hueShift 6s linear infinite;
+}
+
+.dot-inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, transparent 65%);
+  opacity: 0.6;
+  animation: dotGlow 3s ease-in-out infinite;
+  z-index: -1;
+}
+
+.dot-space {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes dotIdle {
+  0%, 100% {
+    transform: scale(0.95) translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+  30% {
+    transform: scale(1.2) translate3d(0.6px, -0.8px, 0);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(0.9) translate3d(-0.8px, 0.6px, 0);
+    opacity: 0.75;
+  }
+}
+
+@keyframes dotGlow {
+  0%, 100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes hueShift {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .title-dots {
+    gap: 8px;
+  }
+
+  .char-dots {
+    gap: 2px;
+  }
+
+  .dot-row {
+    gap: 2px;
+  }
+
+  .dot,
+  .dot-space {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-dots {
+    gap: 6px;
+  }
+
+  .char-dots {
+    gap: 1px;
+  }
+
+  .dot-row {
+    gap: 1px;
+  }
+
+  .dot,
+  .dot-space {
+    width: 6px;
+    height: 6px;
+  }
+
+  .dot {
+    font-size: 4px;
+  }
+}

@@ -1,0 +1,78 @@
+.project-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg) var(--spacing-xl);
+  min-height: calc(100vh - 200px);
+  position: relative;
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(128, 0, 255, 0.01) 0%, transparent 50%);
+  border-radius: var(--radius-lg);
+  margin-top: var(--spacing-md);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  align-items: start;
+}
+
+.project-item {
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xxl);
+  color: var(--color-text-secondary);
+  font-family: var(--font-secondary);
+  font-size: 16px;
+}
+
+/* 响应式网格 */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-grid-container {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .empty-state {
+    font-size: 14px;
+    padding: var(--spacing-xl);
+  }
+}
+
+/* 大屏幕优化 */
+@media (min-width: 1400px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+  }
+}

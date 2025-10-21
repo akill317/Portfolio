@@ -1,0 +1,99 @@
+.category-filter {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg) var(--spacing-lg);
+}
+
+.category-nav {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--spacing-sm) 0;
+}
+
+.category-button {
+  font-size: 10px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  min-width: 60px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: var(--color-surface);
+  border: 3px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all var(--duration-normal) ease;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.category-button:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-3px) rotateX(10deg) scale(1.05);
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 212, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+}
+
+.category-button.active {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border-color: var(--color-primary);
+  box-shadow: 
+    0 0 0 2px var(--color-background),
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    0 0 20px var(--color-primary),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.category-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .category-filter {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+  }
+  
+  .category-nav {
+    gap: var(--spacing-xs);
+    justify-content: center;
+  }
+  
+  .category-button {
+    font-size: 8px;
+    padding: var(--spacing-xs);
+    min-width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-filter {
+    padding: 0 var(--spacing-sm) var(--spacing-sm);
+  }
+  
+  .category-nav {
+    gap: 6px;
+    justify-content: center;
+  }
+  
+  .category-button {
+    font-size: 7px;
+    padding: 2px var(--spacing-xs);
+    min-width: 40px;
+  }
+}

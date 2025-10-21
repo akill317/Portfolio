@@ -1,0 +1,314 @@
+.header {
+  background: 
+    linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-hover) 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 212, 255, 0.03) 10px,
+      rgba(0, 212, 255, 0.03) 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 15px,
+      rgba(128, 0, 255, 0.02) 15px,
+      rgba(128, 0, 255, 0.02) 30px
+    );
+  border-bottom: 2px solid var(--color-border);
+  padding: var(--spacing-lg) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 70% 30%, rgba(128, 0, 255, 0.06) 0%, transparent 60%);
+  animation: headerGlow 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 4px,
+      rgba(0, 212, 255, 0.04) 4px,
+      rgba(0, 212, 255, 0.04) 6px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 4px,
+      rgba(128, 0, 255, 0.03) 4px,
+      rgba(128, 0, 255, 0.03) 6px
+    );
+  animation: headerScan 5s linear infinite;
+  pointer-events: none;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.title-shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .header-content {
+    padding: var(--spacing-md);
+  }
+
+  .title-shell {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .header-content {
+    padding: var(--spacing-sm);
+  }
+
+  .title-shell {
+    padding-bottom: 0;
+  }
+}
+
+/* Header动画效果 */
+@keyframes headerGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  33% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+  66% {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}
+
+@keyframes headerScan {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* 新增：小三角按钮 */
+.expand-button {
+  --triangle-height: 12px;
+  position: absolute;
+  left: 50%;
+  top: calc(100% - 2px);
+  transform: translate(-50%, 0);
+  transform-origin: top center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: transform var(--duration-normal) ease;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 12;
+}
+
+.expand-button:hover {
+  transform: translate(-50%, 0) scale(1.05);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 12px solid var(--color-primary);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.expand-button.expanded .triangle {
+  transform: rotate(180deg);
+}
+
+.expand-button:hover .triangle {
+  border-top-color: var(--color-primary);
+  filter: drop-shadow(0 0 8px var(--color-primary));
+}
+
+/* 新增：展开内容 */
+.expanded-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
+  opacity: 0;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 16px;
+  position: relative;
+  z-index: 5;
+}
+
+.expanded-content.show {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.personal-info {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 0 20px;
+}
+
+.intro-text, .intro-text-en {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--color-text);
+  margin: 8px 0;
+  line-height: 1.4;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+}
+
+.intro-text-en {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.social-link:hover::before {
+  left: 100%;
+}
+
+.social-link:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  filter: drop-shadow(0 0 8px var(--color-glow));
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .expanded-content {
+    max-width: 90%;
+  }
+  
+  .social-links {
+    gap: 16px;
+  }
+  
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .social-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .intro-text {
+    font-size: 13px;
+  }
+  
+  .intro-text-en {
+    font-size: 11px;
+  }
+}

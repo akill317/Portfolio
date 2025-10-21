@@ -1,0 +1,146 @@
+.language-switcher {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  z-index: 100;
+}
+
+.language-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  background: var(--color-surface);
+  border: calc(var(--frame-border-width) + 1px) solid var(--color-border);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  box-shadow: 
+    0 0 0 2px var(--color-background),
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.language-buttons::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, 
+    var(--color-primary), 
+    var(--color-accent), 
+    var(--color-primary), 
+    var(--color-accent)
+  );
+  border-radius: var(--radius-md);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity var(--duration-normal) ease;
+}
+
+.language-buttons:hover::before {
+  opacity: 1;
+  animation: borderGlow 2s ease-in-out infinite;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 10px;
+  min-width: auto;
+  background: var(--color-surface);
+  border: calc(var(--frame-border-width) - 1px) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: all var(--duration-normal) ease;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.language-button:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-3px) rotateX(10deg) scale(1.05);
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 212, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+}
+
+.language-button.active {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border-color: var(--color-primary);
+  box-shadow: 
+    0 0 0 2px var(--color-background),
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    0 0 20px var(--color-primary),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.language-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+
+.flag {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.name {
+  font-family: var(--font-secondary);
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .language-switcher {
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+  }
+  
+  .language-buttons {
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs);
+  }
+  
+  .language-button {
+    padding: var(--spacing-xs);
+    font-size: 8px;
+  }
+  
+  .flag {
+    font-size: 10px;
+  }
+  
+  .name {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-switcher {
+    bottom: var(--spacing-sm);
+    right: var(--spacing-sm);
+  }
+  
+  .language-button {
+    padding: 2px var(--spacing-xs);
+  }
+  
+  .name {
+    display: none; /* 在小屏幕上只显示国旗 */
+  }
+}

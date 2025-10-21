@@ -1,0 +1,53 @@
+:root {
+  /* 赛博朋克配色方案 */
+  --color-primary: #00d4ff;      /* 电光蓝 */
+  --color-secondary: #ff0080;    /* 霓虹粉红 */
+  --color-accent: #39ff14;       /* 矩阵绿 */
+  --color-tertiary: #ff6b35;     /* 橙红 */
+  --color-background: #0a0a0f;   /* 深蓝黑 */
+  --color-surface: #1a1a2e;      /* 深蓝灰 */
+  --color-surface-hover: #16213e; /* 蓝灰悬停 */
+  --color-surface-active: #0f3460; /* 蓝灰激活 */
+  --color-text: #e0e6ed;         /* 冷白 */
+  --color-text-secondary: #a8b2bd; /* 灰白 */
+  --color-text-muted: #6c7b7f;   /* 深灰 */
+  --color-border: #2d3748;       /* 深蓝灰边框 */
+  --color-border-hover: #4a5568; /* 中蓝灰边框 */
+  --color-border-active: #00d4ff; /* 电光蓝边框 */
+  --color-shadow: rgba(0, 212, 255, 0.3); /* 电光蓝阴影 */
+  --color-glow: rgba(0, 212, 255, 0.3); /* 电光蓝发光 */
+  --color-glow-accent: rgba(255, 0, 128, 0.3); /* 霓虹粉红发光 */
+
+  /* 布局常量 */
+  --header-offset: 140px;
+
+  /* 多语言支持字体 - 赛博朋克风格 */
+  --font-primary: 'Orbitron', 'Noto Sans SC', 'Noto Sans JP', 'Roboto Mono', monospace;
+  --font-secondary: 'Exo 2', 'Noto Sans SC', 'Noto Sans JP', 'Roboto', sans-serif;
+  --font-display: 'Rajdhani', 'Noto Sans SC', 'Noto Sans JP', 'Roboto Condensed', sans-serif;
+
+  /* 动画时长 */
+  --duration-fast: 0.2s;
+  --duration-normal: 0.3s;
+  --duration-slow: 0.5s;
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* 边框半径 */
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* 阴影 */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px var(--color-shadow);
+}
