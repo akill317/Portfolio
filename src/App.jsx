@@ -8,6 +8,7 @@ import LanguageSwitcher from './components/LanguageSwitcher'
 import projects from './data/projects.json'
 
 const PINNED_PROJECT_IDS = [
+  'pajinko',
   'birds-camp',
   'monsterologist',
   'chase',
