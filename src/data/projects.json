@@ -9,9 +9,9 @@
     "category": "game",
     "thumbnail": "/images/BattleStackers/BattleStackers_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: Battle Stackers is a strategic combat game where players combine pieces to increase their strength. Each stack size has its own unique set of abilities which correspond to three Character Cards from your deck. Each card in your deck can be swapped out for other class cards to further direct your strategy and react to what’s happening on the board. All three classes are unique, so a taller stack isn’t always the best choice for every situation. Experiment with all three to find your winning combination! If you want to know more about this game, feel free to contact me.\nRole: Design with Blake Andrews, Zachary Brash, Daniel J Nanni, Christian R Sutton and Rizky Winanda",
-      "en-US": "Introduction: Battle Stackers is a strategic combat game where players combine pieces to increase their strength. Each stack size has its own unique set of abilities which correspond to three Character Cards from your deck. Each card in your deck can be swapped out for other class cards to further direct your strategy and react to what’s happening on the board. All three classes are unique, so a taller stack isn’t always the best choice for every situation. Experiment with all three to find your winning combination! If you want to know more about this game, feel free to contact me.\nRole: Design with Blake Andrews, Zachary Brash, Daniel J Nanni, Christian R Sutton and Rizky Winanda",
-      "ja-JP": "Introduction: Battle Stackers is a strategic combat game where players combine pieces to increase their strength. Each stack size has its own unique set of abilities which correspond to three Character Cards from your deck. Each card in your deck can be swapped out for other class cards to further direct your strategy and react to what’s happening on the board. All three classes are unique, so a taller stack isn’t always the best choice for every situation. Experiment with all three to find your winning combination! If you want to know more about this game, feel free to contact me.\nRole: Design with Blake Andrews, Zachary Brash, Daniel J Nanni, Christian R Sutton and Rizky Winanda"
+      "zh-CN": "Battle Stackers 是一款策略对战游戏，玩家通过组合棋子来增强力量。每种堆叠高度都有独特技能，对应牌库中的三张角色卡。你可以替换套牌里的卡牌来调整策略并应对战局。三种职业各具特色，高耸的堆叠并不总是最佳解法。尝试不同组合，找出专属于你的制胜方案！如需了解更多，欢迎联系我。\n角色：与 Blake Andrews、Zachary Brash、Daniel J Nanni、Christian R Sutton、Rizky Winanda 共同担任设计",
+      "en-US": "Battle Stackers is a strategic combat game where players combine pieces to increase their strength. Each stack size has its own unique set of abilities which correspond to three Character Cards from your deck. Each card in your deck can be swapped out for other class cards to further direct your strategy and react to what's happening on the board. All three classes are unique, so a taller stack isn't always the best choice for every situation. Experiment with all three to find your winning combination! If you want to know more about this game, feel free to contact me.\nRole: Design with Blake Andrews, Zachary Brash, Daniel J Nanni, Christian R Sutton and Rizky Winanda",
+      "ja-JP": "Battle Stackers は、駒を組み合わせて強さを高めていく戦略バトルゲームです。スタックの高さごとに固有のアビリティがあり、デッキに入っている3枚のキャラクターカードと連動します。カードは他のクラスカードと入れ替えられるので、戦況に合わせて戦術を調整できます。3つのクラスはすべて個性的で、背の高いスタックが常に最適とは限りません。ぜひすべての組み合わせを試して、勝利の配列を見つけてください。詳しく知りたい方はお気軽にご連絡ください。\n役割：Blake Andrews、Zachary Brash、Daniel J Nanni、Christian R Sutton、Rizky Winanda と共にデザイン"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -23,7 +23,7 @@
       "/images/BattleStackers/BattleStackers_05.jpg",
       "/images/BattleStackers/BattleStackers_06.jpg"
     ],
-    "order": 1
+    "order": 2
   },
   {
     "id": "bigo8",
@@ -35,14 +35,14 @@
     "category": "game",
     "thumbnail": "/images/Bigo8/Bigo8_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is personal. My prompt is A game made in PICO-8This is basically a roguelike infinite runner. I love the concept a lot and think this can be expanded to a more elaborate commercial product. In order to play the roguelike game, you only need to make a simple decision jumping or not. You can kill a monster to gain more experience or skip to the next stage and challenge for a faster level clear time. By the way, PICO-8 is really fun, you can do sprite, music, and program at the same time.  Which is amazing, because I never get tired of making a game anymore, I would work on sprites for a little bit and work on a little bit music and back to code whenever I want.\nRole: Design, Programming, Art, Compose",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is personal. My prompt is A game made in PICO-8This is basically a roguelike infinite runner. I love the concept a lot and think this can be expanded to a more elaborate commercial product. In order to play the roguelike game, you only need to make a simple decision jumping or not. You can kill a monster to gain more experience or skip to the next stage and challenge for a faster level clear time. By the way, PICO-8 is really fun, you can do sprite, music, and program at the same time.  Which is amazing, because I never get tired of making a game anymore, I would work on sprites for a little bit and work on a little bit music and back to code whenever I want.\nRole: Design, Programming, Art, Compose",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is personal. My prompt is A game made in PICO-8This is basically a roguelike infinite runner. I love the concept a lot and think this can be expanded to a more elaborate commercial product. In order to play the roguelike game, you only need to make a simple decision jumping or not. You can kill a monster to gain more experience or skip to the next stage and challenge for a faster level clear time. By the way, PICO-8 is really fun, you can do sprite, music, and program at the same time.  Which is amazing, because I never get tired of making a game anymore, I would work on sprites for a little bit and work on a little bit music and back to code whenever I want.\nRole: Design, Programming, Art, Compose"
+      "zh-CN": "这是在 Prototype Studio 课程中用一周时间完成的作品。课堂上我们每周都会收到一个提示，需要在一周内完成对应主题的游戏。那一周的题目每个人都不一样，于是我选择用 PICO-8 制作这款游戏。它本质上是一款类 Rogue 的无限奔跑游戏。我非常喜欢这个概念，也相信它可以发展成更完整的商业作品。游玩时你只需要思考要不要跳跃：击败怪物可以获得经验，直接前进则能挑战更快的通关时间。顺带一提，PICO-8 特别好玩——可以同时做图、写曲和编程，这种来回切换的创作方式让我始终保持热情。\n角色：设计、编程、美术、作曲\n试玩地址：https://erenyx.itch.io/bigo8",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week's prompt is personal. My prompt is A game made in PICO-8. This is basically a roguelike infinite runner. I love the concept a lot and think this can be expanded to a more elaborate commercial product. In order to play the roguelike game, you only need to make a simple decision jumping or not. You can kill a monster to gain more experience or skip to the next stage and challenge for a faster level clear time. By the way, PICO-8 is really fun, you can do sprite, music, and program at the same time.  Which is amazing, because I never get tired of making a game anymore, I would work on sprites for a little bit and work on a little bit music and back to code whenever I want.\nRole: Design, Programming, Art, Compose\nPlay it here: https://erenyx.itch.io/bigo8",
+      "ja-JP": "これは Prototype Studio の授業で 1 週間かけて制作したゲームです。授業では毎週テーマが与えられ、そのテーマに沿ったゲームを 1 週間で完成させなければなりません。その週のテーマは「パーソナル」だったので、PICO-8 でこのゲームを作りました。ジャンルはローグライク系の無限ランナーです。このコンセプトがとても気に入っていて、もっと発展させれば商用作品にもなれると思っています。遊び方はシンプルで、ジャンプするかどうかを瞬時に判断するだけ。モンスターを倒せば経験値が手に入り、スキップすれば次のステージへ進んでタイムを縮められます。ちなみに PICO-8 はスプライト制作・音楽作り・プログラミングを同時に楽しめる最高のツールで、おかげで制作のモチベーションが途切れませんでした。\n役割：デザイン、プログラミング、アート、作曲\nプレイはこちら：https://erenyx.itch.io/bigo8"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/216181485",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 2
+    "order": 3
   },
   {
     "id": "chase",
@@ -54,9 +54,9 @@
     "category": "game",
     "thumbnail": "/images/Chase/Chase_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: The first game i made.\n2d shooting game combined with some elements of tower defense.\nvoxel style model made by amazing tool MagicaVoxel.\npixel arts UI.\nIncluding 6 level, 6 bosses, 8 weapons, 6 kinds of turrets and many many enemies.\nRole: Design, Art, Programming, Music",
-      "en-US": "Introduction: The first game i made.\n2d shooting game combined with some elements of tower defense.\nvoxel style model made by amazing tool MagicaVoxel.\npixel arts UI.\nIncluding 6 level, 6 bosses, 8 weapons, 6 kinds of turrets and many many enemies.\nRole: Design, Art, Programming, Music",
-      "ja-JP": "Introduction: The first game i made.\n2d shooting game combined with some elements of tower defense.\nvoxel style model made by amazing tool MagicaVoxel.\npixel arts UI.\nIncluding 6 level, 6 bosses, 8 weapons, 6 kinds of turrets and many many enemies.\nRole: Design, Art, Programming, Music"
+      "zh-CN": "这是我制作的第一款游戏。\n这是一款结合塔防元素的 2D 射击游戏。\n所有体素模型都使用出色的工具 MagicaVoxel 制作。\n界面采用像素风格。\n包含 6 个关卡、6 个 Boss、8 种武器、6 类炮塔以及众多敌人。\n角色：设计、美术、编程、音乐",
+      "en-US": "The first game i made.\n2d shooting game combined with some elements of tower defense.\nvoxel style model made by amazing tool MagicaVoxel.\npixel arts UI.\nIncluding 6 level, 6 bosses, 8 weapons, 6 kinds of turrets and many many enemies.\nRole: Design, Art, Programming, Music",
+      "ja-JP": "これは私が初めて制作したゲームです。\nタワーディフェンスの要素を取り入れた 2D シューティング。\nボクセルモデルはすべて優秀なツール MagicaVoxel で制作しました。\nUI はピクセルアートで統一。\n全 6 ステージ・6 体のボス・8 種の武器・6 タイプのタレット、そして大量の敵が登場します。\n役割：デザイン、アート、プログラミング、音楽"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/138479631",
     "soundcloudEmbed": null,
@@ -71,7 +71,7 @@
       "/images/Chase/Chase_08.png",
       "/images/Chase/Chase_09.png"
     ],
-    "order": 3
+    "order": 4
   },
   {
     "id": "circling-dots",
@@ -83,9 +83,9 @@
     "category": "game",
     "thumbnail": "/images/CirclingDots/CirclingDots_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: The first digital game we made for Game Studio~Strictly, it's not my game, we modified a broken version of the game that our professor gave us as an assignment. I added the spinning dot mechanics and a timer to make it more intense. Because I am quite satisfied with what I have got, I put it here and hope that it can inspire you.The game is easy to play, just use your arrow key, and avoid the same color dot.Try your best, my best score is 17.\nRole: Design, Art, Programming",
-      "en-US": "Introduction: The first digital game we made for Game Studio~Strictly, it's not my game, we modified a broken version of the game that our professor gave us as an assignment. I added the spinning dot mechanics and a timer to make it more intense. Because I am quite satisfied with what I have got, I put it here and hope that it can inspire you.The game is easy to play, just use your arrow key, and avoid the same color dot.Try your best, my best score is 17.\nRole: Design, Art, Programming",
-      "ja-JP": "Introduction: The first digital game we made for Game Studio~Strictly, it's not my game, we modified a broken version of the game that our professor gave us as an assignment. I added the spinning dot mechanics and a timer to make it more intense. Because I am quite satisfied with what I have got, I put it here and hope that it can inspire you.The game is easy to play, just use your arrow key, and avoid the same color dot.Try your best, my best score is 17.\nRole: Design, Art, Programming"
+      "zh-CN": "这是我们在 Game Studio 课程里完成的第一个数字游戏——严格来说，它并非完全原创，而是基于老师给的一个半成品进行修复。我加入了旋转圆点的机制和计时器，让游戏节奏更紧张。因为对结果相当满意，就把它放在这里，希望也能给你带来灵感。玩法很简单：用方向键控制，不要碰到同色的圆点。尽你所能，我目前的最高分是 17。\n角色：设计、美术、编程",
+      "en-US": "The first digital game we made for Game Studio~Strictly, it's not my game, we modified a broken version of the game that our professor gave us as an assignment. I added the spinning dot mechanics and a timer to make it more intense. Because I am quite satisfied with what I have got, I put it here and hope that it can inspire you.The game is easy to play, just use your arrow key, and avoid the same color dot.Try your best, my best score is 17.\nRole: Design, Art, Programming",
+      "ja-JP": "Game Studio の授業で最初に仕上げたデジタルゲームです。厳密には完全オリジナルではなく、課題として渡された壊れたバージョンを手直ししたものです。私は回転するドットの仕組みとタイマーを追加し、もっと緊張感が出るようにしました。仕上がりに満足したのでここに掲載し、誰かのインスピレーションになればと思っています。遊び方はとても簡単で、矢印キーで操作し、同じ色のドットを避けるだけ。ベストスコアは 17 点です。\n役割：デザイン、アート、プログラミング"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -95,7 +95,7 @@
       "/images/CirclingDots/CirclingDots_03.png",
       "/images/CirclingDots/CirclingDots_04.png"
     ],
-    "order": 4
+    "order": 5
   },
   {
     "id": "curare-magicum",
@@ -107,9 +107,9 @@
     "category": "game",
     "thumbnail": "/images/CurareMagicum/CurareMagicum_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: Curare Magicum is digital hybrid analog game. In this game, you are going to act as a student who is pursuing a Magical Doctor (M.D.) degree. You will cast your magical spell to cure patients with different symptoms. Your goal is to master the secrets behind the element magical spell and pass the magical course.The digital part of this game is that you need to cast spells by using the smartphone, the smartphone will scan the magic symbol, and you can cast different magic spells with different sets of magical symbols. The analog part of this game is the material, the narrative. This greatly helps create the magical ritual for the game. And all this help provide players with an immersive experience as a magician student.\nRole: Design, Programming, and Art with Alexander King, Christian Skisonic Skr, Sam Von Ehren and Ivy Li",
-      "en-US": "Introduction: Curare Magicum is digital hybrid analog game. In this game, you are going to act as a student who is pursuing a Magical Doctor (M.D.) degree. You will cast your magical spell to cure patients with different symptoms. Your goal is to master the secrets behind the element magical spell and pass the magical course.The digital part of this game is that you need to cast spells by using the smartphone, the smartphone will scan the magic symbol, and you can cast different magic spells with different sets of magical symbols. The analog part of this game is the material, the narrative. This greatly helps create the magical ritual for the game. And all this help provide players with an immersive experience as a magician student.\nRole: Design, Programming, and Art with Alexander King, Christian Skisonic Skr, Sam Von Ehren and Ivy Li",
-      "ja-JP": "Introduction: Curare Magicum is digital hybrid analog game. In this game, you are going to act as a student who is pursuing a Magical Doctor (M.D.) degree. You will cast your magical spell to cure patients with different symptoms. Your goal is to master the secrets behind the element magical spell and pass the magical course.The digital part of this game is that you need to cast spells by using the smartphone, the smartphone will scan the magic symbol, and you can cast different magic spells with different sets of magical symbols. The analog part of this game is the material, the narrative. This greatly helps create the magical ritual for the game. And all this help provide players with an immersive experience as a magician student.\nRole: Design, Programming, and Art with Alexander King, Christian Skisonic Skr, Sam Von Ehren and Ivy Li"
+      "zh-CN": "《Curare Magicum》是一款结合数字与实体元素的混合游戏。玩家扮演正在攻读魔法医学（Magical Doctor, M.D.）学位的学生，通过施放法术治疗不同症状的病人。目标是掌握元素魔法背后的秘密并通过课程考核。数字部分体现在施法方式：需要使用智能手机扫描魔法符号，不同组合会触发不同的法术。模拟部分来自实体材料与叙事设定，它们共同营造出仪式感十足的魔法体验，让玩家真正沉浸在“魔法学徒”的角色中。\n角色：与 Alexander King、Christian “Skisonic” Skr、Sam Von Ehren、Ivy Li 一同负责设计、编程与美术",
+      "en-US": "Curare Magicum is digital hybrid analog game. In this game, you are going to act as a student who is pursuing a Magical Doctor (M.D.) degree. You will cast your magical spell to cure patients with different symptoms. Your goal is to master the secrets behind the element magical spell and pass the magical course.The digital part of this game is that you need to cast spells by using the smartphone, the smartphone will scan the magic symbol, and you can cast different magic spells with different sets of magical symbols. The analog part of this game is the material, the narrative. This greatly helps create the magical ritual for the game. And all this help provide players with an immersive experience as a magician student.\nRole: Design, Programming, and Art with Alexander King, Christian Skisonic Skr, Sam Von Ehren and Ivy Li",
+      "ja-JP": "『Curare Magicum』は、デジタル要素とアナログ要素を融合させたハイブリッドゲームです。プレイヤーは魔法ドクター（Magical Doctor, M.D.）を目指す学生となり、さまざまな症状を持つ患者に呪文を唱えて治療します。目標は元素魔法の秘密を習得し、課程を修了すること。デジタル要素としては、スマートフォンを使って魔法陣をスキャンし、組み合わせによって異なる呪文を発動させます。アナログ要素は素材や物語世界に組み込まれており、儀式的な体験を強めてくれます。その結果、プレイヤーは魔法学校の学生になったかのような没入感を味わえます。\n役割：Alexander King、Christian “Skisonic” Skr、Sam Von Ehren、Ivy Li と共にデザイン・プログラミング・アートを担当"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -120,7 +120,7 @@
       "/images/CurareMagicum/CurareMagicum_04.jpg",
       "/images/CurareMagicum/CurareMagicum_05.jpg"
     ],
-    "order": 5
+    "order": 6
   },
   {
     "id": "darter",
@@ -132,9 +132,9 @@
     "category": "game",
     "thumbnail": "/images/Darter/Darter_thumbnail.jpg",
     "description": {
-      "zh-CN": "Introduction: A mobile 2d shooting game without any button.You can control the player by tilting your device, and shoot your dart by swiping.You only have two darts to shoot. and after you shoot out both of them, you need to pick them back, in order to shoot again.Change your totem by double tap when you trigger them and activate the totem ability by 2 fingers tap.When you want to leave the stage just turn your device upside down.As you kill the boss it will take a screenshot and display it in the Story Room automatically.\nRole: Design, Art, Programming",
-      "en-US": "Introduction: A mobile 2d shooting game without any button.You can control the player by tilting your device, and shoot your dart by swiping.You only have two darts to shoot. and after you shoot out both of them, you need to pick them back, in order to shoot again.Change your totem by double tap when you trigger them and activate the totem ability by 2 fingers tap.When you want to leave the stage just turn your device upside down.As you kill the boss it will take a screenshot and display it in the Story Room automatically.\nRole: Design, Art, Programming",
-      "ja-JP": "Introduction: A mobile 2d shooting game without any button.You can control the player by tilting your device, and shoot your dart by swiping.You only have two darts to shoot. and after you shoot out both of them, you need to pick them back, in order to shoot again.Change your totem by double tap when you trigger them and activate the totem ability by 2 fingers tap.When you want to leave the stage just turn your device upside down.As you kill the boss it will take a screenshot and display it in the Story Room automatically.\nRole: Design, Art, Programming"
+      "zh-CN": "《Darter》是一款不需要按钮的 2D 手机射击游戏。你通过倾斜设备来移动角色，滑动屏幕即可发射飞镖。玩家只有两支飞镖，用完后必须捡回才能继续攻击。双击可以切换已激活的图腾，两指点击释放图腾能力。想离开关卡时，只要把设备倒过来即可。击败 Boss 后游戏会自动截图，并在故事房间中展示你的战绩。\n角色：设计、美术、编程",
+      "en-US": "A mobile 2d shooting game without any button.You can control the player by tilting your device, and shoot your dart by swiping.You only have two darts to shoot. and after you shoot out both of them, you need to pick them back, in order to shoot again.Change your totem by double tap when you trigger them and activate the totem ability by 2 fingers tap.When you want to leave the stage just turn your device upside down.As you kill the boss it will take a screenshot and display it in the Story Room automatically.\nRole: Design, Art, Programming",
+      "ja-JP": "『Darter』はボタン操作を使わない 2D モバイルシューティングです。端末を傾けてキャラクターを動かし、スワイプでダーツを射出します。所持できるダーツは 2 本だけで、撃ち尽くしたら拾い直さないと再び撃てません。ダブルタップで有効化しているトーテムを切り替え、2 本指タップでトーテム能力を発動。ステージを離れたいときは端末を逆さにするだけ。ボスを倒すと自動でスクリーンショットを撮り、ストーリールームに戦績が展示されます。\n役割：デザイン、アート、プログラミング"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/138479703",
     "soundcloudEmbed": null,
@@ -150,7 +150,7 @@
       "/images/Darter/Darter_09.jpg",
       "/images/Darter/Darter_10.jpg"
     ],
-    "order": 6
+    "order": 7
   },
   {
     "id": "feed-chain",
@@ -162,14 +162,14 @@
     "category": "game",
     "thumbnail": "/images/FeedChain/FeedChain_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is Food! So I made the FeedChain.I think it's very interesting that in a food chain system, you need to make sure every species within the system is alive. If one species is extinct, the whole food chain will break. And the most difficult part of this game is what spices to propagate every turn. The species with the more amount will have a larger possibility to propagate. Animals also have hungry value, when it drops down to zero, it will die, so make sure the endangered species eat something.Music takes from Tales Weaver Original Soundtrack Plus by Composer: ESTi, Nauts, Nikacha, JIMMie, Kim Chan-Suk - Joke(イベント)\nRole: Design, Programming",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is Food! So I made the FeedChain.I think it's very interesting that in a food chain system, you need to make sure every species within the system is alive. If one species is extinct, the whole food chain will break. And the most difficult part of this game is what spices to propagate every turn. The species with the more amount will have a larger possibility to propagate. Animals also have hungry value, when it drops down to zero, it will die, so make sure the endangered species eat something.Music takes from Tales Weaver Original Soundtrack Plus by Composer: ESTi, Nauts, Nikacha, JIMMie, Kim Chan-Suk - Joke(イベント)\nRole: Design, Programming",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is Food! So I made the FeedChain.I think it's very interesting that in a food chain system, you need to make sure every species within the system is alive. If one species is extinct, the whole food chain will break. And the most difficult part of this game is what spices to propagate every turn. The species with the more amount will have a larger possibility to propagate. Animals also have hungry value, when it drops down to zero, it will die, so make sure the endangered species eat something.Music takes from Tales Weaver Original Soundtrack Plus by Composer: ESTi, Nauts, Nikacha, JIMMie, Kim Chan-Suk - Joke(イベント)\nRole: Design, Programming"
+      "zh-CN": "这款游戏同样是在 Prototype Studio 的一周项目中完成的，那一周的主题是“食物”。我对食物链系统很感兴趣：要维持生态稳定，每个物种都必须存活；一旦某个物种灭绝，整个链条就会崩溃。游戏中最具挑战的部分是决定每一回合要让哪种生物繁衍。数量越多的物种，繁衍概率就越高。动物还有饥饿值，如果降到 0 就会死亡，所以得确保濒危物种能吃到东西。音乐使用《Tales Weaver Original Soundtrack Plus》，作曲：ESTi、Nauts、Nikacha、JIMMie、Kim Chan-Suk - “Joke（イベント）”。\n角色：设计、编程",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is Food! So I made the FeedChain.I think it's very interesting that in a food chain system, you need to make sure every species within the system is alive. If one species is extinct, the whole food chain will break. And the most difficult part of this game is what spices to propagate every turn. The species with the more amount will have a larger possibility to propagate. Animals also have hungry value, when it drops down to zero, it will die, so make sure the endangered species eat something.Music takes from Tales Weaver Original Soundtrack Plus by Composer: ESTi, Nauts, Nikacha, JIMMie, Kim Chan-Suk - Joke(イベント)\nRole: Design, Programming",
+      "ja-JP": "この作品も Prototype Studio の 1 週間プロジェクトで制作し、テーマは「Food」でした。食物連鎖の仕組みに魅力を感じていて、どの種も生き残らないと生態系が崩れてしまうところが面白いと思っています。ゲームの難しさは、毎ターンどの種族を繁殖させるかを判断するところです。個体数が多いほど繁殖の確率が上がり、動物には空腹度が設定されていてゼロになると死んでしまいます。絶滅危惧の種には必ず餌を行き渡らせましょう。音楽は『Tales Weaver Original Soundtrack Plus』収録、ESTi・Nauts・Nikacha・JIMMie・Kim Chan-Suk 作曲の “Joke（イベント）” を使用しています。\n役割：デザイン、プログラミング"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/205973827",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 7
+    "order": 8
   },
   {
     "id": "free-journey",
@@ -181,14 +181,14 @@
     "category": "game",
     "thumbnail": "/images/FreeJourney/FreeJourney_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is to make a fan-game of a game by a woman! So I made the FreeJourney, which is a fan-game of Journey, and the producer of Journey is Robin Hunicake.I think everybody would agree that it feels really great when sliding in Journey,  at least I do. But the sliding in Journey is pretty short, it only has few minutes. Therefore I want to create an infinite desert so that player can feel free and enjoy the free sliding. The gameplay mechanics of the game is light, hit the star and it will refill the timer on the top of the screen. Don't let the timer runs out, that's is. And it takes no time to restart so that you can enjoy your sliding as you like.Music takes from YUI - My Generation～YUI Acoustic Version～\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is to make a fan-game of a game by a woman! So I made the FreeJourney, which is a fan-game of Journey, and the producer of Journey is Robin Hunicake.I think everybody would agree that it feels really great when sliding in Journey,  at least I do. But the sliding in Journey is pretty short, it only has few minutes. Therefore I want to create an infinite desert so that player can feel free and enjoy the free sliding. The gameplay mechanics of the game is light, hit the star and it will refill the timer on the top of the screen. Don't let the timer runs out, that's is. And it takes no time to restart so that you can enjoy your sliding as you like.Music takes from YUI - My Generation～YUI Acoustic Version～\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is to make a fan-game of a game by a woman! So I made the FreeJourney, which is a fan-game of Journey, and the producer of Journey is Robin Hunicake.I think everybody would agree that it feels really great when sliding in Journey,  at least I do. But the sliding in Journey is pretty short, it only has few minutes. Therefore I want to create an infinite desert so that player can feel free and enjoy the free sliding. The gameplay mechanics of the game is light, hit the star and it will refill the timer on the top of the screen. Don't let the timer runs out, that's is. And it takes no time to restart so that you can enjoy your sliding as you like.Music takes from YUI - My Generation～YUI Acoustic Version～\nRole: Design, Programming, Art"
+      "zh-CN": "这同样是 Prototype Studio 课堂上一周完成的作品。那次的题目是“致敬一位女性创作者的游戏”，于是我制作了 Journey 的同人作品《FreeJourney》，原作的制作人是 Robin Hunicke。相信大家都会同意，在 Journey 里滑翔的感觉非常棒，但原作中的滑行段落很短，仅有几分钟。因此我想打造一片无尽沙漠，让玩家可以尽情滑行。玩法很轻量：碰到星星就能为顶部的计时器补充时间，只要别让时间归零就行了。重新开始几乎不需要等待，随时可以再次感受滑翔的乐趣。音乐使用 YUI《My Generation～YUI Acoustic Version～》。\n角色：设计、编程、美术",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is to make a fan-game of a game by a woman! So I made the FreeJourney, which is a fan-game of Journey, and the producer of Journey is Robin Hunicake.I think everybody would agree that it feels really great when sliding in Journey,  at least I do. But the sliding in Journey is pretty short, it only has few minutes. Therefore I want to create an infinite desert so that player can feel free and enjoy the free sliding. The gameplay mechanics of the game is light, hit the star and it will refill the timer on the top of the screen. Don't let the timer runs out, that's is. And it takes no time to restart so that you can enjoy your sliding as you like.Music takes from YUI - My Generation～YUI Acoustic Version～\nRole: Design, Programming, Art",
+      "ja-JP": "これも Prototype Studio の 1 週間課題で、テーマは「女性クリエイターの作品のファンゲームを作る」でした。そこで、プロデューサーの Robin Hunicke さんに敬意を込めて『Journey』のファンゲーム「FreeJourney」を制作しました。『Journey』の滑空シーンは本当に気持ちいいのですが、プレイできる時間がとても短いのが少し寂しい。そこでプレイヤーが自由に滑走を楽しめる無限の砂漠を用意しました。ルールはシンプルで、星に触れると画面上部のタイマーが回復し、タイマーが尽きないよう滑り続ければOK。リスタートも瞬時に行えるので、いつでも滑走の気分に戻れます。音楽は YUI「My Generation～YUI Acoustic Version～」を使用。\n役割：デザイン、プログラミング、アート"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/20871567",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 8
+    "order": 9
   },
   {
     "id": "full-collapsy",
@@ -200,9 +200,9 @@
     "category": "game",
     "thumbnail": "/images/FullCollapsy/FullCollapsy_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: I was told to make a <a href=\"http://zone.msn.com/gameplayer/gameplayer.aspx?game=collapse\">Collapse</a>-like game.But I don't want to make a static point and click strategy game at that time, so I wondering what can I made with the basic mechanics.Soon I think of whether I can use the collapse-like tile as a playground because it looks like a very interesting dynamics playground.Therefore I made the FullCollapsy, the idea is you need to explode connected dots with the same color to gain ammo with the corresponding color.The enemies are like zombies and they will try to surround you, you need to mark them with your color gun and they will be burned to hail when they touch a corresponding color.I pretty like the feeling of sliding through enemies and shoot them. The game has a free directional movement which is harder than I thought to implement. and the little sprint makes the game so cool. I enjoy every moment that I slide through a guy, hope you like this game too.\nRole: Design, Art, Programming",
-      "en-US": "Introduction: I was told to make a <a href=\"http://zone.msn.com/gameplayer/gameplayer.aspx?game=collapse\">Collapse</a>-like game.But I don't want to make a static point and click strategy game at that time, so I wondering what can I made with the basic mechanics.Soon I think of whether I can use the collapse-like tile as a playground because it looks like a very interesting dynamics playground.Therefore I made the FullCollapsy, the idea is you need to explode connected dots with the same color to gain ammo with the corresponding color.The enemies are like zombies and they will try to surround you, you need to mark them with your color gun and they will be burned to hail when they touch a corresponding color.I pretty like the feeling of sliding through enemies and shoot them. The game has a free directional movement which is harder than I thought to implement. and the little sprint makes the game so cool. I enjoy every moment that I slide through a guy, hope you like this game too.\nRole: Design, Art, Programming",
-      "ja-JP": "Introduction: I was told to make a <a href=\"http://zone.msn.com/gameplayer/gameplayer.aspx?game=collapse\">Collapse</a>-like game.But I don't want to make a static point and click strategy game at that time, so I wondering what can I made with the basic mechanics.Soon I think of whether I can use the collapse-like tile as a playground because it looks like a very interesting dynamics playground.Therefore I made the FullCollapsy, the idea is you need to explode connected dots with the same color to gain ammo with the corresponding color.The enemies are like zombies and they will try to surround you, you need to mark them with your color gun and they will be burned to hail when they touch a corresponding color.I pretty like the feeling of sliding through enemies and shoot them. The game has a free directional movement which is harder than I thought to implement. and the little sprint makes the game so cool. I enjoy every moment that I slide through a guy, hope you like this game too.\nRole: Design, Art, Programming"
+      "zh-CN": "我曾被要求做一款类似 Collapse 的游戏，但当时并不想做静态的点击策略玩法，于是思考能否用它的核心机制创造别的体验。后来想到，把消除方块当成一个可自由移动的战场应该会很有趣。于是就诞生了《FullCollapsy》：你需要引爆相连的同色圆点来获取对应颜色的弹药。敌人像僵尸一样会包围你，你必须用彩色武器给他们做上标记，只要触碰到相同颜色就会被焚烧殆尽。我特别喜欢在敌人之间滑行、顺手射击的感觉。实现全方向移动比想象中难，小小的冲刺动作也让战斗更爽快。我非常享受每一次擦身而过的瞬间，希望你也喜欢这款游戏。\n角色：设计、美术、编程\n试玩地址：https://erenyx.itch.io/fullcollapsy",
+      "en-US": "I was told to make a <a href=\"http://zone.msn.com/gameplayer/gameplayer.aspx?game=collapse\">Collapse</a>-like game.But I don't want to make a static point and click strategy game at that time, so I wondering what can I made with the basic mechanics.Soon I think of whether I can use the collapse-like tile as a playground because it looks like a very interesting dynamics playground.Therefore I made the FullCollapsy, the idea is you need to explode connected dots with the same color to gain ammo with the corresponding color.The enemies are like zombies and they will try to surround you, you need to mark them with your color gun and they will be burned to hail when they touch a corresponding color.I pretty like the feeling of sliding through enemies and shoot them. The game has a free directional movement which is harder than I thought to implement. and the little sprint makes the game so cool. I enjoy every moment that I slide through a guy, hope you like this game too.\nRole: Design, Art, Programming\nPlay it here: https://erenyx.itch.io/fullcollapsy",
+      "ja-JP": "課題で「Collapse」風のゲームを作るように言われたのですが、そのままのクリック系ストラテジーにはしたくありませんでした。そこで基本メカニクスを活かしながら別の遊び方ができないか考え、消去パネルを動き回れる戦場にしてみたら面白そうだと思いました。こうして生まれたのが『FullCollapsy』です。プレイヤーは同じ色でつながったドットを爆発させ、対応する色の弾薬を補給します。敵はゾンビのように取り囲んでくるので、カラ―ガンで色を付け、同じ色に触れさせて焼き払います。敵の間を滑り抜けながら撃つ感覚がとても好きです。全方位移動を実装するのは予想以上に大変でしたが、小さなダッシュがプレイフィールをぐっと良くしてくれました。ぎりぎりでかわして撃つ瞬間を、ぜひ楽しんでください。\n役割：デザイン、アート、プログラミング\nプレイはこちら：https://erenyx.itch.io/fullcollapsy"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/197053002",
     "soundcloudEmbed": null,
@@ -212,7 +212,7 @@
       "/images/FullCollapsy/FullCollapsy_03.png",
       "/images/FullCollapsy/FullCollapsy_04.png"
     ],
-    "order": 9
+    "order": 10
   },
   {
     "id": "giant-because-weight",
@@ -224,16 +224,16 @@
     "category": "game",
     "thumbnail": "/images/GiantBecauseWeight/GiantBecauseWeight_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: Prompt\nThis is a difficult prompt because Belfast seems to be just like thousands of other western cities. Luckily there is a place in Belfast call Giant's Causeway which is an area of about 40,000 interlocking basalt columns. I find this place look amazing, and I want to replicate the feeling of it. Because it's close to the sea where a lot of people would have different emotion and memory comes in, so I want it to be a memory game where you need to remember the path and reverse your memory and trace the path back.Music takes from ESTi  - Aquabelle(ポータルエリア)\nRole: Design, Programming, Art",
-      "en-US": "Introduction: Prompt\nThis is a difficult prompt because Belfast seems to be just like thousands of other western cities. Luckily there is a place in Belfast call Giant's Causeway which is an area of about 40,000 interlocking basalt columns. I find this place look amazing, and I want to replicate the feeling of it. Because it's close to the sea where a lot of people would have different emotion and memory comes in, so I want it to be a memory game where you need to remember the path and reverse your memory and trace the path back.Music takes from ESTi  - Aquabelle(ポータルエリア)\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: Prompt\nThis is a difficult prompt because Belfast seems to be just like thousands of other western cities. Luckily there is a place in Belfast call Giant's Causeway which is an area of about 40,000 interlocking basalt columns. I find this place look amazing, and I want to replicate the feeling of it. Because it's close to the sea where a lot of people would have different emotion and memory comes in, so I want it to be a memory game where you need to remember the path and reverse your memory and trace the path back.Music takes from ESTi  - Aquabelle(ポータルエリア)\nRole: Design, Programming, Art"
+      "zh-CN": "命题：\n这个题目有点棘手，因为贝尔法斯特看起来和许多西方城市并无二致。幸运的是，那里有一个叫“巨人堤道”（Giant's Causeway）的地方，由约四万根互相咬合的玄武岩柱构成，景象令人惊叹，我想把那种感觉复刻出来。巨人堤道靠海，人们在海边往往会唤起不同的情绪与记忆，因此我把它做成一款记忆游戏：玩家需要记住前进路线，再倒着回想，沿着记忆重新走一遍。音乐使用 ESTi 的《Aquabelle（ポータルエリア）》。\n角色：设计、编程、美术",
+      "en-US": "Prompt\nThis is a difficult prompt because Belfast seems to be just like thousands of other western cities. Luckily there is a place in Belfast call Giant's Causeway which is an area of about 40,000 interlocking basalt columns. I find this place look amazing, and I want to replicate the feeling of it. Because it's close to the sea where a lot of people would have different emotion and memory comes in, so I want it to be a memory game where you need to remember the path and reverse your memory and trace the path back.Music takes from ESTi  - Aquabelle(ポータルエリア)\nRole: Design, Programming, Art",
+      "ja-JP": "課題：\nベルファストは典型的な西洋の都市に見えるので、テーマとしては少し難しかったのですが、幸いにも「ジャイアンツ・コーズウェー」という名所があります。約 4 万本の玄武岩柱が組み合わさった景観が本当に美しく、その印象をゲームで再現したいと思いました。海に近い場所なので、人それぞれの記憶や感情が呼び起こされるはず。そこで、プレイヤーが進んだ道筋を覚え、記憶を巻き戻すように逆走していく記憶ゲームにしました。音楽は ESTi「Aquabelle（ポータルエリア）」を使用しています。\n役割：デザイン、プログラミング、アート"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/216181419",
     "soundcloudEmbed": null,
     "screenshots": [
       "/images/GiantBecauseWeight/GiantBecauseWeight_01.jpg"
     ],
-    "order": 10
+    "order": 11
   },
   {
     "id": "horrific-war",
@@ -245,14 +245,14 @@
     "category": "game",
     "thumbnail": "/images/HorrificWar/HorrificWar_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week's prompt is Good Luck! So I made the HorrificWar.You are supposed to survive in a warfare.  You will consume one chicken every day. Some people in the warfare will just give you beers, cigarettes or chicken. Some want to trade with you. Some people want you to kill other people, and some will just kill you. Be caution in the warfare. And be alive.Music takes from Hiroyuki Sawano - UNICORN\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week's prompt is Good Luck! So I made the HorrificWar.You are supposed to survive in a warfare.  You will consume one chicken every day. Some people in the warfare will just give you beers, cigarettes or chicken. Some want to trade with you. Some people want you to kill other people, and some will just kill you. Be caution in the warfare. And be alive.Music takes from Hiroyuki Sawano - UNICORN\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week's prompt is Good Luck! So I made the HorrificWar.You are supposed to survive in a warfare.  You will consume one chicken every day. Some people in the warfare will just give you beers, cigarettes or chicken. Some want to trade with you. Some people want you to kill other people, and some will just kill you. Be caution in the warfare. And be alive.Music takes from Hiroyuki Sawano - UNICORN\nRole: Design, Programming, Art"
+      "zh-CN": "这又是一款 Prototype Studio 课程的一周项目，主题是“好运”。于是我做了《Horrific War》。你必须在战场上想办法活下去，每天都会消耗一只鸡。有些人会给你啤酒、香烟或鸡，有些人想和你交易，也有人会要求你去杀掉别人，甚至直接杀死你。请在战火中保持警惕，努力活着。音乐使用泽野弘之的《UNICORN》。\n角色：设计、编程、美术\n试玩地址：https://erenyx.itch.io/horrificwar",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week's prompt is Good Luck! So I made the HorrificWar.You are supposed to survive in a warfare.  You will consume one chicken every day. Some people in the warfare will just give you beers, cigarettes or chicken. Some want to trade with you. Some people want you to kill other people, and some will just kill you. Be caution in the warfare. And be alive.Music takes from Hiroyuki Sawano - UNICORN\nRole: Design, Programming, Art\nPlay it here: https://erenyx.itch.io/horrificwar",
+      "ja-JP": "これも Prototype Studio の 1 週間課題で、テーマは「Good Luck!」でした。そこで『Horrific War』を制作しました。プレイヤーは戦場で生き延びることが目的で、毎日チキンを 1 羽消費します。戦場の住人たちは、ビールやタバコ、チキンをくれる人もいれば、取引を持ち掛ける人、誰かを殺してほしいと頼む人、そしてこちらを容赦なく殺そうとする人もいます。常に注意を払い、生き抜いてください。音楽は澤野弘之さんの「UNICORN」を使用しています。\n役割：デザイン、プログラミング、アート\nプレイはこちら：https://erenyx.itch.io/horrificwar"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/205966702",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 11
+    "order": 12
   },
   {
     "id": "human-history",
@@ -264,14 +264,14 @@
     "category": "game",
     "thumbnail": "/images/HumanHistory/HumanHistory_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is PERMANENT, OR EPHEMERAL.This is a loose prompt but very hard to come up with an idea. My first thought is a game about a family that inherits the same profession, and you the same profession have different advantages and struggles among different era. But it seems over scoped for a week project. Therefore I caught the core interaction of the idea and made it into two buttons, have a baby and don't die. The concept becomes that you need to keep the human grow as many generations as possible, but every generation have their own struggle and they all thinks their life isn't great. This feels like a loop for human history in a funny and dark way.Music takes from ROOKiEZ is PUNK'D - コンプリケイション\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is PERMANENT, OR EPHEMERAL.This is a loose prompt but very hard to come up with an idea. My first thought is a game about a family that inherits the same profession, and you the same profession have different advantages and struggles among different era. But it seems over scoped for a week project. Therefore I caught the core interaction of the idea and made it into two buttons, have a baby and don't die. The concept becomes that you need to keep the human grow as many generations as possible, but every generation have their own struggle and they all thinks their life isn't great. This feels like a loop for human history in a funny and dark way.Music takes from ROOKiEZ is PUNK'D - コンプリケイション\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is PERMANENT, OR EPHEMERAL.This is a loose prompt but very hard to come up with an idea. My first thought is a game about a family that inherits the same profession, and you the same profession have different advantages and struggles among different era. But it seems over scoped for a week project. Therefore I caught the core interaction of the idea and made it into two buttons, have a baby and don't die. The concept becomes that you need to keep the human grow as many generations as possible, but every generation have their own struggle and they all thinks their life isn't great. This feels like a loop for human history in a funny and dark way.Music takes from ROOKiEZ is PUNK'D - コンプリケイション\nRole: Design, Programming, Art"
+      "zh-CN": "又一个 Prototype Studio 的一周命题，这次的主题是“Permanent, or Ephemeral（永恒或短暂）”。题目看似宽松，实则很难落地。起初我想做一款关于家族传承职业的游戏，让同一种职业在不同时代经历不同的优势与困境，但对一周项目来说规模过大。最后我保留了核心互动，把它浓缩成两个按钮：“生孩子”和“别死”。玩家需要尽可能让人类繁衍更多世代，不过每一代都有自己的烦恼，而且都觉得生活并不如意。这种循环既黑色幽默，又像是人类历史的缩影。音乐使用 ROOKiEZ is PUNK'D《コンプリケイション》。\n角色：设计、编程、美术",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is PERMANENT, OR EPHEMERAL.This is a loose prompt but very hard to come up with an idea. My first thought is a game about a family that inherits the same profession, and you the same profession have different advantages and struggles among different era. But it seems over scoped for a week project. Therefore I caught the core interaction of the idea and made it into two buttons, have a baby and don't die. The concept becomes that you need to keep the human grow as many generations as possible, but every generation have their own struggle and they all thinks their life isn't great. This feels like a loop for human history in a funny and dark way.Music takes from ROOKiEZ is PUNK'D - コンプリケイション\nRole: Design, Programming, Art",
+      "ja-JP": "Prototype Studio の 1 週間課題で、今回のテーマは「PERMANENT, OR EPHEMERAL（永続か刹那か）」でした。一見自由度が高いものの、アイデアをまとめるのが難しいお題です。最初は、同じ職業を受け継ぐ一家の物語を作ろうと考えましたが、各時代ごとの利点と苦労を描くとなると 1 週間では収まりません。そこで発想の核だけを残し、「子どもを産む」「死なない」という 2 つのボタンに集約しました。プレイヤーは可能な限り世代を重ねていきますが、どの世代にも悩みがあり、誰もが自分の人生に満足していないと感じています。ちょっとブラックで、それでいて人類史の縮図のようなループになりました。音楽は ROOKiEZ is PUNK'D「コンプリケイション」を使用。\n役割：デザイン、プログラミング、アート"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/216181056",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 12
+    "order": 13
   },
   {
     "id": "kd-maze",
@@ -283,16 +283,16 @@
     "category": "game",
     "thumbnail": "/images/KDMaze/KDMaze_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game created in a single week for Prototype Studio, where the prompt was to reinterpret a piece of mysterious box art. The haunting illustration of a giant eye watching over a maze inspired a KD-tree puzzle about protecting tiny eyes from shifting firewalls.\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game created in a single week for Prototype Studio, where the prompt was to reinterpret a piece of mysterious box art. The haunting illustration of a giant eye watching over a maze inspired a KD-tree puzzle about protecting tiny eyes from shifting firewalls.\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game created in a single week for Prototype Studio, where the prompt was to reinterpret a piece of mysterious box art. The haunting illustration of a giant eye watching over a maze inspired a KD-tree puzzle about protecting tiny eyes from shifting firewalls.\nRole: Design, Programming, Art"
+      "zh-CN": "这是在 Prototype Studio 中用一周时间完成的作品，命题是“重新诠释一幅神秘的盒绘”。那张令人不安的插画描绘了巨大的眼睛俯视迷宫，于是我设计了这款 KD-tree 解谜游戏：玩家要在不断变化的火墙间保护小眼睛们。\n角色：设计、编程、美术",
+      "en-US": "A game created in a single week for Prototype Studio, where the prompt was to reinterpret a piece of mysterious box art. The haunting illustration of a giant eye watching over a maze inspired a KD-tree puzzle about protecting tiny eyes from shifting firewalls.\nRole: Design, Programming, Art",
+      "ja-JP": "Prototype Studio の 1 週間課題で、テーマは「不思議なパッケージアートの再解釈」でした。巨大な目が迷宮を見下ろす不気味なイラストから着想を得て、可愛い目玉たちを動くファイアウォールから守る KD-tree パズルを制作しました。\n役割：デザイン、プログラミング、アート"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/208715820",
     "soundcloudEmbed": null,
     "screenshots": [
       "/images/KDMaze/KDMaze_01.png"
     ],
-    "order": 13
+    "order": 14
   },
   {
     "id": "matching-rybw",
@@ -304,9 +304,9 @@
     "category": "game",
     "thumbnail": "/images/MatchingRYBW/MatchingRYBW_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A color matching game.“红” means red, “黄”means yellow, “蓝”means blue and “白” means white in english.This game was originally built for mobile ,but you can play it on desktop in the following site as well.Press Right Arrow Key if the left char means the color of the right char, and press Left Arrow Key if not matched.Two modes are available now, the CountDown Mode and Surviving Mode.When game is over you will see your Score and Accuracy.\nRole: Main Design, Art, Programming",
-      "en-US": "Introduction: A color matching game.“红” means red, “黄”means yellow, “蓝”means blue and “白” means white in english.This game was originally built for mobile ,but you can play it on desktop in the following site as well.Press Right Arrow Key if the left char means the color of the right char, and press Left Arrow Key if not matched.Two modes are available now, the CountDown Mode and Surviving Mode.When game is over you will see your Score and Accuracy.\nRole: Main Design, Art, Programming",
-      "ja-JP": "Introduction: A color matching game.“红” means red, “黄”means yellow, “蓝”means blue and “白” means white in english.This game was originally built for mobile ,but you can play it on desktop in the following site as well.Press Right Arrow Key if the left char means the color of the right char, and press Left Arrow Key if not matched.Two modes are available now, the CountDown Mode and Surviving Mode.When game is over you will see your Score and Accuracy.\nRole: Main Design, Art, Programming"
+      "zh-CN": "这是一款颜色匹配游戏。“红”代表 red，“黄”代表 yellow，“蓝”代表 blue，“白”代表 white。原本是移动端作品，现在也可以在桌面浏览器上游玩。如果左侧汉字表示右侧汉字的颜色，就按右方向键；如果不匹配，就按左方向键。游戏包含倒计时模式和生存模式两种玩法。结束后会显示你的得分与准确率。\n角色：主设计、美术、编程",
+      "en-US": "A color matching game.“红” means red, “黄”means yellow, “蓝”means blue and “白” means white in english.This game was originally built for mobile ,but you can play it on desktop in the following site as well.Press Right Arrow Key if the left char means the color of the right char, and press Left Arrow Key if not matched.Two modes are available now, the CountDown Mode and Surviving Mode.When game is over you will see your Score and Accuracy.\nRole: Main Design, Art, Programming",
+      "ja-JP": "色合わせゲームです。「红」は red、「黄」は yellow、「蓝」は blue、「白」は white を意味します。もともとはモバイル向けに作りましたが、今は PC ブラウザでも遊べます。左側の漢字が右側の漢字の色を表していると思ったら右矢印キー、違うと思ったら左矢印キーを押してください。現在はカウントダウンモードとサバイバルモードの 2 種類を用意しています。ゲーム終了後にはスコアと正答率が表示されます。\n役割：メインデザイン、アート、プログラミング"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -317,7 +317,7 @@
       "/images/MatchingRYBW/MatchingRYBW_04.png",
       "/images/MatchingRYBW/MatchingRYBW_05.jpg"
     ],
-    "order": 14
+    "order": 15
   },
   {
     "id": "monsterologist",
@@ -329,9 +329,9 @@
     "category": "game",
     "thumbnail": "/images/Monsterologist/Monsterologist_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: This is my current project, started from September 2016. This starts as a thesis project and wins the <a href=\"https://www.rit.edu/news/story.php?id=61601\">New York State Game Development Challange</a> second place awards. We also have a <a href=\"http://weibo.com/u/6027692756?topnav=1&amp;wvr=6&amp;topsug=1\">social media account</a> with more than 1800 followers.This is a simulation game about the relationship between human and monster. The protagonist is a monster researcher who will study and raise monster in the barn, craft and sell items in her own store, build up relationships with villagers and encounter magical events and legendary monsters.\nRole: Design, Programming, Technical Artist With Zed Lea and Ivy",
-      "en-US": "Introduction: This is my current project, started from September 2016. This starts as a thesis project and wins the <a href=\"https://www.rit.edu/news/story.php?id=61601\">New York State Game Development Challange</a> second place awards. We also have a <a href=\"http://weibo.com/u/6027692756?topnav=1&amp;wvr=6&amp;topsug=1\">social media account</a> with more than 1800 followers.This is a simulation game about the relationship between human and monster. The protagonist is a monster researcher who will study and raise monster in the barn, craft and sell items in her own store, build up relationships with villagers and encounter magical events and legendary monsters.\nRole: Design, Programming, Technical Artist With Zed Lea and Ivy",
-      "ja-JP": "Introduction: This is my current project, started from September 2016. This starts as a thesis project and wins the <a href=\"https://www.rit.edu/news/story.php?id=61601\">New York State Game Development Challange</a> second place awards. We also have a <a href=\"http://weibo.com/u/6027692756?topnav=1&amp;wvr=6&amp;topsug=1\">social media account</a> with more than 1800 followers.This is a simulation game about the relationship between human and monster. The protagonist is a monster researcher who will study and raise monster in the barn, craft and sell items in her own store, build up relationships with villagers and encounter magical events and legendary monsters.\nRole: Design, Programming, Technical Artist With Zed Lea and Ivy"
+      "zh-CN": "这是我从 2016 年 9 月开始的长期项目，最初作为毕业论文作品，还获得了纽约州游戏开发挑战赛二等奖。团队也运营着拥有 1800 多名粉丝的社交媒体账号。游戏是一款描绘人与怪物关系的模拟体验，主角是一位怪物研究者：她要在畜舍里培育怪物，在自己的店铺里制作并售卖物品，与村民建立羁绊，同时邂逅各种奇异事件与传说级的怪物。\n角色：与 Zed Lea、Ivy 搭档担任设计、程序与技术美术",
+      "en-US": "This is my current project, started from September 2016. This starts as a thesis project and wins the <a href=\"https://www.rit.edu/news/story.php?id=61601\">New York State Game Development Challange</a> second place awards. We also have a <a href=\"http://weibo.com/u/6027692756?topnav=1&amp;wvr=6&amp;topsug=1\">social media account</a> with more than 1800 followers.This is a simulation game about the relationship between human and monster. The protagonist is a monster researcher who will study and raise monster in the barn, craft and sell items in her own store, build up relationships with villagers and encounter magical events and legendary monsters.\nRole: Design, Programming, Technical Artist With Zed Lea and Ivy",
+      "ja-JP": "2016 年 9 月から続けている長期プロジェクトです。卒業制作としてスタートし、ニューヨーク州ゲーム開発チャレンジで準優勝を受賞しました。フォロワー 1800 人以上の公式アカウントも運営しています。本作は人間とモンスターの関係を描くシミュレーションゲームです。主人公はモンスター研究者で、納屋でモンスターを育て、ショップでアイテムをクラフトして販売し、村人たちと交流しながら、不思議な出来事や伝説級のモンスターに出会っていきます。\n役割：Zed Lea、Ivy と共にデザイン・プログラミング・テクニカルアートを担当"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/218302969",
     "soundcloudEmbed": null,
@@ -341,7 +341,7 @@
       "/images/Monsterologist/Monsterologist_03.png",
       "/images/Monsterologist/Monsterologist_04.png"
     ],
-    "order": 15
+    "order": 16
   },
   {
     "id": "paintwalker",
@@ -353,9 +353,9 @@
     "category": "game",
     "thumbnail": "/images/PaintWalker/PaintWalker_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: PaintWalker is a project cooperate with the Met Media Lab to make an interesting experience for the Metropolitan Museum of Art.PaintWalker creates an immersive VR experience for players to walk on the contour of a painting, and the idea of it is to create a unique perspective of a painting and bring in a new understanding of an art work.This project is shown on the Met Digital Open House and featured on the <a href=\"http://www.livescience.com/54753-met-museum-virtual-reality-experiences.html?platform=hootsuite”>livescience.\nRole: Design, and Programmingwith Sam Von Ehren, Emma Wang and Lea Liu. 3D scanning painting data provided by Willemijn ElkhuizenSpecial thanks to Matt Parker and Marco Castro Cosio",
-      "en-US": "Introduction: PaintWalker is a project cooperate with the Met Media Lab to make an interesting experience for the Metropolitan Museum of Art.PaintWalker creates an immersive VR experience for players to walk on the contour of a painting, and the idea of it is to create a unique perspective of a painting and bring in a new understanding of an art work.This project is shown on the Met Digital Open House and featured on the <a href=\"http://www.livescience.com/54753-met-museum-virtual-reality-experiences.html?platform=hootsuite”>livescience.\nRole: Design, and Programmingwith Sam Von Ehren, Emma Wang and Lea Liu. 3D scanning painting data provided by Willemijn ElkhuizenSpecial thanks to Matt Parker and Marco Castro Cosio",
-      "ja-JP": "Introduction: PaintWalker is a project cooperate with the Met Media Lab to make an interesting experience for the Metropolitan Museum of Art.PaintWalker creates an immersive VR experience for players to walk on the contour of a painting, and the idea of it is to create a unique perspective of a painting and bring in a new understanding of an art work.This project is shown on the Met Digital Open House and featured on the <a href=\"http://www.livescience.com/54753-met-museum-virtual-reality-experiences.html?platform=hootsuite”>livescience.\nRole: Design, and Programmingwith Sam Von Ehren, Emma Wang and Lea Liu. 3D scanning painting data provided by Willemijn ElkhuizenSpecial thanks to Matt Parker and Marco Castro Cosio"
+      "zh-CN": "《PaintWalker》是与大都会艺术博物馆媒体实验室合作的项目，旨在为博物馆打造独特的观展体验。它让玩家在 VR 中踏上画作的轮廓行走，从全新的视角理解作品。该项目曾在大都会博物馆的 Digital Open House 展出，并被 LiveScience 网站报道。3D 扫描数据由 Willemijn Elkhuizen 提供，特别感谢 Matt Parker 与 Marco Castro Cosio。\n角色：与 Sam Von Ehren、Emma Wang、Lea Liu 一同负责设计与编程",
+      "en-US": "PaintWalker is a project cooperate with the Met Media Lab to make an interesting experience for the Metropolitan Museum of Art.PaintWalker creates an immersive VR experience for players to walk on the contour of a painting, and the idea of it is to create a unique perspective of a painting and bring in a new understanding of an art work.This project is shown on the Met Digital Open House and featured on the <a href=\"http://www.livescience.com/54753-met-museum-virtual-reality-experiences.html?platform=hootsuite”>livescience.\nRole: Design, and Programmingwith Sam Von Ehren, Emma Wang and Lea Liu. 3D scanning painting data provided by Willemijn ElkhuizenSpecial thanks to Matt Parker and Marco Castro Cosio",
+      "ja-JP": "「PaintWalker」はメトロポリタン美術館のメディアラボと協力して開発したプロジェクトで、来館者に新しい鑑賞体験を届けることを目指しています。VR 空間で絵画の輪郭を歩き、作品を別角度から味わえる没入型の体験を提供します。メトロポリタン美術館の Digital Open House で展示され、LiveScience にも取り上げられました。3D スキャンデータは Willemijn Elkhuizen さんに提供いただき、Matt Parker さんと Marco Castro Cosio さんのサポートにも感謝しています。\n役割：Sam Von Ehren、Emma Wang、Lea Liu と共にデザインとプログラミングを担当"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -367,7 +367,7 @@
       "/images/PaintWalker/PaintWalker_05.png",
       "/images/PaintWalker/PaintWalker_06.png"
     ],
-    "order": 16
+    "order": 17
   },
   {
     "id": "pong-in-same-room",
@@ -379,9 +379,9 @@
     "category": "game",
     "thumbnail": "/images/PongInSameRoom/PongInSameRoom_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: This project is inspired by Circle-Pong and Primary Color. They are all very interesting games.\\n\\nI made this game because at that time I was studying socket.io. I found it very interesting, and cool.\\n\\nSo I tried to make this game to horn my network programming ability. But fast pace game's network is really very difficult! But anyway I made it, not perfectly, but it works. And I know I would make it better next time.\\n\\nIf you want to try the online mode, please contact me. If you are playing it locally, highly recommend you not to play this game alone, find two friends to play with you. Otherwise, you will be crazy.\nRole: Design, Art, Programming",
-      "en-US": "Introduction: This project is inspired by Circle-Pong and Primary Color. They are all very interesting games.\\n\\nI made this game because at that time I was studying socket.io. I found it very interesting, and cool.\\n\\nSo I tried to make this game to horn my network programming ability. But fast pace game's network is really very difficult! But anyway I made it, not perfectly, but it works. And I know I would make it better next time.\\n\\nIf you want to try the online mode, please contact me. If you are playing it locally, highly recommend you not to play this game alone, find two friends to play with you. Otherwise, you will be crazy.\nRole: Design, Art, Programming",
-      "ja-JP": "Introduction: This project is inspired by Circle-Pong and Primary Color. They are all very interesting games.\\n\\nI made this game because at that time I was studying socket.io. I found it very interesting, and cool.\\n\\nSo I tried to make this game to horn my network programming ability. But fast pace game's network is really very difficult! But anyway I made it, not perfectly, but it works. And I know I would make it better next time.\\n\\nIf you want to try the online mode, please contact me. If you are playing it locally, highly recommend you not to play this game alone, find two friends to play with you. Otherwise, you will be crazy.\nRole: Design, Art, Programming"
+      "zh-CN": "这个项目受到 Circle-Pong 和 Primary Color 的启发，那两款游戏都很有趣。\n\n当时我正在学习 socket.io，觉得它既酷又好玩，于是做了这款作品来磨练网络编程能力。快速节奏的联网游戏实现起来确实不易，但总算跑起来了，虽然还不完美。我也相信下次能做得更好。\n\n如果你想尝试在线模式，欢迎联系我。若是本地游玩，强烈建议找两位朋友一起，不然你会被折腾疯的。\n角色：设计、美术、编程",
+      "en-US": "This project is inspired by Circle-Pong and Primary Color. They are all very interesting games.\\n\\nI made this game because at that time I was studying socket.io. I found it very interesting, and cool.\\n\\nSo I tried to make this game to horn my network programming ability. But fast pace game's network is really very difficult! But anyway I made it, not perfectly, but it works. And I know I would make it better next time.\\n\\nIf you want to try the online mode, please contact me. If you are playing it locally, highly recommend you not to play this game alone, find two friends to play with you. Otherwise, you will be crazy.\nRole: Design, Art, Programming",
+      "ja-JP": "このプロジェクトは Circle-Pong と Primary Color に影響を受けています。どちらもとてもユニークなゲームです。\n\n当時は socket.io を勉強していて、とても面白くクールだと感じていました。そこでネットワークプログラミングの腕試しとしてこのゲームを制作。高速テンポのオンラインゲームを作るのは本当に難しかったのですが、完璧ではないにせよ動く形にできました。次はもっと良いものにできると思います。\n\nオンラインモードを試したい場合はぜひ連絡してください。ローカルで遊ぶ場合は一人ではなく友達二人とプレイするのを強くおすすめします。そうしないと本当に大変ですよ。\n役割：デザイン、アート、プログラミング"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -390,7 +390,7 @@
       "/images/PongInSameRoom/PongInSameRoom_02.png",
       "/images/PongInSameRoom/PongInSameRoom_03.png"
     ],
-    "order": 17
+    "order": 18
   },
   {
     "id": "rq",
@@ -402,13 +402,13 @@
     "category": "game",
     "thumbnail": "/images/RQ/RQ_thmbnail.jpg",
     "description": {
-      "zh-CN": "Introduction: An augmented reality online game for couples.The idea of creating this game is for distance lover, they love each other but can not see each other, so by doing this game, I hope they can feel like being with each other. They can move around their lovely house and send heart to their lover.I am considering to add chatting bar or some additional animations in the future to full-fledge the experience of a couple in a home yard.\nRole: Design, Art, Programming",
-      "en-US": "Introduction: An augmented reality online game for couples.The idea of creating this game is for distance lover, they love each other but can not see each other, so by doing this game, I hope they can feel like being with each other. They can move around their lovely house and send heart to their lover.I am considering to add chatting bar or some additional animations in the future to full-fledge the experience of a couple in a home yard.\nRole: Design, Art, Programming",
-      "ja-JP": "Introduction: An augmented reality online game for couples.The idea of creating this game is for distance lover, they love each other but can not see each other, so by doing this game, I hope they can feel like being with each other. They can move around their lovely house and send heart to their lover.I am considering to add chatting bar or some additional animations in the future to full-fledge the experience of a couple in a home yard.\nRole: Design, Art, Programming"
+      "zh-CN": "《RQ》是一款为情侣打造的增强现实网络游戏。灵感来自异地恋：两个人彼此相爱，却无法见面，我希望通过这款游戏让他们感受到仿佛在同一屋檐下。玩家可以在虚拟的小屋中四处走动，向对方发送爱心。未来我还想加入聊天栏或更多动画，让这段庭院时光更加完整。\n角色：设计、美术、编程",
+      "en-US": "An augmented reality online game for couples.The idea of creating this game is for distance lover, they love each other but can not see each other, so by doing this game, I hope they can feel like being with each other. They can move around their lovely house and send heart to their lover.I am considering to add chatting bar or some additional animations in the future to full-fledge the experience of a couple in a home yard.\nRole: Design, Art, Programming",
+      "ja-JP": "『RQ』はカップル向けに作った AR オンラインゲームです。遠距離恋愛のふたりが互いに会えない状況でも、一緒にいる感覚を味わってほしいと思い企画しました。可愛い家の中を歩き回りながら、相手にハートを送ることができます。今後はチャット機能や追加アニメーションを入れて、庭で過ごすカップルの体験をさらに豊かにする予定です。\n役割：デザイン、アート、プログラミング"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/138479610",
     "soundcloudEmbed": null,
-    "order": 18
+    "order": 19
   },
   {
     "id": "roof-defence",
@@ -420,16 +420,16 @@
     "category": "game",
     "thumbnail": "/images/RoofDefence/RoofDefence_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is to make a game based on a game idea that somebody else comes up with. And what I've got is this from my classmate Sean. There’s a hurricane outside your house and it’s throwing around cars, trees, and a bunch of other really heavy objects. Your goal is to take your HYPER MEGA BAT and knock away all the things that are flying at your house before they crush it. You get bonus points if you knock objects into other objects. The game ends if your house is hit by 5 objects. This is a 2D sidescroller, so you can run around and jump to reach up and knock things away if you need to. You’ve gotta be able to run around quickly to swat stuff.\nBecause the professor allows us to modify the idea as we want. So I take the main concept of the player standing on a rooftop to fight against trash and make it into a more narrative driven game. Because this game is also a heavy action game, I made a podcast to tell the narrative of a world where people tends to throw rubbish to the rooftop and there are rooftop cleaners working hard every day. And the player acts as a cleaner to experience a weird day of hard work. If you want to give it a try, please don't watch the demo video.Music takes from Keeno - Bitter\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is to make a game based on a game idea that somebody else comes up with. And what I've got is this from my classmate Sean. There’s a hurricane outside your house and it’s throwing around cars, trees, and a bunch of other really heavy objects. Your goal is to take your HYPER MEGA BAT and knock away all the things that are flying at your house before they crush it. You get bonus points if you knock objects into other objects. The game ends if your house is hit by 5 objects. This is a 2D sidescroller, so you can run around and jump to reach up and knock things away if you need to. You’ve gotta be able to run around quickly to swat stuff.\nBecause the professor allows us to modify the idea as we want. So I take the main concept of the player standing on a rooftop to fight against trash and make it into a more narrative driven game. Because this game is also a heavy action game, I made a podcast to tell the narrative of a world where people tends to throw rubbish to the rooftop and there are rooftop cleaners working hard every day. And the player acts as a cleaner to experience a weird day of hard work. If you want to give it a try, please don't watch the demo video.Music takes from Keeno - Bitter\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is to make a game based on a game idea that somebody else comes up with. And what I've got is this from my classmate Sean. There’s a hurricane outside your house and it’s throwing around cars, trees, and a bunch of other really heavy objects. Your goal is to take your HYPER MEGA BAT and knock away all the things that are flying at your house before they crush it. You get bonus points if you knock objects into other objects. The game ends if your house is hit by 5 objects. This is a 2D sidescroller, so you can run around and jump to reach up and knock things away if you need to. You’ve gotta be able to run around quickly to swat stuff.\nBecause the professor allows us to modify the idea as we want. So I take the main concept of the player standing on a rooftop to fight against trash and make it into a more narrative driven game. Because this game is also a heavy action game, I made a podcast to tell the narrative of a world where people tends to throw rubbish to the rooftop and there are rooftop cleaners working hard every day. And the player acts as a cleaner to experience a weird day of hard work. If you want to give it a try, please don't watch the demo video.Music takes from Keeno - Bitter\nRole: Design, Programming, Art"
+      "zh-CN": "这是一款 Prototype Studio 课堂上的一周作品。那次的要求是\"根据别人提出的想法做一款游戏\"，我收到的设定来自同学 Sean：飓风肆虐，你需要挥动超级球棒把飞来的汽车、树木等重物全部打掉，防止房子被砸毁。击中物体互相碰撞还能加分，房子被击中五次就算失败。它是横版 2D 游戏，玩家要在屋顶上快速奔跑、跳跃，迎面击退垃圾。\n\n导师允许我们对创意进行改编，于是我保留\"屋顶清洁工对抗飞来的垃圾\"这个核心，并加入叙事元素。我制作了一段播客，讲述一个人们习惯把垃圾扔上屋顶、清洁工日夜辛劳的世界，玩家则化身清洁工体验这古怪又忙碌的一天。如果想亲自试玩，建议先别看演示视频。音乐使用 Keeno 的《Bitter》。\n试玩地址：https://erenyx.itch.io/roofdefence\n角色：设计、编程、美术",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week's prompt is to make a game based on a game idea that somebody else comes up with. And what I've got is this from my classmate Sean. There's a hurricane outside your house and it's throwing around cars, trees, and a bunch of other really heavy objects. Your goal is to take your HYPER MEGA BAT and knock away all the things that are flying at your house before they crush it. You get bonus points if you knock objects into other objects. The game ends if your house is hit by 5 objects. This is a 2D sidescroller, so you can run around and jump to reach up and knock things away if you need to. You've gotta be able to run around quickly to swat stuff.\nBecause the professor allows us to modify the idea as we want. So I take the main concept of the player standing on a rooftop to fight against trash and make it into a more narrative driven game. Because this game is also a heavy action game, I made a podcast to tell the narrative of a world where people tends to throw rubbish to the rooftop and there are rooftop cleaners working hard every day. And the player acts as a cleaner to experience a weird day of hard work. If you want to give it a try, please don't watch the demo video.Music takes from Keeno - Bitter\nPlay it here: https://erenyx.itch.io/roofdefence\nRole: Design, Programming, Art",
+      "ja-JP": "Prototype Studio の 1 週間課題で、今回は「他人が考えたゲーム案をもとに作品を作る」というお題でした。クラスメイトの Sean からもらったアイデアはこうです：外はハリケーンで、車や木など重量物が家に向かって飛んでくる。プレイヤーは HYPER MEGA BAT を振り回して、それらが家を壊す前に弾き飛ばす。物同士をぶつけるとボーナスが入り、家が 5 回被弾するとゲームオーバー。2D の横スクロールなので、屋根の上を駆け回ってジャンプしながら迎撃します。\n\n教授からはアイデアを自由にアレンジして良いと言われていたため、「屋根の上でゴミと戦う清掃員」というモチーフを活かしつつ、物語性を強めました。人々が平気で屋上にゴミを投げ捨て、清掃員が懸命に働いている世界をポッドキャスト形式で描き、プレイヤーはその清掃員として奇妙で忙しい一日を追体験します。プレイしてみたい方は、まずデモ動画を見ずに挑戦してみてください。音楽は Keeno「Bitter」を使用。\nプレイはこちら：https://erenyx.itch.io/roofdefence\n役割：デザイン、プログラミング、アート"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/216180821",
     "soundcloudEmbed": null,
     "screenshots": [
       "/images/RoofDefence/RoofDefence_01.png"
     ],
-    "order": 19
+    "order": 20
   },
   {
     "id": "say-hi",
@@ -441,9 +441,9 @@
     "category": "game",
     "thumbnail": "/images/SayHi/SayHi_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game for <http://globalgamejam.org/2016/games/sayhi> 2016 Global Game Jam, with the title of ritual.We are trying to express the ritual of saying Hi that we need to face every day with the rhythm game mechanics.\nRole: Programming, Designed with Lily, NOCA as Artist and Zed as composer.",
-      "en-US": "Introduction: A game for <http://globalgamejam.org/2016/games/sayhi> 2016 Global Game Jam, with the title of ritual.We are trying to express the ritual of saying Hi that we need to face every day with the rhythm game mechanics.\nRole: Programming, Designed with Lily, NOCA as Artist and Zed as composer.",
-      "ja-JP": "Introduction: A game for <http://globalgamejam.org/2016/games/sayhi> 2016 Global Game Jam, with the title of ritual.We are trying to express the ritual of saying Hi that we need to face every day with the rhythm game mechanics.\nRole: Programming, Designed with Lily, NOCA as Artist and Zed as composer."
+      "zh-CN": "这款作品是在 2016 年全球游戏创作节（主题为“仪式”）上完成的（http://globalgamejam.org/2016/games/sayhi）。我们尝试用节奏游戏的机制呈现日常生活中“打招呼”这一仪式感。\n角色：编程；与 Lily 共同设计，NOCA 负责美术，Zed 担任作曲",
+      "en-US": "A game for <http://globalgamejam.org/2016/games/sayhi> 2016 Global Game Jam, with the title of ritual.We are trying to express the ritual of saying Hi that we need to face every day with the rhythm game mechanics.\nRole: Programming, Designed with Lily, NOCA as Artist and Zed as composer.",
+      "ja-JP": "2016 年の Global Game Jam（テーマは “ritual”）で制作したゲームです（http://globalgamejam.org/2016/games/sayhi）。日々繰り返す「あいさつ」という儀式を、リズムゲームのメカニクスで表現してみました。\n役割：プログラミング、デザイン（Lily と共同）。アートは NOCA、作曲は Zed"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -454,7 +454,7 @@
       "/images/SayHi/SayHi_04.png",
       "/images/SayHi/SayHi_05.png"
     ],
-    "order": 20
+    "order": 21
   },
   {
     "id": "second-personal-fighting-game",
@@ -466,14 +466,14 @@
     "category": "game",
     "thumbnail": "/images/SecondPersonalFightingGame/SecondPersonalFightingGame_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is What Kind of Game Do You Hate The Most! So I made the SecondPersonalFightingGame.Because I hate games that are First Person View because I will get sick very easily. Also, I hate fighting game because I can not even win AI in a fighting game. Grrr, hope you feel sick with this game as I am.You are controlling two separate avatars at a time. Make sure they both alive.Music takes from ナノ-Now Or Never\nRole: Design, Programming",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is What Kind of Game Do You Hate The Most! So I made the SecondPersonalFightingGame.Because I hate games that are First Person View because I will get sick very easily. Also, I hate fighting game because I can not even win AI in a fighting game. Grrr, hope you feel sick with this game as I am.You are controlling two separate avatars at a time. Make sure they both alive.Music takes from ナノ-Now Or Never\nRole: Design, Programming",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is What Kind of Game Do You Hate The Most! So I made the SecondPersonalFightingGame.Because I hate games that are First Person View because I will get sick very easily. Also, I hate fighting game because I can not even win AI in a fighting game. Grrr, hope you feel sick with this game as I am.You are controlling two separate avatars at a time. Make sure they both alive.Music takes from ナノ-Now Or Never\nRole: Design, Programming"
+      "zh-CN": "又是一周一个作品的 Prototype Studio 练习，那次的题目是“做一款你最讨厌类型的游戏”。于是诞生了《Second Personal Fighting Game》。我讨厌第一人称视角，因为很容易晕；也讨厌格斗游戏，因为连 AI 都赢不了。呜，希望你玩这款游戏时也能体会到我的痛苦。玩家需要同时操控两个角色，并让他们都活下来。音乐使用 ナノ 的《Now Or Never》。\n角色：设计、编程",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is What Kind of Game Do You Hate The Most! So I made the SecondPersonalFightingGame.Because I hate games that are First Person View because I will get sick very easily. Also, I hate fighting game because I can not even win AI in a fighting game. Grrr, hope you feel sick with this game as I am.You are controlling two separate avatars at a time. Make sure they both alive.Music takes from ナノ-Now Or Never\nRole: Design, Programming",
+      "ja-JP": "Prototype Studio の 1 週間課題で、テーマは「自分が一番苦手なジャンルのゲームを作る」でした。そこで生まれたのが『Second Personal Fighting Game』です。私は一人称視点が苦手で酔いやすく、格闘ゲームも CPU にすら勝てないので大嫌い。だからこそ、このゲームでもぜひ同じ気持ちを味わってください。プレイヤーは 2 体のアバターを同時に操作し、両方を生存させなければなりません。音楽はナノの「Now Or Never」を使用しています。\n役割：デザイン、プログラミング"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/205972679",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 21
+    "order": 22
   },
   {
     "id": "simultriathlon",
@@ -485,14 +485,14 @@
     "category": "game",
     "thumbnail": "/images/SimulTriathlon/SimulTriathlon_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is LICENCED GAME: THE OLYMPICS.The prompt of this week is very hard. Because there are already tons of games have been made with an Olympics theme. Simultriathlon is a game where you need to finish the three sports of triathlon: swimming,  cycling and running at the same time. I want to create an experience like patting your head and rubbing your belly. Therefore I come up with three different control schemes for a person to control three avatars at the same time. This is actually very intense for your hand if you want to get a good score but it's very fun as well.Music takes from Sawano Hiroyuki – X-BT1\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is LICENCED GAME: THE OLYMPICS.The prompt of this week is very hard. Because there are already tons of games have been made with an Olympics theme. Simultriathlon is a game where you need to finish the three sports of triathlon: swimming,  cycling and running at the same time. I want to create an experience like patting your head and rubbing your belly. Therefore I come up with three different control schemes for a person to control three avatars at the same time. This is actually very intense for your hand if you want to get a good score but it's very fun as well.Music takes from Sawano Hiroyuki – X-BT1\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is LICENCED GAME: THE OLYMPICS.The prompt of this week is very hard. Because there are already tons of games have been made with an Olympics theme. Simultriathlon is a game where you need to finish the three sports of triathlon: swimming,  cycling and running at the same time. I want to create an experience like patting your head and rubbing your belly. Therefore I come up with three different control schemes for a person to control three avatars at the same time. This is actually very intense for your hand if you want to get a good score but it's very fun as well.Music takes from Sawano Hiroyuki – X-BT1\nRole: Design, Programming, Art"
+      "zh-CN": "这是 Prototype Studio 的又一项一周作业，题目是“授权游戏：奥运”。这个命题非常难，因为奥运题材已有无数作品。于是我做了《Simultriathlon》，玩家要同时完成铁人三项的三种运动：游泳、骑行、跑步。我想营造一种“一边拍头一边揉肚子”的体验，于是设计了三套完全不同的操作方式，让一个人同时操控三个角色。想拿高分需要双手不停忙碌，既紧张又有趣。音乐使用泽野弘之的《X-BT1》。\n角色：设计、编程、美术",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is LICENCED GAME: THE OLYMPICS.The prompt of this week is very hard. Because there are already tons of games have been made with an Olympics theme. Simultriathlon is a game where you need to finish the three sports of triathlon: swimming,  cycling and running at the same time. I want to create an experience like patting your head and rubbing your belly. Therefore I come up with three different control schemes for a person to control three avatars at the same time. This is actually very intense for your hand if you want to get a good score but it's very fun as well.Music takes from Sawano Hiroyuki – X-BT1\nRole: Design, Programming, Art",
+      "ja-JP": "Prototype Studio の 1 週間課題で、テーマは「ライセンスゲーム：オリンピック」でした。すでにオリンピック題材のゲームは大量に存在するので、とても難しいお題です。そこで私は『Simultriathlon』を制作し、トライアスロンの 3 種目──水泳・自転車・ランニング──を同時にこなさせることにしました。頭をポンポン叩きながらお腹をさするような体験を作りたかったのです。そのため、1 人のプレイヤーが 3 体のアバターを同時に操れるよう、それぞれ別の操作系を用意しました。高得点を狙うと手がかなり忙しくなりますが、とても楽しいですよ。音楽は澤野弘之「X-BT1」を使用。\n役割：デザイン、プログラミング、アート"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/218297748",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 22
+    "order": 23
   },
   {
     "id": "slime-slayer",
@@ -504,9 +504,9 @@
     "category": "game",
     "thumbnail": "/images/SlimeSlayer/SlimeSlayer_thumbnail.jpg",
     "description": {
-      "zh-CN": "Introduction: Another AR game of mine.During the process of making this game, I found that I can not ignore those problems of AR technology.The camera can not move rapidly, Always lost target, not perfectly in the same coordinates with the world.So instead of solving these problems, I took them as a feature of this game.In this game, you are going to move the camera in order to move your character.And you can only see the thing within the cards.This makes the game feel more realistic with AR technology.\nRole: Design, Art, Programming",
-      "en-US": "Introduction: Another AR game of mine.During the process of making this game, I found that I can not ignore those problems of AR technology.The camera can not move rapidly, Always lost target, not perfectly in the same coordinates with the world.So instead of solving these problems, I took them as a feature of this game.In this game, you are going to move the camera in order to move your character.And you can only see the thing within the cards.This makes the game feel more realistic with AR technology.\nRole: Design, Art, Programming",
-      "ja-JP": "Introduction: Another AR game of mine.During the process of making this game, I found that I can not ignore those problems of AR technology.The camera can not move rapidly, Always lost target, not perfectly in the same coordinates with the world.So instead of solving these problems, I took them as a feature of this game.In this game, you are going to move the camera in order to move your character.And you can only see the thing within the cards.This makes the game feel more realistic with AR technology.\nRole: Design, Art, Programming"
+      "zh-CN": "这是我做的另一款 AR 游戏。制作过程中我意识到 AR 技术的局限：摄像头无法快速移动、经常丢失目标、虚拟物体与现实坐标无法完美对齐。于是我决定把这些问题当成玩法特性。玩家要通过移动摄像头来移动角色，只能看到卡片范围内的世界。这样反而让这款 AR 游戏更有真实感。\n角色：设计、美术、编程",
+      "en-US": "Another AR game of mine.During the process of making this game, I found that I can not ignore those problems of AR technology.The camera can not move rapidly, Always lost target, not perfectly in the same coordinates with the world.So instead of solving these problems, I took them as a feature of this game.In this game, you are going to move the camera in order to move your character.And you can only see the thing within the cards.This makes the game feel more realistic with AR technology.\nRole: Design, Art, Programming",
+      "ja-JP": "もう一つの AR プロジェクトです。制作するうちに、AR 技術が抱える問題――カメラを素早く動かせない、ターゲットを見失いやすい、現実世界と座標が微妙にズレる――を無視できないと痛感しました。そこで、それらを欠点ではなく特徴として取り入れることにしました。プレイヤーはカメラを動かすことでキャラクターを操作し、カード上に映っている範囲しか見ることができません。この制約があるからこそ、AR 独特のリアリティが生まれています。\n役割：デザイン、アート、プログラミング"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -519,7 +519,7 @@
       "/images/SlimeSlayer/SlimeSlayer_06.jpg",
       "/images/SlimeSlayer/SlimeSlayer_07.jpg"
     ],
-    "order": 23
+    "order": 24
   },
   {
     "id": "so-many-things",
@@ -531,14 +531,14 @@
     "category": "game",
     "thumbnail": "/images/SoManyThings/SoManyThings_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is SELF-PORTRAIT WORST NIGHTMARE.\\r\\n\\r\\nI am a person who has very bad memory. Forgetting things is constantly my nightmare, especially after I enter graduate shool. Therefore I made this game for you to experience the pain I feel. During the night, you can memorize everybody\\'s name, during the day, you need to accept the quest from different people, and deliver the quest on the specific day just like your messy schedule. Music takes from Duke Ellington - Take the -A- Train\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is SELF-PORTRAIT WORST NIGHTMARE.\\r\\n\\r\\nI am a person who has very bad memory. Forgetting things is constantly my nightmare, especially after I enter graduate shool. Therefore I made this game for you to experience the pain I feel. During the night, you can memorize everybody\\'s name, during the day, you need to accept the quest from different people, and deliver the quest on the specific day just like your messy schedule. Music takes from Duke Ellington - Take the -A- Train\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is SELF-PORTRAIT WORST NIGHTMARE.\\r\\n\\r\\nI am a person who has very bad memory. Forgetting things is constantly my nightmare, especially after I enter graduate shool. Therefore I made this game for you to experience the pain I feel. During the night, you can memorize everybody\\'s name, during the day, you need to accept the quest from different people, and deliver the quest on the specific day just like your messy schedule. Music takes from Duke Ellington - Take the -A- Train\nRole: Design, Programming, Art"
+      "zh-CN": "这款一周小作业的主题是“自画像：最糟的噩梦”。我记忆力一直很差，进入研究生阶段后忘事更是家常便饭，这种焦虑几乎成了噩梦。所以我做了这款游戏，让你也能体验这种痛苦。夜晚时你可以记住每个人的名字；白天则要从不同的人那里接任务，并在指定日期完成，就像处理凌乱的日程表。音乐使用 Duke Ellington 的《Take the 'A' Train》。\n角色：设计、编程、美术\n试玩地址：https://erenyx.itch.io/somanythings",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is SELF-PORTRAIT WORST NIGHTMARE.\\r\\n\\r\\nI am a person who has very bad memory. Forgetting things is constantly my nightmare, especially after I enter graduate shool. Therefore I made this game for you to experience the pain I feel. During the night, you can memorize everybody\\'s name, during the day, you need to accept the quest from different people, and deliver the quest on the specific day just like your messy schedule. Music takes from Duke Ellington - Take the -A- Train\nRole: Design, Programming, Art\nPlay it here: https://erenyx.itch.io/somanythings",
+      "ja-JP": "Prototype Studio の 1 週間課題で、テーマは「SELF-PORTRAIT WORST NIGHTMARE（自画像としての最悪の悪夢）」でした。私は物忘れがひどく、大学院に入ってからさらに悪化しました。それがずっと付きまとってくる悪夢なのです。このゲームは、そんな私の感覚を体験してもらうために作りました。夜のうちに登場人物の名前を覚え、昼間になるとさまざまな人から依頼を受け、指定された日に合わせてこなしていきます。つまり、散らかったスケジュール帳と格闘する感覚です。音楽は Duke Ellington「Take the 'A' Train」を使用しています。\n役割：デザイン、プログラミング、アート\nプレイはこちら：https://erenyx.itch.io/somanythings"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/216180009",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 24
+    "order": 25
   },
   {
     "id": "space-wanderer",
@@ -550,9 +550,9 @@
     "category": "game",
     "thumbnail": "/images/SpaceWanderer/SpaceWanderer_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: I was learning hardware development when I was making this project. I keep thinking what can I use to replace the common control scheme of gamepads, keyboard or mouse. Soon I notice that making games with potentiometers can be a pretty good idea because they can persist information even when you are not holding it. Therefore I made this game, you need to mess with three potentiometers and two buttons. The point of this game is to let you being busy like in a spaceship control room.\nRole: Design, Art, Programming",
-      "en-US": "Introduction: I was learning hardware development when I was making this project. I keep thinking what can I use to replace the common control scheme of gamepads, keyboard or mouse. Soon I notice that making games with potentiometers can be a pretty good idea because they can persist information even when you are not holding it. Therefore I made this game, you need to mess with three potentiometers and two buttons. The point of this game is to let you being busy like in a spaceship control room.\nRole: Design, Art, Programming",
-      "ja-JP": "Introduction: I was learning hardware development when I was making this project. I keep thinking what can I use to replace the common control scheme of gamepads, keyboard or mouse. Soon I notice that making games with potentiometers can be a pretty good idea because they can persist information even when you are not holding it. Therefore I made this game, you need to mess with three potentiometers and two buttons. The point of this game is to let you being busy like in a spaceship control room.\nRole: Design, Art, Programming"
+      "zh-CN": "在制作这个项目时，我正在学习硬件开发，想着能否用别的方式取代手柄、键盘或鼠标等常见操作。很快我发现电位器是个好主意，因为即使不触摸，它们也能保持状态。于是就做了这款游戏：玩家要同时操作三个电位器和两个按钮，像是在飞船操控室里忙得团团转。\n角色：设计、美术、编程",
+      "en-US": "I was learning hardware development when I was making this project. I keep thinking what can I use to replace the common control scheme of gamepads, keyboard or mouse. Soon I notice that making games with potentiometers can be a pretty good idea because they can persist information even when you are not holding it. Therefore I made this game, you need to mess with three potentiometers and two buttons. The point of this game is to let you being busy like in a spaceship control room.\nRole: Design, Art, Programming",
+      "ja-JP": "このプロジェクトの制作期間中はハードウェア開発を勉強しており、ゲームパッドやキーボード、マウスとは違う操作方法を模索していました。そこで電位計（ポテンショメーター）に注目。手を離しても状態が保持されるので、ゲームとの相性が良いと考えました。このゲームでは 3 つのポテンショメーターと 2 つのボタンを駆使し、まるで宇宙船のコントロールルームで忙しく働いているかのような感覚を味わえます。\n役割：デザイン、アート、プログラミング"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/197126021",
     "soundcloudEmbed": null,
@@ -563,7 +563,7 @@
       "/images/SpaceWanderer/SpaceWanderer_04.jpg",
       "/images/SpaceWanderer/SpaceWanderer_05.png"
     ],
-    "order": 25
+    "order": 26
   },
   {
     "id": "toss-your-bean-back",
@@ -575,9 +575,9 @@
     "category": "game",
     "thumbnail": "/images/TossYourBeanBack/TossYourBeanBack_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: This is a game cooperated with TimesSquareArts and presented on Broadway pedestrian plaza.This is a very interesting design challange for me, because we need to design a game for TimesSquare, not other places. This place have visitor and workers and resident with different cultural, religions and languages. This place is crowded and we need to think of every possible situation that may happen. And the good news is the game is pretty success. I remember there was one little girl played several times, and told me that she likes this game. At that moment, I feel very proud and worthy for all of my works.The idea of the game is simple, to bring you back to your childhood playground time. Not only will you have a good time, but also having new friends while playing a game.This project is featured on the <a href=\"http://www.ny1.com/nyc/all-boroughs/news/2016/07/14/play-times-squared-visitors-get-their-game-on.html\"><u>NY1</u></a>, <a href=\"http://www.nytimes.com/2016/07/15/nyregion/new-york-today-outdoor-gaming-pokemon-go-national-ice-cream-day.html?smid=nytcore-iphone-share&amp;smprod=nytcore-iphone&amp;_r=0\"><u>New York Times</u></a>, <a href=\"https://viewing.nyc/voyage-a-multi-channel-animation-and-this-months-midnight-moment-in-times-square/\"><u>Viewing NYC</u></a> and more.\nRole: Designer, Operator",
-      "en-US": "Introduction: This is a game cooperated with TimesSquareArts and presented on Broadway pedestrian plaza.This is a very interesting design challange for me, because we need to design a game for TimesSquare, not other places. This place have visitor and workers and resident with different cultural, religions and languages. This place is crowded and we need to think of every possible situation that may happen. And the good news is the game is pretty success. I remember there was one little girl played several times, and told me that she likes this game. At that moment, I feel very proud and worthy for all of my works.The idea of the game is simple, to bring you back to your childhood playground time. Not only will you have a good time, but also having new friends while playing a game.This project is featured on the <a href=\"http://www.ny1.com/nyc/all-boroughs/news/2016/07/14/play-times-squared-visitors-get-their-game-on.html\"><u>NY1</u></a>, <a href=\"http://www.nytimes.com/2016/07/15/nyregion/new-york-today-outdoor-gaming-pokemon-go-national-ice-cream-day.html?smid=nytcore-iphone-share&amp;smprod=nytcore-iphone&amp;_r=0\"><u>New York Times</u></a>, <a href=\"https://viewing.nyc/voyage-a-multi-channel-animation-and-this-months-midnight-moment-in-times-square/\"><u>Viewing NYC</u></a> and more.\nRole: Designer, Operator",
-      "ja-JP": "Introduction: This is a game cooperated with TimesSquareArts and presented on Broadway pedestrian plaza.This is a very interesting design challange for me, because we need to design a game for TimesSquare, not other places. This place have visitor and workers and resident with different cultural, religions and languages. This place is crowded and we need to think of every possible situation that may happen. And the good news is the game is pretty success. I remember there was one little girl played several times, and told me that she likes this game. At that moment, I feel very proud and worthy for all of my works.The idea of the game is simple, to bring you back to your childhood playground time. Not only will you have a good time, but also having new friends while playing a game.This project is featured on the <a href=\"http://www.ny1.com/nyc/all-boroughs/news/2016/07/14/play-times-squared-visitors-get-their-game-on.html\"><u>NY1</u></a>, <a href=\"http://www.nytimes.com/2016/07/15/nyregion/new-york-today-outdoor-gaming-pokemon-go-national-ice-cream-day.html?smid=nytcore-iphone-share&amp;smprod=nytcore-iphone&amp;_r=0\"><u>New York Times</u></a>, <a href=\"https://viewing.nyc/voyage-a-multi-channel-animation-and-this-months-midnight-moment-in-times-square/\"><u>Viewing NYC</u></a> and more.\nRole: Designer, Operator"
+      "zh-CN": "这款作品与 Times Square Arts 合作，曾在百老汇步行广场对外展示。对我而言这是一次很有趣的设计挑战：我们要为时代广场这样独一无二的地点做游戏。那里游客、上班族、居民来自不同文化、宗教与语言背景，而且人潮汹涌，必须预想各种可能的状况。值得庆幸的是，活动非常成功。我记得有个小女孩玩了好几次，还跑来说她很喜欢，那一刻让我觉得所有努力都值得。游戏的理念很简单，就是把你带回童年的游乐场时光，让人不仅玩得开心，还能结识新朋友。项目曾被 NY1、《纽约时报》、Viewing NYC 等媒体报道。\n角色：设计、现场运营",
+      "en-US": "This is a game cooperated with TimesSquareArts and presented on Broadway pedestrian plaza.This is a very interesting design challange for me, because we need to design a game for TimesSquare, not other places. This place have visitor and workers and resident with different cultural, religions and languages. This place is crowded and we need to think of every possible situation that may happen. And the good news is the game is pretty success. I remember there was one little girl played several times, and told me that she likes this game. At that moment, I feel very proud and worthy for all of my works.The idea of the game is simple, to bring you back to your childhood playground time. Not only will you have a good time, but also having new friends while playing a game.This project is featured on the <a href=\"http://www.ny1.com/nyc/all-boroughs/news/2016/07/14/play-times-squared-visitors-get-their-game-on.html\"><u>NY1</u></a>, <a href=\"http://www.nytimes.com/2016/07/15/nyregion/new-york-today-outdoor-gaming-pokemon-go-national-ice-cream-day.html?smid=nytcore-iphone-share&amp;smprod=nytcore-iphone&amp;_r=0\"><u>New York Times</u></a>, <a href=\"https://viewing.nyc/voyage-a-multi-channel-animation-and-this-months-midnight-moment-in-times-square/\"><u>Viewing NYC</u></a> and more.\nRole: Designer, Operator",
+      "ja-JP": "Times Square Arts と協力し、ブロードウェイの歩行者広場で公開したゲームです。タイムズスクエアという特別な場所のためにデザインしなければならないのが非常に面白い課題でした。観光客、ビジネスパーソン、地元住民など、文化や宗教、言語の異なる人々がひしめき合う場所なので、想定すべきシチュエーションが数え切れないほどあります。結果は大成功で、何度も遊びに来て「大好き」と伝えてくれた女の子のことを今でも覚えています。その瞬間、これまでの苦労が報われたと感じました。ゲームの狙いはシンプルで、子どもの頃の遊び場に帰ってきたような体験を提供し、楽しみながら友達ができるようにすることです。NY1 や『New York Times』、Viewing NYC など多くのメディアで紹介されました。\n役割：デザイナー、オペレーター"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
@@ -588,7 +588,7 @@
       "/images/TossYourBeanBack/TossYourBeanBack_04.jpg",
       "/images/TossYourBeanBack/TossYourBeanBack_05.jpg"
     ],
-    "order": 26
+    "order": 27
   },
   {
     "id": "wave-runner",
@@ -600,14 +600,14 @@
     "category": "game",
     "thumbnail": "/images/WaveRunner/WaveRunner_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game for <a href=\"https://globalgamejam.org/2017/games/waverunner-0\">2017 Global Game Jam</a> with the theme of Wave. It was also featured by <a href=\"https://www.indiehangover.com/5-fantastic-games-from-ggj17/\">INDIEHANGOVER</a>. Use both control sticks to tune pitch and amplitude, surf the sound waves, collect diamonds, and avoid obstacles!\nRole: Programming, designed with <a href=\"https://globalgamejam.org/users/alexjlee\">alexjlee</a>, <a href=\"https://globalgamejam.org/users/chrischung\">chrischung</a>, <a href=\"https://globalgamejam.org/users/elowy\">elowy</a>, and <a href=\"https://globalgamejam.org/users/rrappoport\">rrappoport</a>. Music by Tallboi.",
-      "en-US": "Introduction: A game for <a href=\"https://globalgamejam.org/2017/games/waverunner-0\">2017 Global Game Jam</a> with the theme of Wave. It was also featured by <a href=\"https://www.indiehangover.com/5-fantastic-games-from-ggj17/\">INDIEHANGOVER</a>. Use both control sticks to tune pitch and amplitude, surf the sound waves, collect diamonds, and avoid obstacles!\nRole: Programming, designed with <a href=\"https://globalgamejam.org/users/alexjlee\">alexjlee</a>, <a href=\"https://globalgamejam.org/users/chrischung\">chrischung</a>, <a href=\"https://globalgamejam.org/users/elowy\">elowy</a>, and <a href=\"https://globalgamejam.org/users/rrappoport\">rrappoport</a>. Music by Tallboi.",
-      "ja-JP": "Introduction: A game for <a href=\"https://globalgamejam.org/2017/games/waverunner-0\">2017 Global Game Jam</a> with the theme of Wave. It was also featured by <a href=\"https://www.indiehangover.com/5-fantastic-games-from-ggj17/\">INDIEHANGOVER</a>. Use both control sticks to tune pitch and amplitude, surf the sound waves, collect diamonds, and avoid obstacles!\nRole: Programming, designed with <a href=\"https://globalgamejam.org/users/alexjlee\">alexjlee</a>, <a href=\"https://globalgamejam.org/users/chrischung\">chrischung</a>, <a href=\"https://globalgamejam.org/users/elowy\">elowy</a>, and <a href=\"https://globalgamejam.org/users/rrappoport\">rrappoport</a>. Music by Tallboi."
+      "zh-CN": "这是在 2017 年全球游戏创作节（主题为“波动”）上制作的作品，并被 IndieHangover 推荐。玩家使用两个摇杆调节音高和振幅，在声波上冲浪、收集钻石，同时躲避障碍。\n角色：编程；与 alexjlee、chrischung、elowy、rrappoport 共同设计，音乐由 Tallboi 创作",
+      "en-US": "A game for <a href=\"https://globalgamejam.org/2017/games/waverunner-0\">2017 Global Game Jam</a> with the theme of Wave. It was also featured by <a href=\"https://www.indiehangover.com/5-fantastic-games-from-ggj17/\">INDIEHANGOVER</a>. Use both control sticks to tune pitch and amplitude, surf the sound waves, collect diamonds, and avoid obstacles!\nRole: Programming, designed with <a href=\"https://globalgamejam.org/users/alexjlee\">alexjlee</a>, <a href=\"https://globalgamejam.org/users/chrischung\">chrischung</a>, <a href=\"https://globalgamejam.org/users/elowy\">elowy</a>, and <a href=\"https://globalgamejam.org/users/rrappoport\">rrappoport</a>. Music by Tallboi.",
+      "ja-JP": "2017 年の Global Game Jam（テーマは “Wave”）で制作したゲームで、INDIEHANGOVER にも取り上げられました。2 本のスティックで音のピッチと振幅を調整し、サウンドウェーブをサーフィンしながらダイヤを集め、障害物を避けて進みます。\n役割：プログラミング。alexjlee、chrischung、elowy、rrappoport と共同でデザインし、音楽は Tallboi が担当"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/201047244",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 27
+    "order": 28
   },
   {
     "id": "yggdrasil",
@@ -619,9 +619,9 @@
     "category": "game",
     "thumbnail": "/images/Yggdrasil/Yggdrasil_thumbnail.jpg",
     "description": {
-      "zh-CN": "Introduction: Yggdrasil is a narrative-driven platformer game. It tells a story of the relationship between our three main characters: April, Roy and Dylan. They were good friends when they were young, but grow apart gradually. And now they find out themselves a task to retrieve a medicine and save their town elder together. It's a story about friendship, compromise, and forgiveness.We are trying to tell the story in different ways. Your two dear friends Roy and Dylan will not only follow but also communicate with you along the journey. They will tell you background story, hint of puzzles by just trivial talking. And whenever you make a key decision between these two characters, the following level will be different dependent on what you have chosen.\nRole: Design and Programming with Andrew Fandi, Kevin, Ivy, Risky and Zed",
-      "en-US": "Introduction: Yggdrasil is a narrative-driven platformer game. It tells a story of the relationship between our three main characters: April, Roy and Dylan. They were good friends when they were young, but grow apart gradually. And now they find out themselves a task to retrieve a medicine and save their town elder together. It's a story about friendship, compromise, and forgiveness.We are trying to tell the story in different ways. Your two dear friends Roy and Dylan will not only follow but also communicate with you along the journey. They will tell you background story, hint of puzzles by just trivial talking. And whenever you make a key decision between these two characters, the following level will be different dependent on what you have chosen.\nRole: Design and Programming with Andrew Fandi, Kevin, Ivy, Risky and Zed",
-      "ja-JP": "Introduction: Yggdrasil is a narrative-driven platformer game. It tells a story of the relationship between our three main characters: April, Roy and Dylan. They were good friends when they were young, but grow apart gradually. And now they find out themselves a task to retrieve a medicine and save their town elder together. It's a story about friendship, compromise, and forgiveness.We are trying to tell the story in different ways. Your two dear friends Roy and Dylan will not only follow but also communicate with you along the journey. They will tell you background story, hint of puzzles by just trivial talking. And whenever you make a key decision between these two characters, the following level will be different dependent on what you have chosen.\nRole: Design and Programming with Andrew Fandi, Kevin, Ivy, Risky and Zed"
+      "zh-CN": "《Yggdrasil》是一款以叙事为核心的平台跳跃游戏，讲述 April、Roy、Dylan 三位主角的关系。他们儿时是挚友，却渐渐疏远；如今为了拯救镇上的长者，又必须携手寻找药物。这是一个关于友情、妥协与原谅的故事。旅途中，Roy 和 Dylan 不仅会跟随你，还会与你对话，透露背景故事与解谜提示。每当你在两人之间做出关键选择，后续关卡也会随之变化。\n角色：与 Andrew Fandi、Kevin、Ivy、Risky、Zed 合作负责设计与编程",
+      "en-US": "Yggdrasil is a narrative-driven platformer game. It tells a story of the relationship between our three main characters: April, Roy and Dylan. They were good friends when they were young, but grow apart gradually. And now they find out themselves a task to retrieve a medicine and save their town elder together. It's a story about friendship, compromise, and forgiveness.We are trying to tell the story in different ways. Your two dear friends Roy and Dylan will not only follow but also communicate with you along the journey. They will tell you background story, hint of puzzles by just trivial talking. And whenever you make a key decision between these two characters, the following level will be different dependent on what you have chosen.\nRole: Design and Programming with Andrew Fandi, Kevin, Ivy, Risky and Zed",
+      "ja-JP": "『Yggdrasil』は物語性を重視したプラットフォームゲームで、主人公の April、Roy、Dylan の関係を描いています。子どもの頃は親友だった 3 人ですが、時が経つにつれて疎遠に。今は町の長老を救う薬を探すため、再び力を合わせなければなりません。友情と譲り合い、そして許しの物語です。旅のあいだ、Roy と Dylan は後ろをついてくるだけでなく、会話を通じて背景やパズルのヒントを伝えてくれます。また、2 人のどちらに寄り添うかという重要な選択をするたびに、その後のステージ構成が変化します。\n役割：Andrew Fandi、Kevin、Ivy、Risky、Zed と共にデザインとプログラミングを担当"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/166650198",
     "soundcloudEmbed": null,
@@ -629,7 +629,7 @@
       "/images/Yggdrasil/Yggdrasil_01.jpg",
       "/images/Yggdrasil/Yggdrasil_02.gif"
     ],
-    "order": 28
+    "order": 29
   },
   {
     "id": "racognition",
@@ -641,16 +641,16 @@
     "category": "game",
     "thumbnail": "/images/raCOGNiTIOn/RaCOGNiTIOn_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is a Words as Object! So I made the raCOGNiTIOn.This is a simple words recognition game, you need to recognize 10 words within 45 seconds. Pretty proud of the visual experimentation I did for this game, and I feel the completion screen is very satisfying.Music takes from 石进 - 夜的钢琴曲Ⅱ-暗恋\nRole: Design, Programming, Art",
-      "en-US": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is a Words as Object! So I made the raCOGNiTIOn.This is a simple words recognition game, you need to recognize 10 words within 45 seconds. Pretty proud of the visual experimentation I did for this game, and I feel the completion screen is very satisfying.Music takes from 石进 - 夜的钢琴曲Ⅱ-暗恋\nRole: Design, Programming, Art",
-      "ja-JP": "Introduction: A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is a Words as Object! So I made the raCOGNiTIOn.This is a simple words recognition game, you need to recognize 10 words within 45 seconds. Pretty proud of the visual experimentation I did for this game, and I feel the completion screen is very satisfying.Music takes from 石进 - 夜的钢琴曲Ⅱ-暗恋\nRole: Design, Programming, Art"
+      "zh-CN": "这是 Prototype Studio 的另一款一周作品，题目是“Words as Object（把词语当作物件）”，于是我制作了《raCOGNiTIOn》。玩法很简单：在 45 秒内认出 10 个单词。我很喜欢这次做的视觉实验，完成画面看起来也十分令人满足。音乐使用石进的《夜的钢琴曲 II·暗恋》。\n角色：设计、编程、美术\n试玩地址：https://erenyx.itch.io/racognition",
+      "en-US": "A game made in a week for Prototype Studio class, at that class, we have a prompt every week, and we are asked to make a game within a week with that prompt. And that week’s prompt is a Words as Object! So I made the raCOGNiTIOn.This is a simple words recognition game, you need to recognize 10 words within 45 seconds. Pretty proud of the visual experimentation I did for this game, and I feel the completion screen is very satisfying.Music takes from 石进 - 夜的钢琴曲Ⅱ-暗恋\nRole: Design, Programming, Art\nPlay it here: https://erenyx.itch.io/racognition",
+      "ja-JP": "Prototype Studio の 1 週間課題で、テーマは「Words as Object」でした。そこで言葉認識ゲーム『raCOGNiTIOn』を制作。45 秒以内に 10 個の単語を見分けるシンプルなルールです。今回のビジュアル実験にはかなり満足していて、リザルト画面の演出もとても気に入っています。音楽は石进「夜のピアノ曲Ⅱ・暗恋」を使用しました。\n役割：デザイン、プログラミング、アート\nプレイはこちら：https://erenyx.itch.io/racognition"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/205967898",
     "soundcloudEmbed": null,
     "screenshots": [
       "/images/raCOGNiTIOn/RaCOGNiTIOn_01.png"
     ],
-    "order": 29
+    "order": 30
   },
   {
     "id": "holy-decadent-work",
@@ -662,14 +662,14 @@
     "category": "music",
     "thumbnail": "/images/HolyDecadentWork/HolyDecadentWork_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: Ask a few of my friendsThey have different illusion when hearing this.Some think it's like  an Ancient Egyptian carrying a woman,and some think it's like a cute  heavy Viking standing on the deck of  a ship and riding the wave.How about you?",
-      "en-US": "Introduction: Ask a few of my friendsThey have different illusion when hearing this.Some think it's like  an Ancient Egyptian carrying a woman,and some think it's like a cute  heavy Viking standing on the deck of  a ship and riding the wave.How about you?",
-      "ja-JP": "Introduction: Ask a few of my friendsThey have different illusion when hearing this.Some think it's like  an Ancient Egyptian carrying a woman,and some think it's like a cute  heavy Viking standing on the deck of  a ship and riding the wave.How about you?"
+      "zh-CN": "我让几位朋友听了这首曲子，每个人脑海里浮现的画面都不同：有人觉得像古埃及人抱着女子，有人觉得像可爱的胖维京人站在船甲板上乘风破浪。你听到了什么？",
+      "en-US": "Ask a few of my friendsThey have different illusion when hearing this.Some think it's like  an Ancient Egyptian carrying a woman,and some think it's like a cute  heavy Viking standing on the deck of  a ship and riding the wave.How about you?",
+      "ja-JP": "何人かの友人にこの曲を聴かせてみたところ、浮かぶ情景は人それぞれ。古代エジプト人が女性を抱えているようだと言う人もいれば、ぽっちゃりしたヴァイキングが船の甲板で波に乗っているように感じた人もいます。あなたにはどんな光景が見えるでしょうか。"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348515108&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
     "screenshots": [],
-    "order": 31
+    "order": 32
   },
   {
     "id": "kaze-final",
@@ -681,14 +681,14 @@
     "category": "music",
     "thumbnail": "/images/Kaze_final/KazeFinal_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: By far the most satisfying one, you should hear this song.A lot of the element is inspired by Hiroyuki Zawano. One of my favorite composer.",
-      "en-US": "Introduction: By far the most satisfying one, you should hear this song.A lot of the element is inspired by Hiroyuki Zawano. One of my favorite composer.",
-      "ja-JP": "Introduction: By far the most satisfying one, you should hear this song.A lot of the element is inspired by Hiroyuki Zawano. One of my favorite composer."
+      "zh-CN": "这是目前让我最满意的一首作品，强烈推荐你听一听。很多元素都受到了我最喜欢的作曲家泽野弘之的启发。",
+      "en-US": "By far the most satisfying one, you should hear this song.A lot of the element is inspired by Hiroyuki Zawano. One of my favorite composer.",
+      "ja-JP": "今のところ一番満足している曲です。ぜひ聴いてみてください。大好きな作曲家・澤野弘之さんから多くのインスピレーションを得ています。"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348514464&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
     "screenshots": [],
-    "order": 30
+    "order": 31
   },
   {
     "id": "space",
@@ -700,14 +700,14 @@
     "category": "music",
     "thumbnail": "/images/Space/Space_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: I also have a dream of going to space, and I hope I wouldn't abandon it.",
-      "en-US": "Introduction: I also have a dream of going to space, and I hope I wouldn't abandon it.",
-      "ja-JP": "Introduction: I also have a dream of going to space, and I hope I wouldn't abandon it."
+      "zh-CN": "我也有一个去太空的梦想，希望永远不要放弃。",
+      "en-US": "I also have a dream of going to space, and I hope I wouldn't abandon it.",
+      "ja-JP": "私にも宇宙へ行きたいという夢があり、いつまでも忘れずにいたいと思っています。"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348515107&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
     "screenshots": [],
-    "order": 32
+    "order": 33
   },
   {
     "id": "monster-rider",
@@ -719,16 +719,16 @@
     "category": "painting",
     "thumbnail": "/images/MonsterRider/MonsterRider_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: Painting Practice\nPractice of the digital painting",
-      "en-US": "Introduction: Painting Practice\nPractice of the digital painting",
-      "ja-JP": "Introduction: Painting Practice\nPractice of the digital painting"
+      "zh-CN": "绘画练习。\n数字绘画练习作品。",
+      "en-US": "Painting Practice\nPractice of the digital painting",
+      "ja-JP": "ペインティングの練習。\nデジタルペインティングの習作です。"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
     "screenshots": [
       "/images/MonsterRider/MonsterRider_thumbnail.png"
     ],
-    "order": 33
+    "order": 34
   },
   {
     "id": "sitting-pose",
@@ -740,16 +740,16 @@
     "category": "painting",
     "thumbnail": "/images/SittingPose/SittingPose_thumbnail.png",
     "description": {
-      "zh-CN": "Introduction: Hoping this picture can bring some flow into this website.23333\npracticing human body, it's soooo difficult!!!",
-      "en-US": "Introduction: Hoping this picture can bring some flow into this website.23333\npracticing human body, it's soooo difficult!!!",
-      "ja-JP": "Introduction: Hoping this picture can bring some flow into this website.23333\npracticing human body, it's soooo difficult!!!"
+      "zh-CN": "希望这幅作品能给网站带来一些动感，23333。\n人体练习真的好难啊！",
+      "en-US": "Hoping this picture can bring some flow into this website.23333\npracticing human body, it's soooo difficult!!!",
+      "ja-JP": "このイラストがサイトに少しでも流れを生み出せますように（笑）。\n人体の練習って本当に難しい！"
     },
     "vimeoEmbed": null,
     "soundcloudEmbed": null,
     "screenshots": [
       "/images/SittingPose/SittingPose_thumbnail.png"
     ],
-    "order": 34
+    "order": 35
   },
   {
     "id": "finger-dance",
@@ -761,13 +761,67 @@
     "category": "others",
     "thumbnail": "/images/FingerDance/FingerDance_thumbnail.jpg",
     "description": {
-      "zh-CN": "Introduction: I choreograph this, and dance with my pen~~~\nHope you can enjoy this.",
-      "en-US": "Introduction: I choreograph this, and dance with my pen~~~\nHope you can enjoy this.",
-      "ja-JP": "Introduction: I choreograph this, and dance with my pen~~~\nHope you can enjoy this."
+      "zh-CN": "这支舞由我编排，用手中的画笔一起起舞～～\n希望你会喜欢。",
+      "en-US": "I choreograph this, and dance with my pen~~~\nHope you can enjoy this.",
+      "ja-JP": "自分で振り付けした作品で、ペンと一緒にダンスしています〜。\n楽しんでもらえたら嬉しいです。"
     },
     "vimeoEmbed": "https://player.vimeo.com/video/138479609",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 35
+    "order": 36
+  },
+  {
+    "id": "birds-camp",
+    "title": {
+      "zh-CN": "Birds Camp",
+      "en-US": "Birds Camp",
+      "ja-JP": "Birds Camp"
+    },
+    "category": "game",
+    "thumbnail": "/images/BirdsCamp/BirdsCamp_thumbnail.png",
+    "description": {
+      "zh-CN": "这是一款卡通风格的休闲卡牌塔防游戏。灵感最初来自《浮岛物语 Forager》，立项时的玩法是白天采集材料、夜晚塔防抵御外敌。经过五年多的开发，它逐渐演变成如今的样子。作为我第一次以制作人身份完成的商业项目，这段旅程并不顺利：团队协作与开发节奏都充满挑战，也留下不少遗憾。不过最终项目顺利上线，也算是对五年付出的最好回应。\n角色：制作人、程序，与张航、汤睿哲、秦亦、朱俊鸿、刘开畅共同开发",
+      "en-US": "Birds Camp is a lighthearted, cartoon-style card defense game. It began as a Forager-inspired idea where you would gather resources during the day and defend against invaders at night. Over more than five years of development it gradually evolved into its current form. This was my first full commercial project as a producer, and the road was anything but smooth—team coordination, schedule management, and countless setbacks made the journey tough. Still, seeing the project launch in the end felt like the best answer to five years of relentless effort.\nRole: Producer & Programmer, built together with Zhang Hang, Tang Ruizhe, Qin Yi, Zhu Junhong, and Liu Kaichang",
+      "ja-JP": "『Birds Camp』は、コミカルなビジュアルが特徴のカジュアルカードタワーディフェンスゲームです。発想の原点は『Forager』で、企画当初は昼に素材を集め、夜は敵を防ぐゲームでした。そこから 5 年以上の開発期間を経て、今の姿へと少しずつ形を変えていきました。制作総指揮を務めた商業プロジェクトはこれが初めてで、決して順風満帆ではありませんでした。チームワークの難しさや進行の停滞など、多くの壁にぶつかり、心残りも少なくありません。それでも最終的にリリースまで辿り着けたことは、5 年間の努力に対する最高の答えだと感じています。\n役割：プロデューサー・プログラマー。張航、湯睿哲、秦亦、朱俊鴻、劉開暢と共に開発"
+    },
+    "bilibiliEmbed": "//player.bilibili.com/player.html?isOutside=true&aid=114154627141441&bvid=BV1JrQwY5EQC&cid=28844556833&p=1",
+    "soundcloudEmbed": null,
+    "vimeoEmbed": null,
+    "screenshots": [
+      "/images/BirdsCamp/BirdsCamp_01.jpg",
+      "/images/BirdsCamp/BirdsCamp_02.jpg",
+      "/images/BirdsCamp/BirdsCamp_03.jpg",
+      "/images/BirdsCamp/BirdsCamp_04.jpg",
+      "/images/BirdsCamp/BirdsCamp_05.jpg",
+      "/images/BirdsCamp/BirdsCamp_06.jpg",
+      "/images/BirdsCamp/BirdsCamp_07.jpg"
+    ],
+    "order": 14
+  },
+  {
+    "id": "pajinko",
+    "title": {
+      "zh-CN": "PaJinko",
+      "en-US": "PaJinko",
+      "ja-JP": "PaJinko"
+    },
+    "category": "game",
+    "thumbnail": "/images/PaJinko/PaJinko_thumbnail.png",
+    "description": {
+      "zh-CN": "在这款轻量休闲的物理弹珠游戏里，你要把鸡蛋投入钉板，让它们一路碰撞、连锁、堆叠，滚入收集口换取星星分数与奖励。我们融合了些许升级组合与随机事件，过程短、反馈爽，还有个排行榜比拼分数。\n离职后小游戏尝试，尝试了一下AI制作角色，还有AI作曲，效果还是不错，成品可以在itch和steam上买到。\n试玩地址：https://erenyx.itch.io/pajinko\n角色：设计、程序",
+      "en-US": "In this light and casual physics pinball game, you drop eggs into a pegboard and watch them collide, chain, and stack as they roll into collection slots to earn star points and rewards. We've incorporated some upgrade combinations and random events, with short gameplay sessions and satisfying feedback, plus a leaderboard to compete for high scores.\nA small game experiment after leaving my job, I tried using AI to create characters and compose music, and the results were quite good. The finished product is available for purchase on itch.io and Steam.\nPlay it here: https://erenyx.itch.io/pajinko\nRole: Design, Programming",
+      "ja-JP": "この軽量でカジュアルな物理パチンコゲームでは、卵をピンボードに投げ入れ、それらが衝突、連鎖、積み重なって収集口に転がり込み、星のポイントと報酬を獲得します。いくつかのアップグレード組み合わせとランダムイベントを融合し、短いゲームプレイと爽快なフィードバック、そしてハイスコアを競うリーダーボードがあります。\n退職後の小ゲーム実験で、AIを使ってキャラクター制作と作曲を試してみましたが、効果はかなり良かったです。完成品はitch.ioとSteamで購入できます。\nプレイはこちら：https://erenyx.itch.io/pajinko\n役割：デザイン、プログラミング"
+    },
+    "vimeoEmbed": "https://player.vimeo.com/video/1108829669",
+    "soundcloudEmbed": null,
+    "bilibiliEmbed": null,
+    "screenshots": [
+      "/images/PaJinko/PaJinko_01.png",
+      "/images/PaJinko/PaJinko_02.png",
+      "/images/PaJinko/PaJinko_03.png",
+      "/images/PaJinko/PaJinko_04.png",
+      "/images/PaJinko/PaJinko_05.png"
+    ],
+    "order": 13
   }
 ]

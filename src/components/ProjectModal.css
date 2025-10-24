@@ -259,3 +259,20 @@
 .modal-body::-webkit-scrollbar-thumb:hover {
   background: var(--color-accent);
 }
+
+/* 视频提示样式 */
+.video-fallback-notice {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+}
+
+.video-fallback-notice p {
+  margin: 0;
+  font-size: 12px;
+  color: #ffc107;
+  font-family: var(--font-secondary);
+}

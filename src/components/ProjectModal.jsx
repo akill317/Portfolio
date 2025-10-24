@@ -123,17 +123,37 @@ function ProjectModal({ project, onClose }) {
             </div>
           )}
 
-          {project.vimeoEmbed && (
+          {/* 视频播放器 - 优先显示国内可访问的视频源 */}
+          {(project.bilibiliEmbed || project.vimeoEmbed) && (
             <div className="modal-video">
-              <iframe
-                src={project.vimeoEmbed}
-                width="100%"
-                height="315"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title={project.title}
-              />
+              {/* 优先显示Bilibili视频 */}
+              {project.bilibiliEmbed ? (
+                <iframe
+                  src={project.bilibiliEmbed}
+                  width="100%"
+                  height="315"
+                  frameBorder="0"
+                  allow="autoplay"
+                  allowFullScreen
+                  title={project.title}
+                />
+              ) : (
+                /* 如果没有Bilibili视频，显示Vimeo（可能无法访问） */
+                <>
+                  <div className="video-fallback-notice">
+                    <p>⚠️ 此视频可能无法正常播放，建议使用VPN或查看其他项目</p>
+                  </div>
+                  <iframe
+                    src={project.vimeoEmbed}
+                    width="100%"
+                    height="315"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title={project.title}
+                  />
+                </>
+              )}
             </div>
           )}
 
