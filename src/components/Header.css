@@ -16,7 +16,7 @@
       rgba(128, 0, 255, 0.02) 30px
     );
   border-bottom: 2px solid var(--color-border);
-  padding-block: clamp(12px, 3.5vw, 28px) clamp(4px, 1.8vw, 14px);
+  padding-block: clamp(12px, 3vw, 24px) clamp(4px, 1.5vw, 12px);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -77,7 +77,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(4px, 1.5vw, 12px);
+  gap: clamp(3px, 1.2vw, 10px);
 }
 
 .title-shell {
@@ -85,18 +85,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: clamp(3px, 1.2vw, 10px);
+  gap: clamp(2px, 1vw, 8px);
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
   .header {
-    padding-block: clamp(10px, 5vw, 24px) clamp(4px, 2vw, 12px);
+    padding-block: clamp(10px, 3.5vw, 20px) clamp(4px, 1.5vw, 10px);
   }
 
   .header-content {
     padding: 0 clamp(12px, 6vw, 24px);
-    gap: clamp(3px, 2vw, 10px);
+    gap: clamp(3px, 1.5vw, 8px);
   }
 
   .skills-grid {
@@ -120,17 +120,23 @@
 }
 
 @media (max-width: 480px) {
-  .header {
-    padding-block: clamp(8px, 8vw, 20px) clamp(4px, 2.5vw, 10px);
+  header.header {
+    padding-block: clamp(4px, 1.5vw, 8px) clamp(2px, 0.8vw, 4px) !important;
+    background-color: red !important; /* 测试样式 - 应该看到红色背景 */
   }
 
   .header-content {
     padding: 0 clamp(10px, 6vw, 18px);
-    gap: clamp(3px, 2.5vw, 8px);
+    gap: clamp(0px, 0.5vw, 2px) !important;
   }
 
   .expanded-content {
+    max-width: 100%;
+  }
+
+  .expanded-content.show {
     max-height: 60vh;
+    overflow-y: auto;
   }
 
   .skills-grid {
@@ -440,7 +446,10 @@
 @media (max-width: 768px) {
   .expanded-content {
     max-width: 90%;
-    max-height: 70vh;
+  }
+
+  .expanded-content.show {
+    max-height: min(70vh, 600px);
     overflow-y: auto;
   }
   

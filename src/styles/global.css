@@ -80,7 +80,7 @@ body::before {
 
 .page-content {
   position: relative;
-  padding-top: var(--spacing-lg);
+  padding-top: clamp(8px, 2vw, 16px);
   overflow-x: hidden;
 }
 
