@@ -8,6 +8,7 @@ import LanguageSwitcher from './components/LanguageSwitcher'
 import projects from './data/projects.json'
 
 const PINNED_PROJECT_IDS = [
+  'mist-trek',
   'pajinko',
   'birds-camp',
   'monsterologist',
@@ -29,31 +30,23 @@ function App() {
     pinnedIndex: PINNED_PROJECT_IDS.indexOf(project.id)
   }))
 
+  // 排序：先按是否置顶（置顶的在前），置顶内按 PINNED_PROJECT_IDS 顺序，未置顶的按 order 再按原下标
   const sortedProjects = projectsWithIndex
     .slice()
     .sort((a, b) => {
       const aPinned = a.pinnedIndex !== -1
       const bPinned = b.pinnedIndex !== -1
 
-      if (aPinned && bPinned && a.pinnedIndex !== b.pinnedIndex) {
+      if (aPinned && bPinned) {
         return a.pinnedIndex - b.pinnedIndex
       }
-
       if (aPinned !== bPinned) {
         return aPinned ? -1 : 1
       }
 
-      const aHasOrder = typeof a.project.order === 'number'
-      const bHasOrder = typeof b.project.order === 'number'
-
-      if (aHasOrder !== bHasOrder) {
-        return aHasOrder ? 1 : -1
-      }
-
-      if (aHasOrder && a.project.order !== b.project.order) {
-        return a.project.order - b.project.order
-      }
-
+      const aOrder = typeof a.project.order === 'number' ? a.project.order : 9999
+      const bOrder = typeof b.project.order === 'number' ? b.project.order : 9999
+      if (aOrder !== bOrder) return aOrder - bOrder
       return a.index - b.index
     })
     .map(item => item.project)
