@@ -1,5 +1,25 @@
 [
   {
+    "id": "mist-trek",
+    "title": {
+      "zh-CN": "MistTrek",
+      "en-US": "MistTrek",
+      "ja-JP": "MistTrek"
+    },
+    "category": "game",
+    "thumbnail": "/images/MistTrek/MistTrek_thumbnail",
+    "description": {
+      "zh-CN": "一个月纯cursor制作，没写一行代码，不过还是用了不少插件和assetstore里的资源。也算是一次AI学习练习作品。玩家主要在现实中行走，然后积攒能量在游戏里破除迷雾探索世界完成任务发现可爱生物。",
+      "en-US": "Made entirely with Cursor in one month without writing a single line of code, though I used quite a few plugins and Asset Store resources. It was also an AI learning exercise. Players mainly walk in the real world to accumulate energy, then use it in the game to clear the mist, explore the world, complete tasks, and discover cute creatures.",
+      "ja-JP": "一ヶ月で Cursor だけで制作し、一行もコードを書いていません。ただし、多くのプラグインと Asset Store のリソースは使用しました。AI 学習の練習作品でもあります。プレイヤーは主に現実世界を歩いてエネルギーを貯め、ゲーム内で霧を晴らし、世界を探索し、クエストをクリアしてかわいい生物を発見します。"
+    },
+    "bilibiliEmbed": "//player.bilibili.com/player.html?isOutside=true&aid=116060955281249&bvid=BV1cCcLzPExG&cid=36018194569&p=1",
+    "vimeoEmbed": null,
+    "soundcloudEmbed": null,
+    "screenshots": [],
+    "order": 1
+  },
+  {
     "id": "battle-stackers",
     "title": {
       "zh-CN": "Battle Stackers",
@@ -23,7 +43,7 @@
       "/images/BattleStackers/BattleStackers_05.jpg",
       "/images/BattleStackers/BattleStackers_06.jpg"
     ],
-    "order": 2
+    "order": 3
   },
   {
     "id": "bigo8",
@@ -42,7 +62,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/216181485",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 3
+    "order": 4
   },
   {
     "id": "chase",
@@ -71,7 +91,7 @@
       "/images/Chase/Chase_08.png",
       "/images/Chase/Chase_09.png"
     ],
-    "order": 4
+    "order": 5
   },
   {
     "id": "circling-dots",
@@ -95,7 +115,7 @@
       "/images/CirclingDots/CirclingDots_03.png",
       "/images/CirclingDots/CirclingDots_04.png"
     ],
-    "order": 5
+    "order": 6
   },
   {
     "id": "curare-magicum",
@@ -120,7 +140,7 @@
       "/images/CurareMagicum/CurareMagicum_04.jpg",
       "/images/CurareMagicum/CurareMagicum_05.jpg"
     ],
-    "order": 6
+    "order": 7
   },
   {
     "id": "darter",
@@ -150,7 +170,7 @@
       "/images/Darter/Darter_09.jpg",
       "/images/Darter/Darter_10.jpg"
     ],
-    "order": 7
+    "order": 8
   },
   {
     "id": "feed-chain",
@@ -169,7 +189,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/205973827",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 8
+    "order": 9
   },
   {
     "id": "free-journey",
@@ -188,7 +208,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/20871567",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 9
+    "order": 10
   },
   {
     "id": "full-collapsy",
@@ -212,7 +232,7 @@
       "/images/FullCollapsy/FullCollapsy_03.png",
       "/images/FullCollapsy/FullCollapsy_04.png"
     ],
-    "order": 10
+    "order": 11
   },
   {
     "id": "giant-because-weight",
@@ -233,7 +253,7 @@
     "screenshots": [
       "/images/GiantBecauseWeight/GiantBecauseWeight_01.jpg"
     ],
-    "order": 11
+    "order": 12
   },
   {
     "id": "horrific-war",
@@ -252,7 +272,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/205966702",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 12
+    "order": 13
   },
   {
     "id": "human-history",
@@ -271,7 +291,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/216181056",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 13
+    "order": 14
   },
   {
     "id": "kd-maze",
@@ -292,7 +312,7 @@
     "screenshots": [
       "/images/KDMaze/KDMaze_01.png"
     ],
-    "order": 14
+    "order": 15
   },
   {
     "id": "matching-rybw",
@@ -317,7 +337,7 @@
       "/images/MatchingRYBW/MatchingRYBW_04.png",
       "/images/MatchingRYBW/MatchingRYBW_05.jpg"
     ],
-    "order": 15
+    "order": 16
   },
   {
     "id": "monsterologist",
@@ -341,7 +361,7 @@
       "/images/Monsterologist/Monsterologist_03.png",
       "/images/Monsterologist/Monsterologist_04.png"
     ],
-    "order": 16
+    "order": 17
   },
   {
     "id": "paintwalker",
@@ -367,7 +387,7 @@
       "/images/PaintWalker/PaintWalker_05.png",
       "/images/PaintWalker/PaintWalker_06.png"
     ],
-    "order": 17
+    "order": 18
   },
   {
     "id": "pong-in-same-room",
@@ -390,7 +410,7 @@
       "/images/PongInSameRoom/PongInSameRoom_02.png",
       "/images/PongInSameRoom/PongInSameRoom_03.png"
     ],
-    "order": 18
+    "order": 19
   },
   {
     "id": "rq",
@@ -408,7 +428,7 @@
     },
     "vimeoEmbed": "https://player.vimeo.com/video/138479610",
     "soundcloudEmbed": null,
-    "order": 19
+    "order": 30
   },
   {
     "id": "roof-defence",
@@ -429,7 +449,7 @@
     "screenshots": [
       "/images/RoofDefence/RoofDefence_01.png"
     ],
-    "order": 20
+    "order": 31
   },
   {
     "id": "say-hi",
@@ -454,7 +474,7 @@
       "/images/SayHi/SayHi_04.png",
       "/images/SayHi/SayHi_05.png"
     ],
-    "order": 21
+    "order": 32
   },
   {
     "id": "second-personal-fighting-game",
@@ -473,7 +493,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/205972679",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 22
+    "order": 33
   },
   {
     "id": "simultriathlon",
@@ -492,7 +512,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/218297748",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 23
+    "order": 34
   },
   {
     "id": "slime-slayer",
@@ -519,7 +539,7 @@
       "/images/SlimeSlayer/SlimeSlayer_06.jpg",
       "/images/SlimeSlayer/SlimeSlayer_07.jpg"
     ],
-    "order": 24
+    "order": 35
   },
   {
     "id": "so-many-things",
@@ -538,7 +558,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/216180009",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 25
+    "order": 36
   },
   {
     "id": "space-wanderer",
@@ -563,7 +583,7 @@
       "/images/SpaceWanderer/SpaceWanderer_04.jpg",
       "/images/SpaceWanderer/SpaceWanderer_05.png"
     ],
-    "order": 26
+    "order": 37
   },
   {
     "id": "toss-your-bean-back",
@@ -588,7 +608,7 @@
       "/images/TossYourBeanBack/TossYourBeanBack_04.jpg",
       "/images/TossYourBeanBack/TossYourBeanBack_05.jpg"
     ],
-    "order": 27
+    "order": 38
   },
   {
     "id": "wave-runner",
@@ -607,7 +627,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/201047244",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 28
+    "order": 39
   },
   {
     "id": "yggdrasil",
@@ -629,7 +649,7 @@
       "/images/Yggdrasil/Yggdrasil_01.jpg",
       "/images/Yggdrasil/Yggdrasil_02.gif"
     ],
-    "order": 29
+    "order": 40
   },
   {
     "id": "racognition",
@@ -650,7 +670,7 @@
     "screenshots": [
       "/images/raCOGNiTIOn/RaCOGNiTIOn_01.png"
     ],
-    "order": 30
+    "order": 41
   },
   {
     "id": "holy-decadent-work",
@@ -669,7 +689,7 @@
     "vimeoEmbed": null,
     "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348515108&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
     "screenshots": [],
-    "order": 32
+    "order": 43
   },
   {
     "id": "kaze-final",
@@ -688,7 +708,7 @@
     "vimeoEmbed": null,
     "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348514464&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
     "screenshots": [],
-    "order": 31
+    "order": 42
   },
   {
     "id": "space",
@@ -707,7 +727,7 @@
     "vimeoEmbed": null,
     "soundcloudEmbed": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348515107&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
     "screenshots": [],
-    "order": 33
+    "order": 44
   },
   {
     "id": "monster-rider",
@@ -728,7 +748,7 @@
     "screenshots": [
       "/images/MonsterRider/MonsterRider_thumbnail.png"
     ],
-    "order": 34
+    "order": 45
   },
   {
     "id": "sitting-pose",
@@ -749,7 +769,7 @@
     "screenshots": [
       "/images/SittingPose/SittingPose_thumbnail.png"
     ],
-    "order": 35
+    "order": 46
   },
   {
     "id": "finger-dance",
@@ -768,7 +788,7 @@
     "vimeoEmbed": "https://player.vimeo.com/video/138479609",
     "soundcloudEmbed": null,
     "screenshots": [],
-    "order": 36
+    "order": 47
   },
   {
     "id": "birds-camp",
@@ -796,7 +816,7 @@
       "/images/BirdsCamp/BirdsCamp_06.jpg",
       "/images/BirdsCamp/BirdsCamp_07.jpg"
     ],
-    "order": 14
+    "order": 15
   },
   {
     "id": "pajinko",
@@ -822,6 +842,6 @@
       "/images/PaJinko/PaJinko_04.png",
       "/images/PaJinko/PaJinko_05.png"
     ],
-    "order": 13
+    "order": 14
   }
 ]
