@@ -5,6 +5,7 @@ import CategoryFilter from './components/CategoryFilter'
 import ProjectGrid from './components/ProjectGrid'
 import ProjectModal from './components/ProjectModal'
 import LanguageSwitcher from './components/LanguageSwitcher'
+import Footer from './components/Footer'
 import projects from './data/projects.json'
 
 const PINNED_PROJECT_IDS = [
@@ -78,6 +79,7 @@ function App() {
             />
           )}
           <LanguageSwitcher />
+          <Footer />
         </div>
       </div>
     </LanguageProvider>
