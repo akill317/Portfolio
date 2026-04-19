@@ -2,11 +2,11 @@
   {
     "id": "dungeon-employee",
     "title": {
-      "zh-CN": "地牢员工",
+      "zh-CN": "地牢牛马",
       "en-US": "Dungeon Employee",
       "ja-JP": "Dungeon Employee"
     },
-    "category": "game",
+    "category": "others",
     "thumbnail": "/images/DungeonEmployee/DungeonEmployee_thumbnail.png",
     "description": {
       "zh-CN": "第二个Seedance做的游戏PV，多学习多练多进步。",
@@ -22,11 +22,11 @@
   {
     "id": "override-adventure",
     "title": {
-      "zh-CN": "Override Adventure",
+      "zh-CN": "覆写冒险",
       "en-US": "Override Adventure",
       "ja-JP": "Override Adventure"
     },
-    "category": "game",
+    "category": "others",
     "thumbnail": "/images/OverrideAdventure/OverrideAdventure_thumbnail.png",
     "description": {
       "zh-CN": "Seedance2.0做了个AI游戏PV，蹭热度试验了一下，虽然漏洞百出，哈哈，不知道有没传达出游戏玩法。",
