@@ -883,5 +883,59 @@
       "/images/PaJinko/PaJinko_05.png"
     ],
     "order": 14
+  },
+  {
+    "id": "chroma-trail",
+    "title": {
+      "zh-CN": "步步生彩",
+      "en-US": "ChromaTrail",
+      "ja-JP": "ChromaTrail"
+    },
+    "category": "game",
+    "thumbnail": "/images/ChromaTrail/thumbnail.png",
+    "description": {
+      "zh-CN": "一款独立休闲小游戏，使用 Unity 制作，音频侧接入 FMOD，强调色彩与节拍等轻量反馈。项目从原型到微信小游戏导出、素材与备案流程一路踩坑补齐，也顺带尝试了多端发行。已上架微信小游戏、Google Play 与 Apple App Store。\n角色：独立开发（含程序与音频管线等）",
+      "en-US": "A solo-built casual mini-game made in Unity with FMOD for audio, leaning into color and beat-driven feedback. The journey covered prototyping, WeChat mini-game export, store assets, compliance steps, and multi-platform release. Available on WeChat mini games, Google Play, and the Apple App Store.\nRole: Solo development (including programming and audio pipeline)",
+      "ja-JP": "Unity で制作したインディー向けカジュアルミニゲーム。FMOD でオーディオを扱い、色彩やビート感のある軽いフィードバックを重視。プロトタイプから WeChat ミニゲームへの書き出し、ストア用素材、審査・備案、マルチプラットフォーム展開まで一通り経験。WeChat ミニゲーム、Google Play、Apple App Store で配信中。\n役割：ソロ開発（プログラミングとオーディオ周りなど）"
+    },
+    "bilibiliEmbed": "//player.bilibili.com/player.html?isOutside=true&aid=116406347629625&bvid=BV1b4Q5BQEX9&cid=37515953784&p=1",
+    "vimeoEmbed": null,
+    "soundcloudEmbed": null,
+    "screenshots": [
+      "/images/ChromaTrail/sc0.png",
+      "/images/ChromaTrail/sc1.png",
+      "/images/ChromaTrail/sc2.png",
+      "/images/ChromaTrail/sc3.png",
+      "/images/ChromaTrail/sc4.png"
+    ],
+    "order": 48
+  },
+  {
+    "id": "tri-ring-pong",
+    "title": {
+      "zh-CN": "三环弹球",
+      "en-US": "TriRingPong",
+      "ja-JP": "TriRingPong"
+    },
+    "category": "game",
+    "thumbnail": "/images/TriRingPong/thumbnail.jpg",
+    "description": {
+      "zh-CN": "面向移动端的本地单机休闲游戏，考验反应与规划。场地中央为品红、黄、蓝三条同心轨道挡板（CMY 印刷三色），球在环内反弹；玩家用底部三条色条分别控制各环的切向转动来接球。当碰撞环的颜色包含在球当前颜色中时，会剥去对应一层色壳，混色球可按任意顺序逐层剥净，剥净后得分并进入下一颗球。球速与叠色难度会随分数递进，外围边界救球次数用尽后再出界则本局结束；清台达一定次数可解锁三选一肉鸽强化，同一局内叠层生效，为高分提供成长路线。已上架微信小游戏、Google Play 与 Apple App Store。\n角色：独立开发",
+      "en-US": "A mobile, offline casual game about reflexes and planning. Three concentric paddles in CMY (magenta, yellow, blue) ring a bouncing ball; each bottom strip spins its matching ring tangentially to keep rallies alive. On impact, if a ring’s color is part of the ball’s current mix, that color layer is peeled away—multi-color balls can be cleared in any order, and clearing all layers scores and spawns the next ball. Ball speed and color complexity ramp with your score; you have limited out-of-bounds saves, and the run ends when you’re out of saves and the ball escapes. Clearing enough balls unlocks a rogue-like pick-one-of-three buff that stacks for the rest of the run. Out on WeChat mini games, Google Play, and the Apple App Store.\nRole: Solo development",
+      "ja-JP": "モバイル向けのオフライン単体カジュアルゲームで、反射神経と読み合いが鍵。中央にマゼンタ、イエロー、ブルー系（ドキュメント上 CMY 三色）の同心円パドルがあり、ボールは環内で跳ね返る。画面下の各色バーで対応するリングの接線方向の回転を切り替えて接球する。衝突したリングの色がボールの現在の色集合に含まれていれば、その色の層が一枚はがれる。混色ボールは順不同で層をはがし、すべて剥がすと得点して次のボールへ。スコアに応じて球速と混色難易度が上がり、外周の救球回数を使い切ったあとにアウトするとゲームオーバー。一定回のクリアでローグライク式の三択強化が開放され、同一ラウンド内で効果が累積する。WeChat ミニゲーム、Google Play、Apple App Store で配信中。\n役割：ソロ開発"
+    },
+    "bilibiliEmbed": null,
+    "youtubeEmbed": "https://www.youtube.com/embed/mT5d-ETmSf4",
+    "vimeoEmbed": null,
+    "soundcloudEmbed": null,
+    "screenshots": [
+      "/images/TriRingPong/s0.jpg",
+      "/images/TriRingPong/s1.jpg",
+      "/images/TriRingPong/s2.jpg",
+      "/images/TriRingPong/s3.jpg",
+      "/images/TriRingPong/s4.jpg",
+      "/images/TriRingPong/s5.jpg"
+    ],
+    "order": 49
   }
 ]
