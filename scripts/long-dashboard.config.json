@@ -1,0 +1,4 @@
+{
+  "backtraderRoot": "../Backtrader",
+  "outHtml": "public/long/index.html"
+}
