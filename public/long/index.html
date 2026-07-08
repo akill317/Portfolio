@@ -481,9 +481,8 @@ main {
 
 .summary-foot {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 8px;
+  flex-direction: column;
+  gap: 6px;
   margin-top: var(--space-sm);
   padding-top: var(--space-sm);
   border-top: 1px solid var(--border-light);
@@ -491,6 +490,23 @@ main {
   font-size: 12px;
   line-height: 1.7;
   color: var(--muted);
+}
+.foot-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+}
+.foot-row-trading {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.foot-row-trading .foot-chip {
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+.foot-row-trading .foot-chip.fee {
+  margin-right: 4px;
 }
 .foot-chip {
   display: inline-flex;
@@ -503,20 +519,33 @@ main {
 }
 .foot-chip b { font-weight: 600; color: var(--text-soft, #64748b); }
 .foot-chip .foot-val { font-weight: 700; color: var(--text); }
-.foot-chip.fee { background: #fff7ed; border-color: #fed7aa; }
-.foot-chip.fee b { color: #c2410c; }
-.foot-chip.fee .foot-val { color: #b45309; }
-.foot-chip.flow { background: #f0f9ff; border-color: #bae6fd; }
-.foot-chip.flow b { color: #0369a1; }
-.foot-chip.deposit { background: #eef2ff; border-color: #dbe2fe; flex-wrap: wrap; }
-.foot-chip.deposit b { color: #4338ca; }
+.foot-chip.capital,
+.foot-chip.deposit,
+.foot-chip.flow {
+  background: var(--bg-subtle, #f8fafc);
+  border-color: var(--border-light, #e2e8f0);
+}
+.foot-chip.capital b,
+.foot-chip.capital .foot-val,
+.foot-chip.deposit b,
+.foot-chip.deposit .foot-val,
+.foot-chip.flow b,
+.foot-chip.flow .foot-val { color: #0f172a; }
+.foot-chip.deposit { flex-wrap: wrap; }
+.foot-chip.fee { background: #f0fdf4; border-color: #bbf7d0; }
+.foot-chip.fee b { color: #15803d; }
+.foot-chip.fee .foot-val { color: #166534; }
+.foot-chip.passive { background: #fef2f2; border-color: #fecaca; }
+.foot-chip.passive b { color: #b91c1c; }
+.foot-chip.passive .foot-val { color: #dc2626; }
+.foot-chip .foot-sub { font-size: 11px; color: var(--muted); font-weight: 500; margin-left: 2px; }
 .dep-tag {
   display: inline-block;
   margin: 1px 0 1px 5px;
   padding: 0 6px;
-  background: #e0e7ff;
+  background: #f1f5f9;
   border-radius: 5px;
-  color: #3730a3;
+  color: #0f172a;
   font-weight: 600;
 }
 
@@ -1542,7 +1571,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1783521772346"></script>
+<script src="double_dragon_data.js?v=1783523510992"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1761,6 +1790,11 @@ function renderSummary(elId, plat) {
   const copayerFoot = '';
   const feeM = (last.fee_note || '').match(/交易损耗\(税\+佣\)\s*¥\s*([\d,]+)/);
   const feeAmt = feeM ? feeM[1] : '';
+  const passiveM = (last.fee_note || '').match(/股息红利\s*¥\s*([\d,.-]+)/);
+  const passiveAmt = last.passive_income_net != null && last.passive_income_net !== ''
+    ? fmtMoneyPlain(last.passive_income_net)
+    : (passiveM ? passiveM[1] : '');
+  const passiveCnt = last.passive_income_count || 0;
   const depM = (last.fee_note || '').match(/入金:\s*(.+)$/);
   const depItems = depM ? depM[1].split(',').map(d => d.trim()).filter(Boolean) : [];
   el.innerHTML = `
@@ -1819,11 +1853,17 @@ function renderSummary(elId, plat) {
         </div>` : ''}
       </div>
       <div class="summary-foot">
-        <span class="foot-chip"><b>总投入</b><span class="foot-val">¥${fmtMoneyPlain(last.total_invested)}</span></span>
-        ${last.capital_base ? `<span class="foot-chip"><b>首日本金</b><span class="foot-val">¥${fmtMoneyPlain(last.capital_base)}</span></span>` : ''}
-        ${feeAmt ? `<span class="foot-chip fee"><b>交易损耗(税+佣)</b><span class="foot-val">¥${feeAmt}</span></span>` : ''}
-        ${depItems.length ? `<span class="foot-chip deposit"><b>入金</b>${depItems.map(d => `<span class="dep-tag">${d}</span>`).join('')}</span>` : ''}
-        ${flowNote ? `<span class="foot-chip flow"><b>资金调整</b><span class="foot-val">${flowNote}</span></span>` : ''}
+        <div class="foot-row">
+          <span class="foot-chip capital"><b>总投入</b><span class="foot-val">¥${fmtMoneyPlain(last.total_invested)}</span></span>
+        </div>
+        ${depItems.length || flowNote ? `<div class="foot-row">
+          ${depItems.length ? `<span class="foot-chip deposit"><b>入金</b>${depItems.map(d => `<span class="dep-tag">${d}</span>`).join('')}</span>` : ''}
+          ${flowNote ? `<span class="foot-chip capital"><b>资金调整</b><span class="foot-val">${flowNote}</span></span>` : ''}
+        </div>` : ''}
+        ${feeAmt || passiveAmt ? `<div class="foot-row foot-row-trading">
+          ${feeAmt ? `<span class="foot-chip fee"><b>交易损耗(税+佣)</b><span class="foot-val">¥${feeAmt}</span></span>` : ''}
+          ${passiveAmt ? `<span class="foot-chip passive"><b>股息红利</b><span class="foot-val">¥${passiveAmt}</span>${passiveCnt ? `<span class="foot-sub">${passiveCnt}笔</span>` : ''}</span>` : ''}
+        </div>` : ''}
       </div>
     </div>`;
 }
