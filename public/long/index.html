@@ -493,6 +493,7 @@ main {
   color: var(--muted);
 }
 .summary-foot-end { margin-top: 8px; padding-top: 8px; }
+.summary-foot-mid { margin-top: 8px; padding-top: 8px; }
 .foot-chip {
   display: inline-flex;
   align-items: baseline;
@@ -1546,7 +1547,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1783686415018"></script>
+<script src="double_dragon_data.js?v=1783736117308"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1831,9 +1832,12 @@ function renderSummary(elId, plat) {
       <div class="summary-foot">
         <span class="foot-chip"><b>总投入</b><span class="foot-val">¥${fmtMoneyPlain(last.total_invested)}</span></span>
         ${last.capital_base ? `<span class="foot-chip"><b>首日本金</b><span class="foot-val">¥${fmtMoneyPlain(last.capital_base)}</span></span>` : ''}
-        ${depItems.length ? `<span class="foot-chip deposit"><b>入金</b>${depItems.map(d => `<span class="dep-tag">${d}</span>`).join('')}</span>` : ''}
         ${flowNote ? `<span class="foot-chip flow"><b>资金调整</b><span class="foot-val">${flowNote}</span></span>` : ''}
       </div>
+      ${depItems.length ? `
+      <div class="summary-foot summary-foot-mid">
+        <span class="foot-chip deposit"><b>入金</b>${depItems.map(d => `<span class="dep-tag">${d}</span>`).join('')}</span>
+      </div>` : ''}
       <div class="summary-foot summary-foot-end">
         ${feeAmt ? `<span class="foot-chip fee"><b>交易损耗(税+佣)</b><span class="foot-val">¥${feeAmt}</span></span>` : ''}
         ${last.passive_income_net != null && (last.passive_income_net != 0 || last.passive_income_count) ? `<span class="foot-chip passive"><b>股息红利(被动收入)</b><span class="foot-val">¥${fmtMoneyPlain(last.passive_income_net)}</span>${last.passive_income_count ? ` <span class="foot-sub">${last.passive_income_count}笔</span>` : ''}</span>` : ''}
