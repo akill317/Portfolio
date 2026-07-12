@@ -1547,7 +1547,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1783736293431"></script>
+<script src="double_dragon_data.js?v=1783834820132"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1948,6 +1948,48 @@ function asNum(v) {
   return Number(v);
 }
 
+/** 回退：累计收益净值 peak→trough（与 dashboard_common 一致；非收益率相减）。 */
+function calcMaxDrawdownFromDays(days) {
+  if (!days || !days.length) return null;
+  let peakW = null;
+  let peakIdx = -1;
+  let best = null;
+  for (let i = 0; i < days.length; i++) {
+    const d = days[i];
+    const cr = asNum(d.cum_return);
+    if (cr == null) continue;
+    const wealth = 1 + cr;
+    if (peakW == null || wealth > peakW) {
+      peakW = wealth;
+      peakIdx = i;
+    }
+    if (peakW <= 0) continue;
+    const dd = wealth / peakW - 1;
+    if (best == null || dd < best.mdd) {
+      best = {
+        mdd: dd,
+        peakIdx,
+        troughIdx: i,
+        peak_date_display: days[peakIdx].date_display || days[peakIdx].date,
+        trough_date_display: d.date_display || d.date,
+      };
+    }
+  }
+  return best;
+}
+
+function resolvePlatformMdd(plat) {
+  const m = plat && plat.max_drawdown;
+  if (m && m.peak_date_display && m.trough_date_display != null && m.mdd != null) {
+    return {
+      mdd: Number(m.mdd),
+      peak_date_display: m.peak_date_display,
+      trough_date_display: m.trough_date_display,
+    };
+  }
+  return calcMaxDrawdownFromDays(plat && plat.days);
+}
+
 function chartRange(allValues, symmetric, opts) {
   opts = opts || {};
   const vals = allValues.map(asNum).filter(v => v != null);
@@ -2102,6 +2144,18 @@ function sliceChartOpts(opts, fromIdx, toIdx) {
       ...e,
       values: (e.values || []).slice(fromIdx, end),
     })),
+    markers: (opts.markers || [])
+      .filter(m => m.idx >= fromIdx && m.idx <= toIdx)
+      .map(m => ({ ...m, idx: m.idx - fromIdx })),
+    mddLabels: (opts.mddLabels || [])
+      .map(lb => ({
+        ...lb,
+        peakIdx: lb.peakIdx - fromIdx,
+        troughIdx: lb.troughIdx - fromIdx,
+      }))
+      .filter(lb =>
+        (lb.peakIdx >= 0 && lb.peakIdx < end - fromIdx) ||
+        (lb.troughIdx >= 0 && lb.troughIdx < end - fromIdx)),
     zoomable: false,
   };
 }
@@ -2521,6 +2575,62 @@ function _drawSvgChartCore(el, opts, mount) {
     y2Series.forEach((s, si) => drawLineSeries(s, y1Series.length + si, yAt2, true));
   }
 
+  // 最大回撤起止黄点（挂在对应 series 上，图例切换时一并显隐）
+  (opts.markers || []).forEach(m => {
+    const si = m.series;
+    const s = series[si];
+    if (!s) return;
+    const i = m.idx;
+    if (i < 0 || i >= n) return;
+    const yFn = s.axis === 'y2' ? yAt2 : yAt;
+    const y = yFn(s.values[i]);
+    if (y == null) return;
+    const x = xAt(i);
+    const hidden = s.hidden ? ' display="none"' : '';
+    const r = m.r != null ? m.r : 7;
+    const color = m.color || '#facc15';
+    const stroke = m.stroke || '#ca8a04';
+    parts.push(`<g class="chart-series chart-marker" data-series="${si}"${hidden}>`);
+    parts.push(`<circle cx="${x}" cy="${y}" r="${r}" fill="${color}" stroke="${stroke}" stroke-width="1.8"><title>${m.title || ''}</title></circle>`);
+    if (m.tag) {
+      const tagY = Math.max(pad.top + 10, y - r - 5);
+      parts.push(`<text x="${x}" y="${tagY}" text-anchor="middle" font-size="10" font-weight="700" fill="${stroke}">${m.tag}</text>`);
+    }
+    parts.push('</g>');
+  });
+
+  // 最大回撤数值：放在回撤谷底上方空白处（多条时纵向错开）
+  const mddLabelSlots = {};
+  (opts.mddLabels || []).forEach(lb => {
+    const si = lb.series;
+    const s = series[si];
+    if (!s || s.hidden) return;
+    const yFn = s.axis === 'y2' ? yAt2 : yAt;
+    const iPeak = lb.peakIdx;
+    const iTrough = lb.troughIdx;
+    if (iTrough < 0 || iTrough >= n) return;
+    const yTrough = yFn(s.values[iTrough]);
+    if (yTrough == null) return;
+    const iMid = Math.round(((iPeak >= 0 ? iPeak : iTrough) + iTrough) / 2);
+    const iMidClamped = Math.max(0, Math.min(n - 1, iMid));
+    let x = xAt(iMidClamped);
+    const slotKey = String(iMidClamped);
+    const slot = mddLabelSlots[slotKey] || 0;
+    mddLabelSlots[slotKey] = slot + 1;
+    let y = yTrough - 22 - slot * 22;
+    const text = lb.text || '';
+    const approxW = Math.max(text.length * 7.2, 72);
+    x = Math.max(pad.left + approxW / 2 + 4, Math.min(W - pad.right - approxW / 2 - 4, x));
+    y = Math.max(pad.top + 14, Math.min(pad.top + plotH - 8, y));
+    const fill = lb.fill || 'rgba(254,249,195,0.92)';
+    const stroke = lb.stroke || lb.color || '#facc15';
+    const textColor = lb.color || '#a16207';
+    parts.push(`<g class="chart-series chart-mdd-label" data-series="${si}">`);
+    parts.push(`<rect x="${x - approxW / 2}" y="${y - 12}" width="${approxW}" height="18" rx="4" fill="${fill}" stroke="${stroke}" stroke-width="1.2"/>`);
+    parts.push(`<text x="${x}" y="${y + 1}" text-anchor="middle" font-size="11" font-weight="700" fill="${textColor}">${text}</text>`);
+    parts.push('</g>');
+  });
+
   parts.push(`<line class="chart-guide" x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${pad.top + plotH}" style="display:none"/>`);
   parts.push(`<rect class="chart-hit" x="${pad.left}" y="${pad.top}" width="${plotW}" height="${plotH}"/>`);
   parts.push('</svg>');
@@ -2590,6 +2700,56 @@ function chartNav() {
     ...DATA.junzhi.days.map(d => d.date_display),
     ...DATA.miniqmt.days.map(d => d.date_display),
   ])].sort();
+  const jzCum = dates.map(d => jzBy[d]?.cum_return ?? null);
+  const mqCum = dates.map(d => mqBy[d]?.cum_return ?? null);
+  const jzNav = dates.map(d => jzBy[d]?.nav ?? null);
+  const mqNav = dates.map(d => mqBy[d]?.nav ?? null);
+  const jzMddRaw = resolvePlatformMdd(DATA.junzhi);
+  const mqMddRaw = resolvePlatformMdd(DATA.miniqmt);
+  const fmtMddPct = v => (v * 100).toFixed(2) + '%';
+  const dateTag = d => (d || '').slice(5);
+  const toIdxMdd = (raw) => {
+    if (!raw) return null;
+    const peakIdx = dates.indexOf(raw.peak_date_display);
+    const troughIdx = dates.indexOf(raw.trough_date_display);
+    if (peakIdx < 0 || troughIdx < 0) return null;
+    return { mdd: raw.mdd, peakIdx, troughIdx };
+  };
+  const jzMdd = toIdxMdd(jzMddRaw);
+  const mqMdd = toIdxMdd(mqMddRaw);
+  // series 顺序：0君智NAV 1MiniQMT NAV 2君智累计 3MiniQMT累计 …
+  const markers = [];
+  const mddLabels = [];
+  const pushMddMarks = (mdd, navSi, retSi, name, color, stroke, labelFill) => {
+    if (!mdd) return;
+    const peakDate = dates[mdd.peakIdx];
+    const troughDate = dates[mdd.troughIdx];
+    const mk = (idx, series, tag, role) => ({
+      idx,
+      series,
+      r: 8,
+      color,
+      stroke,
+      tag,
+      title: `${name}最大回撤${role} ${dates[idx]} · ${fmtMddPct(mdd.mdd)}`,
+    });
+    // 累计收益曲线（默认可见）+ 总资产曲线（点开图例后也可见）
+    markers.push(mk(mdd.peakIdx, retSi, dateTag(peakDate), '起点'));
+    markers.push(mk(mdd.troughIdx, retSi, dateTag(troughDate), '终点'));
+    markers.push(mk(mdd.peakIdx, navSi, dateTag(peakDate), '起点'));
+    markers.push(mk(mdd.troughIdx, navSi, dateTag(troughDate), '终点'));
+    mddLabels.push({
+      series: retSi,
+      peakIdx: mdd.peakIdx,
+      troughIdx: mdd.troughIdx,
+      text: `${name}最大回撤 ${fmtMddPct(mdd.mdd)}`,
+      color: stroke,
+      stroke: color,
+      fill: labelFill,
+    });
+  };
+  pushMddMarks(jzMdd, 0, 2, '君智', '#14b8a6', '#0f766e', 'rgba(204,251,241,0.92)');
+  pushMddMarks(mqMdd, 1, 3, 'MiniQMT', '#c084fc', '#7c3aed', 'rgba(243,232,255,0.92)');
   const benchColors = { '399101': '#64748b', '000300': '#0ea5e9', '000001': '#a8a29e' };
   // Default: only 沪深300 visible, 399101 and 上证指数 hidden
   const benchDefaultHidden = { '399101': true, '000001': true };
@@ -2622,20 +2782,22 @@ function chartNav() {
     y2Fmt: v => (v * 100).toFixed(2) + '%',
     valueFmt: v => v.toLocaleString('zh-CN', { maximumFractionDigits: 0 }) + ' 元',
     valueFmt2: v => (v >= 0 ? '+' : '') + (v * 100).toFixed(2) + '%',
-    caption: '实线=账户实际总资产 · 彩色虚线=账户累计收益 · 灰/蓝/褐虚线=指数基准 · 拖动时间轴框选范围',
+    caption: '实线=账户实际总资产 · 彩色虚线=账户累计收益 · 灰/蓝/褐虚线=指数基准 · 圆点=最大回撤起止(净值peak→trough) · 拖动时间轴框选范围',
     type: 'line',
     symmetricY2: false,
     adaptiveSymmetricY2: true,
+    markers,
+    mddLabels,
     series: [
-      { name: '君智总资产', color: '#0f766e', values: dates.map(d => jzBy[d]?.nav ?? null), hidden: true },
-      { name: 'MiniQMT总资产', color: '#7c3aed', values: dates.map(d => mqBy[d]?.nav ?? null), hidden: true },
-      { name: '君智累计收益', axis: 'y2', dash: true, color: '#14b8a6', values: dates.map(d => jzBy[d]?.cum_return ?? null) },
-      { name: 'MiniQMT累计收益', axis: 'y2', dash: true, color: '#c084fc', values: dates.map(d => mqBy[d]?.cum_return ?? null) },
+      { name: '君智总资产', color: '#0f766e', values: jzNav, hidden: true },
+      { name: 'MiniQMT总资产', color: '#7c3aed', values: mqNav, hidden: true },
+      { name: '君智累计收益', axis: 'y2', dash: true, color: '#14b8a6', values: jzCum },
+      { name: 'MiniQMT累计收益', axis: 'y2', dash: true, color: '#c084fc', values: mqCum },
       ...benchSeries,
     ],
     extras: [
-      { label: '君智总资产', values: dates.map(d => jzBy[d]?.nav ?? null), valueFmt: v => Number(v).toLocaleString('zh-CN', {maximumFractionDigits:0}) + ' 元' },
-      { label: 'MiniQMT总资产', values: dates.map(d => mqBy[d]?.nav ?? null), valueFmt: v => Number(v).toLocaleString('zh-CN', {maximumFractionDigits:0}) + ' 元' },
+      { label: '君智总资产', values: jzNav, valueFmt: v => Number(v).toLocaleString('zh-CN', {maximumFractionDigits:0}) + ' 元' },
+      { label: 'MiniQMT总资产', values: mqNav, valueFmt: v => Number(v).toLocaleString('zh-CN', {maximumFractionDigits:0}) + ' 元' },
       { label: '君智日盈亏', values: dates.map(d => jzBy[d]?.daily_pnl ?? null), valueFmt: v => (v >= 0 ? '+' : '') + Number(v).toLocaleString('zh-CN', {maximumFractionDigits:0}) + ' 元' },
       { label: 'MiniQMT日盈亏', values: dates.map(d => mqBy[d]?.daily_pnl ?? null), valueFmt: v => (v >= 0 ? '+' : '') + Number(v).toLocaleString('zh-CN', {maximumFractionDigits:0}) + ' 元' },
       { label: '君智累计盈亏', values: dates.map(d => jzBy[d]?.cum_pnl ?? null), valueFmt: v => (v >= 0 ? '+' : '') + Number(v).toLocaleString('zh-CN', {maximumFractionDigits:0}) + ' 元' },
