@@ -1481,7 +1481,7 @@ th {
 
   <div class="card section">
     <h2>总资产 NAV 与累计收益率</h2>
-    <p class="sub">左轴=账户实际总资产 · 右轴=累计收益率(相对总投入=首日本金+入金) · 虚线=399101/沪深300/上证指数基准 · 含实时/快照日</p>
+    <p class="sub">左轴=账户实际总资产 · 右轴=累计收益率(相对总投入=首日本金+入金) · 虚线=399101/沪深300/上证指数/深成指基准 · 当日须 15:03 后纳入</p>
     <div id="chart-nav" class="chart"></div>
   </div>
 
@@ -1547,7 +1547,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1784185539890"></script>
+<script src="double_dragon_data.js?v=1784272034546"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -2750,9 +2750,9 @@ function chartNav() {
   };
   pushMddMarks(jzMdd, 0, 2, '君智', '#14b8a6', '#0f766e', 'rgba(204,251,241,0.92)');
   pushMddMarks(mqMdd, 1, 3, 'MiniQMT', '#c084fc', '#7c3aed', 'rgba(243,232,255,0.92)');
-  const benchColors = { '399101': '#64748b', '000300': '#0ea5e9', '000001': '#a8a29e' };
-  // Default: only 沪深300 visible, 399101 and 上证指数 hidden
-  const benchDefaultHidden = { '399101': true, '000001': true };
+  const benchColors = { '399101': '#64748b', '000300': '#0ea5e9', '000001': '#a8a29e', '399001': '#f59e0b' };
+  // Default: only 沪深300 visible; 399101 / 上证 / 深成指 hidden
+  const benchDefaultHidden = { '399101': true, '000001': true, '399001': true };
   const benchSeries = benchList.map(b => ({
     name: b.label,
     axis: 'y2',
@@ -2782,7 +2782,7 @@ function chartNav() {
     y2Fmt: v => (v * 100).toFixed(2) + '%',
     valueFmt: v => v.toLocaleString('zh-CN', { maximumFractionDigits: 0 }) + ' 元',
     valueFmt2: v => (v >= 0 ? '+' : '') + (v * 100).toFixed(2) + '%',
-    caption: '实线=账户实际总资产 · 彩色虚线=账户累计收益 · 灰/蓝/褐虚线=指数基准 · 圆点=最大回撤起止(净值peak→trough) · 拖动时间轴框选范围',
+    caption: '实线=账户实际总资产 · 彩色虚线=账户累计收益 · 灰/蓝/褐/琥珀虚线=指数基准 · 圆点=最大回撤起止(净值peak→trough) · 拖动时间轴框选范围',
     type: 'line',
     symmetricY2: false,
     adaptiveSymmetricY2: true,
