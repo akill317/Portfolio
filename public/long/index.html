@@ -1547,7 +1547,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1784272034546"></script>
+<script src="double_dragon_data.js?v=1784284261116"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -3182,17 +3182,18 @@ function changeShowsRealized(row) {
   return false;
 }
 function changeAmountHtml(row) {
+  const bits = [];
   // 卖出金额优先(详尽到分, 不再缩为万元一位小数)
   if (row.sell_amount > 0 && row.sell_vol > 0) {
     const px = Number(row.sell_px || 0).toFixed(3);
-    return `<span class="change-amount">卖出 ${fmtMoneyDetail(row.sell_amount)} @${px}</span>`;
+    bits.push(`<span class="change-amount">卖出 ${fmtMoneyDetail(row.sell_amount)} @${px}</span>`);
   }
-  // 买入金额
+  // 买入金额（清仓再买时与卖出同屏；拆成两行后各显一侧）
   if (row.buy_amount > 0 && row.buy_vol > 0) {
     const px = Number(row.buy_px || 0).toFixed(3);
-    return `<span class="change-amount">买入 ${fmtMoneyDetail(row.buy_amount)} @${px}</span>`;
+    bits.push(`<span class="change-amount">买入 ${fmtMoneyDetail(row.buy_amount)} @${px}</span>`);
   }
-  return '';
+  return bits.join(' ');
 }
 function compactDeltaText(row) {
   // 持仓变动不再显示 仓%；仅展示买卖金额(@价)
