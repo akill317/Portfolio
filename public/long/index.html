@@ -1547,7 +1547,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1787642600260"></script>
+<script src="double_dragon_data.js?v=1787644594531"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1721,7 +1721,11 @@ function renderCopayers() {
       <div class="copayer-note">
         ${navNote}
         ${cp.note ? '<br>' + cp.note : ''}
-        ${mqLast && inNav ? '<br>参照 MiniQMT 策略日收益独立滚算 · 本金在入金日作总 NAV 入金 · 入金当日影子日盈亏为 0' : ''}
+        ${mqLast && inNav
+          ? (cp.count_join_day_pnl
+            ? '<br>参照 MiniQMT 策略日收益独立滚算 · 起点为昨收 NAV+本金 · 入金当日计入影子盈亏'
+            : '<br>参照 MiniQMT 策略日收益独立滚算 · 本金在入金日作总 NAV 入金 · 入金当日影子日盈亏为 0')
+          : ''}
       </div>
     </div>`;
   }).join('');
