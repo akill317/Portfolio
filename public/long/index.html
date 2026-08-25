@@ -1547,7 +1547,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1787644594531"></script>
+<script src="double_dragon_data.js?v=1787645047202"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1767,7 +1767,6 @@ function renderSummary(elId, plat) {
     : '';
   const bk = holdingBreakdown(last);
   const flowNote = [
-    last.copayer_inflow ? ('跟投入金 ' + fmtMoneyPlain(last.copayer_inflow)) : '',
     last.capital_inflow && !last.copayer_inflow ? ('已剔除入金 ' + fmtMoneyPlain(last.capital_inflow)) : '',
     last.capital_inflow && last.copayer_inflow && last.capital_inflow > last.copayer_inflow
       ? ('其他入金 ' + fmtMoneyPlain(last.capital_inflow - last.copayer_inflow)) : '',
