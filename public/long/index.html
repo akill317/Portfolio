@@ -1547,7 +1547,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1787648471623"></script>
+<script src="double_dragon_data.js?v=1787728904659"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1680,7 +1680,8 @@ function renderCopayers() {
   const mqDays = mq.days || [];
   const mqLast = mqDays[mqDays.length - 1];
   el.innerHTML = list.map(cp => {
-    const principal = Number(cp.principal) || 0;
+    const principal = Number(
+      cp.principal_total != null ? cp.principal_total : cp.principal) || 0;
     const joinDisp = (cp.join_date_display || cp.join_date || '').replace(
       /(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
     const inNav = !!cp.in_nav;
