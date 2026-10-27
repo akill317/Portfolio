@@ -1546,8 +1546,14 @@ th {
       <div id="chg-mq" class="change-scroll"></div>
     </div>
   </div>
+  <div class="card section">
+    <h2>PTrade · 真实成交明细</h2>
+    <p class="sub">逐笔成交时间、数量、价格、费用和操作原因；持仓变化不代替成交回报。</p>
+    <select id="execution-date" aria-label="成交日期"></select>
+    <div id="execution-details" style="overflow-x:auto"></div>
+  </div>
 </main>
-<script src="double_dragon_data.js?v=1793004095886"></script>
+<script src="double_dragon_data.js?v=1793084639689"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -3359,12 +3365,52 @@ document.getElementById('meta').textContent =
   '生成时间 ' + DATA.generated_at +
   ' · 日盈亏剔除入金；累计收益相对总投入本金 · 龙一=小市值+闲置ETF · 龙二=70742动量ETF';
 
+function renderExecutionDetails() {
+  const days = (DATA.miniqmt && DATA.miniqmt.days) || [];
+  const select = document.getElementById('execution-date');
+  select.replaceChildren();
+  [...days].reverse().forEach(day => {
+    const option = document.createElement('option');
+    option.value = day.date; option.textContent = day.date_display || day.date;
+    select.appendChild(option);
+  });
+  function draw() {
+    const day = days.find(d => String(d.date) === select.value) || {};
+    const rows = day.trade_details || (day.trades || []).filter(t => String(t.source || '').startsWith('ptrade'));
+    const el = document.getElementById('execution-details');
+    el.replaceChildren();
+    const note = document.createElement('p'); note.className = 'sub';
+    note.textContent = !rows.length
+      ? (day.trades_complete ? '当日无成交。' : '该日未导出真实成交明细，无法从收盘持仓还原成交时间与成交价格。')
+      : `共 ${rows.length} 笔真实成交${day.trades_complete ? '' : ' · 明细可能不完整'}；缺失费用显示待回单。`;
+    el.appendChild(note);
+    if (!rows.length) return;
+    const table = document.createElement('table');
+    const head = table.createTHead().insertRow();
+    ['时间', '代码', '买卖', '数量', '成交价', '金额', '费用', '归属 / 引擎', '操作原因', '成交号'].forEach(label => {
+      const th = document.createElement('th'); th.textContent = label; head.appendChild(th);
+    });
+    const body = table.createTBody();
+    rows.forEach(t => {
+      const tr = body.insertRow();
+      const side = ['buy', 'b', '买入'].includes(t.side) ? '买入' : '卖出';
+      const values = [t.t || t.trade_time || '—', t.code, side, t.vol || t.volume,
+        t.px || t.price, t.amt || t.amount, t.fees_known ? t.fee : '待回单',
+        [t.role, t.engine].filter(Boolean).join(' / ') || '—', t.reason || '未记录', t.trade_id || '—'];
+      values.forEach(value => { const td = tr.insertCell(); td.textContent = value == null ? '—' : String(value); });
+    });
+    el.appendChild(table);
+  }
+  select.onchange = draw; draw();
+}
+
 function boot() {
   PLATFORM_PANELS.forEach(p => renderSummary(p.cardId, DATA[p.key]));
   renderCopayers();
   chartNav();
   initPlatformTabs();
   PLATFORM_PANELS.forEach(p => renderChanges(p.chgId, DATA[p.key]));
+  renderExecutionDetails();
 }
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', boot);
