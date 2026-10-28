@@ -545,6 +545,50 @@ main {
 
 .chart { width: 100%; min-height: 320px; }
 
+.monthly-calendar { display: grid; gap: 22px; }
+.monthly-year h3 { margin: 2px 0 12px; font-size: 15px; color: var(--text-secondary); }
+.monthly-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
+.monthly-cell {
+  aspect-ratio: 1;
+  min-width: 0;
+  padding: 10px 7px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.monthly-cell.profit { color: var(--up); background: var(--up-light); border-color: var(--up-border); }
+.monthly-cell.loss { color: var(--down); background: var(--down-light); border-color: var(--down-border); }
+.monthly-cell.flat { color: var(--text-secondary); background: var(--card-hover); }
+.monthly-cell.empty { color: var(--muted-light); background: var(--border-light); border-color: var(--border-light); }
+.monthly-cell .month-label { font-size: 11px; opacity: .85; }
+.monthly-cell .month-percent { font-size: clamp(16px, 1.8vw, 23px); font-weight: 750; line-height: 1.15; }
+.monthly-cell .month-amount { font-size: clamp(9px, 1vw, 12px); white-space: nowrap; }
+.monthly-calendar-note { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.calendar-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 0 0 14px; flex-wrap: wrap; }
+.calendar-period, .calendar-years { display: flex; align-items: center; gap: 5px; }
+.calendar-years button, .calendar-years select { background: var(--card); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); padding: 5px 8px; font: inherit; font-size: 12px; }
+.calendar-years button { cursor: pointer; }
+.calendar-years button:disabled { opacity: .35; cursor: default; }
+.monthly-grid.weekly-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.weekly-grid .monthly-cell { padding: 6px 3px; gap: 3px; border-radius: 7px; }
+.weekly-grid .month-label { font-size: 10px; }
+.weekly-grid .week-range { font-size: 8px; opacity: .75; white-space: nowrap; }
+.weekly-grid .month-percent { font-size: clamp(12px, 1.3vw, 17px); }
+.weekly-grid .month-amount { font-size: 8px; }
+@media (max-width: 480px) {
+  .monthly-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .monthly-cell .month-percent { font-size: 21px; }
+  .monthly-cell .month-amount { font-size: 11px; }
+  .monthly-grid.weekly-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .weekly-grid .month-percent { font-size: 16px; }
+  .weekly-grid .month-amount { font-size: 9px; }
+}
+
 .chart-wrap { position: relative; }
 
 .chart svg {
@@ -1512,10 +1556,22 @@ th {
       </div>
     </div>
     <div class="card">
-      <h2>持仓数量变化</h2>
-      <p class="sub">收盘有效持仓只数</p>
-      <div class="tabs-wrap" id="cnt-tabs"></div>
-      <div id="chart-cnt" class="chart"></div>
+      <h2 id="calendar-title">月盈亏记录</h2>
+      <p class="sub">盈亏百分比及金额（元）· 支持月历 / 周历及年份切换 · 无记录置灰</p>
+      <div class="tabs-wrap" id="monthly-tabs"></div>
+      <div class="calendar-toolbar">
+        <div class="calendar-period" role="group" aria-label="盈亏统计周期">
+          <button type="button" class="tab active" id="calendar-month" aria-pressed="true">月历</button>
+          <button type="button" class="tab" id="calendar-week" aria-pressed="false">周历</button>
+        </div>
+        <div class="calendar-years">
+          <button type="button" id="calendar-prev-year" aria-label="上一年">‹</button>
+          <select id="calendar-year" aria-label="统计年份"></select>
+          <button type="button" id="calendar-next-year" aria-label="下一年">›</button>
+        </div>
+      </div>
+      <div id="monthly-calendar" class="monthly-calendar"></div>
+      <p class="monthly-calendar-note" id="calendar-note"></p>
     </div>
   </div>
 
@@ -1546,14 +1602,8 @@ th {
       <div id="chg-mq" class="change-scroll"></div>
     </div>
   </div>
-  <div class="card section">
-    <h2>PTrade · 真实成交明细</h2>
-    <p class="sub">逐笔成交时间、数量、价格、费用和操作原因；持仓变化不代替成交回报。</p>
-    <select id="execution-date" aria-label="成交日期"></select>
-    <div id="execution-details" style="overflow-x:auto"></div>
-  </div>
 </main>
-<script src="double_dragon_data.js?v=1793176009602"></script>
+<script src="double_dragon_data.js?v=1793177757982"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1571,7 +1621,7 @@ const PLATFORM_CHART_RENDERERS = [
   { tabsId: 'mv-tabs', render: chartTradeWin },
   { tabsId: 'pnl-tabs', render: barPnl },
   { tabsId: 'ret-tabs', render: lineRet },
-  { tabsId: 'cnt-tabs', render: barCnt },
+  { tabsId: 'monthly-tabs', render: renderMonthlyCalendar },
 ];
 
 function platformAt(index) {
@@ -2838,13 +2888,7 @@ function platformSeries(plat) {
   const d1ret = fillForward(plat.days.map(d => (((d.dragons||{}).dragon1||{}).cum_return ?? null)));
   const d2ret = fillForward(plat.days.map(d => (((d.dragons||{}).dragon2||{}).cum_return ?? null)));
   const d0ret = fillForward(plat.days.map(d => (((d.dragons||{}).dragon0||{}).cum_return ?? null)));
-  const cnt = plat.days.map(d => {
-    const active = (d.holdings || []).filter(isActiveHolding).length;
-    if (active > 0) return active;
-    const hc = d.holdings_count;
-    return hc == null ? null : Number(hc);
-  });
-  return { dates, d1mv, d2mv, d0mv, d1pnl, d2pnl, d0pnl, d1ret, d2ret, d0ret, cnt };
+  return { dates, d1mv, d2mv, d0mv, d1pnl, d2pnl, d0pnl, d1ret, d2ret, d0ret };
 }
 
 function fmtPctRatio(r) {
@@ -3002,22 +3046,122 @@ function lineRet(plat, title) {
   });
 }
 
-function barCnt(plat, title) {
-  const s = platformSeries(plat);
-  drawSvgChart('chart-cnt', {
-    title: title + ' 持仓只数',
-    labels: s.dates,
-    yLabel: '只',
-    yMinZero: true,
-    yInteger: true,
-    yFmt: v => String(Math.round(v)),
-    valueFmt: v => Math.round(v) + ' 只',
-    caption: title + ' · 收盘有效持仓只数 · 悬停查看',
-    type: 'bar',
-    series: [
-      { name: '持仓只数', color: '#64748b', values: s.cnt },
-    ],
+const PNL_CALENDAR_STATE = { period: 'month', year: null };
+
+function isoWeek(date8) {
+  const date = new Date(Date.UTC(Number(date8.slice(0, 4)), Number(date8.slice(4, 6)) - 1, Number(date8.slice(6, 8))));
+  date.setUTCDate(date.getUTCDate() + 4 - (date.getUTCDay() || 7));
+  const year = date.getUTCFullYear();
+  const week = Math.ceil((((date - new Date(Date.UTC(year, 0, 1))) / 86400000) + 1) / 7);
+  return { year, index: week, key: year + '-W' + String(week).padStart(2, '0') };
+}
+
+function weekRange(year, week) {
+  const start = new Date(Date.UTC(year, 0, 4));
+  start.setUTCDate(start.getUTCDate() - ((start.getUTCDay() || 7) - 1) + (week - 1) * 7);
+  const end = new Date(start);
+  end.setUTCDate(end.getUTCDate() + 6);
+  return [start.toISOString().slice(0, 10), end.toISOString().slice(0, 10)];
+}
+
+function periodPnlRecords(plat, period = 'month') {
+  const periods = new Map();
+  const number = value => value != null && Number.isFinite(Number(value)) ? Number(value) : null;
+  let previousDay = null;
+  [...(plat.days || [])].sort((a, b) => String(a.date).localeCompare(String(b.date))).forEach(day => {
+    if (!/^\d{8}$/.test(String(day.date))) return;
+    const date8 = String(day.date);
+    const info = period === 'week' ? isoWeek(date8) : {
+      year: Number(date8.slice(0, 4)), index: Number(date8.slice(4, 6)),
+      key: date8.slice(0, 4) + '-' + date8.slice(4, 6),
+    };
+    const record = periods.get(info.key) || { ...info, growth: 1, returnKnown: true };
+    const nav = number(day.nav);
+    const invested = number(day.total_invested);
+    const previousNav = previousDay ? number(previousDay.nav) : null;
+    const previousInvested = previousDay ? number(previousDay.total_invested) : null;
+    let dailyReturn = null;
+    if (!previousDay && nav != null && invested > 0) {
+      dailyReturn = (nav - invested) / invested;
+    } else if (previousNav > 0 && previousInvested != null && nav != null && invested != null) {
+      const flow = invested - previousInvested;
+      dailyReturn = (nav - previousNav - flow) / (previousNav + Math.max(flow, 0));
+    }
+    if (dailyReturn == null) record.returnKnown = false;
+    else record.growth *= 1 + dailyReturn;
+    record.last = day;
+    periods.set(info.key, record);
+    previousDay = day;
   });
+  let previousCum = 0;
+  return [...periods.values()].map(record => {
+    const last = record.last;
+    // 周期末累计盈亏减上一周期末累计盈亏，避免将入金误算成收益。
+    const cum = last.cum_pnl != null && Number.isFinite(Number(last.cum_pnl))
+      ? Number(last.cum_pnl)
+      : last.nav != null && last.total_invested != null
+        && Number.isFinite(Number(last.nav)) && Number.isFinite(Number(last.total_invested))
+        ? Number(last.nav) - Number(last.total_invested) : null;
+    const pnl = cum != null && previousCum != null ? Math.round((cum - previousCum) * 100) / 100 : null;
+    previousCum = cum;
+    return { key: record.key, year: record.year, index: record.index, pnl,
+      returnRatio: record.returnKnown ? record.growth - 1 : null,
+      through: String(last.date).replace(/^(\d{4})(\d{2})(\d{2})$/, '$1-$2-$3') };
+  });
+}
+
+function renderMonthlyCalendar(plat, title) {
+  const weekly = PNL_CALENDAR_STATE.period === 'week';
+  const records = periodPnlRecords(plat, PNL_CALENDAR_STATE.period);
+  const byPeriod = new Map(records.map(record => [record.key, record]));
+  const currentYear = Number(new Intl.DateTimeFormat('en', { timeZone: 'Asia/Shanghai', year: 'numeric' }).format(new Date()));
+  // 月历和周历使用共同的年份范围，切回时保留所选年份。
+  const availableYears = [...periodPnlRecords(plat, 'month'), ...periodPnlRecords(plat, 'week')].map(record => record.year);
+  const firstYear = Math.min(currentYear, ...availableYears);
+  const lastYear = Math.max(currentYear, ...availableYears);
+  if (PNL_CALENDAR_STATE.year == null) PNL_CALENDAR_STATE.year = lastYear;
+  PNL_CALENDAR_STATE.year = Math.max(firstYear, Math.min(lastYear, PNL_CALENDAR_STATE.year));
+  const year = PNL_CALENDAR_STATE.year;
+  const select = document.getElementById('calendar-year');
+  select.innerHTML = Array.from({ length: lastYear - firstYear + 1 }, (_, i) => lastYear - i)
+    .map(value => `<option value="${value}"${value === year ? ' selected' : ''}>${value}年</option>`).join('');
+  select.onchange = () => { PNL_CALENDAR_STATE.year = Number(select.value); renderMonthlyCalendar(plat, title); };
+  for (const [id, offset] of [['calendar-prev-year', -1], ['calendar-next-year', 1]]) {
+    const button = document.getElementById(id);
+    button.disabled = offset < 0 ? year <= firstYear : year >= lastYear;
+    button.onclick = () => { PNL_CALENDAR_STATE.year += offset; renderMonthlyCalendar(plat, title); };
+  }
+  for (const period of ['month', 'week']) {
+    const button = document.getElementById('calendar-' + period);
+    button.className = 'tab' + (PNL_CALENDAR_STATE.period === period ? ' active' : '');
+    button.setAttribute('aria-pressed', String(PNL_CALENDAR_STATE.period === period));
+    button.onclick = () => { PNL_CALENDAR_STATE.period = period; renderMonthlyCalendar(plat, title); };
+  }
+  document.getElementById('calendar-title').textContent = weekly ? '周盈亏记录' : '月盈亏记录';
+  document.getElementById('calendar-note').textContent = '盈亏已剔除入出金；百分比按每日收益复合计算。首期自策略开始日计，当前期间截至最新交易日。' +
+    (weekly ? '每周为周一至周日；跨年周整体计入周四所在年份，不拆分或重复统计。' : '');
+  const count = weekly ? isoWeek(String(year) + '1228').index : 12;
+    const cells = [];
+    for (let index = 1; index <= count; index++) {
+      const key = year + (weekly ? '-W' : '-') + String(index).padStart(2, '0');
+      const record = byPeriod.get(key);
+      const label = weekly ? '第' + String(index).padStart(2, '0') + '周' : index + '月';
+      const range = weekly ? weekRange(year, index) : null;
+      const rangeHtml = range ? `<span class="week-range">${range[0].slice(5).replace('-', '/')}–${range[1].slice(5).replace('-', '/')}</span>` : '';
+      if (!record || record.pnl == null) {
+        cells.push(`<div class="monthly-cell empty" aria-label="${year}年${label}，无记录"><span class="month-label">${label}</span>${rangeHtml}<span class="month-percent">—</span><span class="month-amount">暂无记录</span></div>`);
+        continue;
+      }
+      const style = record.pnl > 0 ? 'profit' : record.pnl < 0 ? 'loss' : 'flat';
+      const ratio = record.returnRatio;
+      const percent = ratio == null ? '—' : (ratio > 0 ? '+' : '') + (ratio * 100).toFixed(2) + '%';
+      const amount = (record.pnl > 0 ? '+' : '') + record.pnl.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      const tooltip = (range ? range.join(' 至 ') + '；' : '') + '统计截至 ' + record.through;
+      cells.push(`<div class="monthly-cell ${style}" title="${tooltip}" aria-label="${year}年${label}，${percent}，${amount}元"><span class="month-label">${label}</span>${rangeHtml}<span class="month-percent">${percent}</span><span class="month-amount">${amount}</span></div>`);
+    }
+  const container = document.getElementById('monthly-calendar');
+  container.setAttribute('aria-label', title + (weekly ? '周' : '月') + '盈亏记录');
+  container.innerHTML = `<section class="monthly-year"><h3>${year}年</h3><div class="monthly-grid${weekly ? ' weekly-grid' : ''}">${cells.join('')}</div></section>`;
 }
 
 function renderAnomalyDayNotice(day) {
@@ -3369,52 +3513,12 @@ document.getElementById('meta').textContent =
   '生成时间 ' + DATA.generated_at +
   ' · 日盈亏剔除入金；累计收益相对总投入本金 · 龙一=小市值+闲置ETF · 龙二=70742动量ETF';
 
-function renderExecutionDetails() {
-  const days = (DATA.miniqmt && DATA.miniqmt.days) || [];
-  const select = document.getElementById('execution-date');
-  select.replaceChildren();
-  [...days].reverse().forEach(day => {
-    const option = document.createElement('option');
-    option.value = day.date; option.textContent = day.date_display || day.date;
-    select.appendChild(option);
-  });
-  function draw() {
-    const day = days.find(d => String(d.date) === select.value) || {};
-    const rows = day.trade_details || (day.trades || []).filter(t => String(t.source || '').startsWith('ptrade'));
-    const el = document.getElementById('execution-details');
-    el.replaceChildren();
-    const note = document.createElement('p'); note.className = 'sub';
-    note.textContent = !rows.length
-      ? (day.trades_complete ? '当日无成交。' : '该日未导出真实成交明细，无法从收盘持仓还原成交时间与成交价格。')
-      : `共 ${rows.length} 笔真实成交${day.trades_complete ? '' : ' · 明细可能不完整'}；缺失费用显示待回单。`;
-    el.appendChild(note);
-    if (!rows.length) return;
-    const table = document.createElement('table');
-    const head = table.createTHead().insertRow();
-    ['时间', '代码', '买卖', '数量', '成交价', '金额', '费用', '归属 / 引擎', '操作原因', '成交号'].forEach(label => {
-      const th = document.createElement('th'); th.textContent = label; head.appendChild(th);
-    });
-    const body = table.createTBody();
-    rows.forEach(t => {
-      const tr = body.insertRow();
-      const side = ['buy', 'b', '买入'].includes(t.side) ? '买入' : '卖出';
-      const values = [t.t || t.trade_time || '—', t.code, side, t.vol || t.volume,
-        t.px || t.price, t.amt || t.amount, t.fees_known ? t.fee : '待回单',
-        [t.role, t.engine].filter(Boolean).join(' / ') || '—', t.reason || '未记录', t.trade_id || '—'];
-      values.forEach(value => { const td = tr.insertCell(); td.textContent = value == null ? '—' : String(value); });
-    });
-    el.appendChild(table);
-  }
-  select.onchange = draw; draw();
-}
-
 function boot() {
   PLATFORM_PANELS.forEach(p => renderSummary(p.cardId, DATA[p.key]));
   renderCopayers();
   chartNav();
   initPlatformTabs();
   PLATFORM_PANELS.forEach(p => renderChanges(p.chgId, DATA[p.key]));
-  renderExecutionDetails();
 }
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', boot);
