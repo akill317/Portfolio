@@ -1553,7 +1553,7 @@ th {
     <div id="execution-details" style="overflow-x:auto"></div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1793173732396"></script>
+<script src="double_dragon_data.js?v=1793176009602"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -3196,12 +3196,16 @@ function changeAmountHtml(row) {
   // 卖出金额优先(详尽到分, 不再缩为万元一位小数)
   if (row.sell_amount > 0 && row.sell_vol > 0) {
     const px = Number(row.sell_px || 0).toFixed(3);
-    bits.push(`<span class="change-amount">卖出 ${fmtMoneyDetail(row.sell_amount)} @${px}</span>`);
+    bits.push(`<span class="change-amount">${row.sell_manual ? '手动卖出' : '卖出'} ${Number(row.sell_vol).toLocaleString()}股 ${fmtMoneyDetail(row.sell_amount)} @${px}</span>`);
   }
   // 买入金额（清仓再买时与卖出同屏；拆成两行后各显一侧）
   if (row.buy_amount > 0 && row.buy_vol > 0) {
     const px = Number(row.buy_px || 0).toFixed(3);
-    bits.push(`<span class="change-amount">买入 ${fmtMoneyDetail(row.buy_amount)} @${px}</span>`);
+    bits.push(`<span class="change-amount">${row.buy_manual ? '手动买入' : '买入'} ${Number(row.buy_vol).toLocaleString()}股 ${fmtMoneyDetail(row.buy_amount)} @${px}</span>`);
+  }
+  if (row.trade_details_missing) {
+    const direction = row.missing_trade_side === 'buy' ? '增加' : '减少';
+    bits.push(`<span class="change-amount">持仓${direction} ${Number(row.missing_trade_vol).toLocaleString()}股 · 成交明细缺失</span>`);
   }
   return bits.join(' ');
 }
