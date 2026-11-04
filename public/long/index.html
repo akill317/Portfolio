@@ -1603,7 +1603,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1793776423578"></script>
+<script src="double_dragon_data.js?v=1793776764749"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1823,6 +1823,9 @@ function renderSummary(elId, plat) {
     ? (' · 收盘源 ' + last.nav_patched + (last.updated_at ? ' @' + String(last.updated_at).replace('T', ' ').slice(0, 16) : ''))
     : '';
   const bk = holdingBreakdown(last);
+  const valuation = last.valuation_adjustment || {};
+  const valuationNote = Math.abs(Number(valuation.amount) || 0) > .02 || Math.abs(Number(valuation.daily_pnl) || 0) > .02
+    ? `<p class="sub">券商与逐股行情估值待核对差额：${fmtMoney(valuation.amount || 0)}；今日变动 ${fmtMoney(valuation.daily_pnl || 0)}。账户总盈亏包含此项，尚未归入龙一或龙二。</p>` : '';
   const flowNote = [
     last.capital_inflow && !last.copayer_inflow ? ('已剔除入金 ' + fmtMoneyPlain(last.capital_inflow)) : '',
     last.capital_inflow && last.copayer_inflow && last.capital_inflow > last.copayer_inflow
@@ -1837,6 +1840,7 @@ function renderSummary(elId, plat) {
   el.innerHTML = `
     <h2>${plat.label}</h2>
     <p class="sub">账号 ${plat.account} · 数据源 ${plat.source} · 共 ${days.length} 条记录</p>
+    ${valuationNote}
     <p class="sub">${capitalHint}${ipoFoot}${orphanFoot}${closeSrcFoot}${copEmbedded ? ' · 跟投已计入' : (copOverlay ? ' · 含跟投' : '')}</p>
     <div class="summary-top">
       <div class="summary-nav">
