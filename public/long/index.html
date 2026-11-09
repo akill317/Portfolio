@@ -1603,7 +1603,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1794210271783"></script>
+<script src="double_dragon_data.js?v=1794210434900"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -1836,7 +1836,7 @@ function renderSummary(elId, plat) {
   const feeM = (last.fee_note || '').match(/交易损耗\(税\+佣\)\s*¥\s*([\d,]+)/);
   const feeAmt = feeM ? feeM[1] : '';
   const depM = (last.fee_note || '').match(/入金:\s*(.+)$/);
-  const depItems = depM ? depM[1].split(',').map(d => d.trim()).filter(Boolean) : [];
+  const depItems = depM ? depM[1].split(/,\s*(?=\d{1,2}\/\d{1,2}\s)/).map(d => d.trim()).filter(Boolean) : [];
   el.innerHTML = `
     <h2>${plat.label}</h2>
     <p class="sub">账号 ${plat.account} · 数据源 ${plat.source} · 共 ${days.length} 条记录</p>
