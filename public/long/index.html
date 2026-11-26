@@ -1520,13 +1520,13 @@ th {
 
   <div class="card section" id="copayer-section" hidden>
     <h2>跟投伙伴 · 独立核算</h2>
-    <p class="sub">跟投份额自入金日起计入 MiniQMT 总 NAV（本金作入金）；伙伴盈亏独立展示</p>
+    <p class="sub">跟投已计入 MiniQMT 总 NAV。当前权益按入金时固定比例分摊，后续入金不调整比例；与账户单位净值最大回撤不是同一口径。</p>
     <div class="copayer-grid" id="copayer-cards"></div>
   </div>
 
   <div class="card section">
     <h2>总资产 NAV 与累计收益率</h2>
-    <p class="sub">左轴=账户实际总资产 · 右轴=累计收益率(相对总投入=首日本金+入金) · 虚线=399101/沪深300/上证指数/深成指基准 · 当日须 15:03 后纳入</p>
+    <p class="sub">左轴=账户实际总资产 · 右轴=剔除入出金后的单位净值收益率 · 最大回撤按单位净值计算 · 本金口径累计收益仍见账户卡片</p>
     <div id="chart-nav" class="chart"></div>
   </div>
 
@@ -1604,7 +1604,7 @@ th {
     </div>
   </div>
 </main>
-<script src="double_dragon_data.js?v=1795688210775"></script>
+<script src="double_dragon_data.js?v=1795688531033"></script>
 <script>
 const DATA = window.DASHBOARD_DATA;
 if (typeof DATA === 'undefined' || !DATA) {
@@ -2013,17 +2013,37 @@ function asNum(v) {
   return Number(v);
 }
 
-/** 回退：累计收益净值 peak→trough（与 dashboard_common 一致；非收益率相减）。 */
+function unitWealthFromDays(days) {
+  let previous = null, wealth = 1;
+  return (days || []).map(day => {
+    const nav = asNum(day.nav);
+    if (nav == null || !Number.isFinite(nav) || nav < 0) return null;
+    let rate;
+    if (previous == null) rate = nav / (asNum(day.total_invested) || nav) - 1;
+    else {
+      const invested = asNum(day.total_invested), prior = asNum(previous.total_invested);
+      const flow = invested != null && prior != null ? invested - prior
+        : Number(day.capital_inflow || 0) - Number(day.capital_outflow || 0);
+      rate = (nav - Number(previous.nav) - flow) / (Number(previous.nav) + Math.max(flow, 0));
+    }
+    if (!Number.isFinite(rate)) return null;
+    wealth *= 1 + rate;
+    previous = day;
+    return wealth;
+  });
+}
+
+/** 回退：按现金流调整后的单位净值计算，与后端一致。 */
 function calcMaxDrawdownFromDays(days) {
   if (!days || !days.length) return null;
   let peakW = null;
   let peakIdx = -1;
   let best = null;
+  const units = unitWealthFromDays(days);
   for (let i = 0; i < days.length; i++) {
     const d = days[i];
-    const cr = asNum(d.cum_return);
-    if (cr == null) continue;
-    const wealth = 1 + cr;
+    const wealth = units[i];
+    if (wealth == null) continue;
     if (peakW == null || wealth > peakW) {
       peakW = wealth;
       peakIdx = i;
@@ -2045,7 +2065,7 @@ function calcMaxDrawdownFromDays(days) {
 
 function resolvePlatformMdd(plat) {
   const m = plat && plat.max_drawdown;
-  if (m && m.peak_date_display && m.trough_date_display != null && m.mdd != null) {
+  if (m && m.method === 'cash_flow_adjusted_unit_nav' && m.peak_date_display && m.trough_date_display != null && m.mdd != null) {
     return {
       mdd: Number(m.mdd),
       peak_date_display: m.peak_date_display,
@@ -2765,8 +2785,12 @@ function chartNav() {
     ...DATA.junzhi.days.map(d => d.date_display),
     ...DATA.miniqmt.days.map(d => d.date_display),
   ])].sort();
-  const jzCum = dates.map(d => jzBy[d]?.cum_return ?? null);
-  const mqCum = dates.map(d => mqBy[d]?.cum_return ?? null);
+  const jzWealth = unitWealthFromDays(DATA.junzhi.days);
+  const mqWealth = unitWealthFromDays(DATA.miniqmt.days);
+  const jzUnits = Object.fromEntries(DATA.junzhi.days.map((d, i) => [d.date_display, jzWealth[i]]));
+  const mqUnits = Object.fromEntries(DATA.miniqmt.days.map((d, i) => [d.date_display, mqWealth[i]]));
+  const jzCum = dates.map(d => jzUnits[d] != null ? jzUnits[d] - 1 : null);
+  const mqCum = dates.map(d => mqUnits[d] != null ? mqUnits[d] - 1 : null);
   const jzNav = dates.map(d => jzBy[d]?.nav ?? null);
   const mqNav = dates.map(d => mqBy[d]?.nav ?? null);
   const jzMddRaw = resolvePlatformMdd(DATA.junzhi);
@@ -2842,12 +2866,12 @@ function chartNav() {
     title: 'NAV 与累计收益率',
     labels: dates,
     yLabel: 'NAV(元)',
-    y2Label: '累计收益率',
+    y2Label: '单位净值收益率',
     yFmt: v => (v / 10000).toFixed(0) + '万',
     y2Fmt: v => (v * 100).toFixed(2) + '%',
     valueFmt: v => v.toLocaleString('zh-CN', { maximumFractionDigits: 0 }) + ' 元',
     valueFmt2: v => (v >= 0 ? '+' : '') + (v * 100).toFixed(2) + '%',
-    caption: '实线=账户实际总资产 · 彩色虚线=账户累计收益 · 灰/蓝/褐/琥珀虚线=指数基准 · 圆点=最大回撤起止(净值peak→trough) · 拖动时间轴框选范围',
+    caption: '实线=账户实际总资产 · 彩色虚线=单位净值累计收益（剔除入出金） · 圆点=单位净值最大回撤起止 · 拖动时间轴框选范围',
     type: 'line',
     symmetricY2: false,
     adaptiveSymmetricY2: true,
@@ -2856,8 +2880,8 @@ function chartNav() {
     series: [
       { name: '君智总资产', color: '#0f766e', values: jzNav, hidden: true },
       { name: 'MiniQMT总资产', color: '#7c3aed', values: mqNav, hidden: true },
-      { name: '君智累计收益', axis: 'y2', dash: true, color: '#14b8a6', values: jzCum },
-      { name: 'MiniQMT累计收益', axis: 'y2', dash: true, color: '#c084fc', values: mqCum },
+      { name: '君智单位净值收益', axis: 'y2', dash: true, color: '#14b8a6', values: jzCum },
+      { name: 'MiniQMT单位净值收益', axis: 'y2', dash: true, color: '#c084fc', values: mqCum },
       ...benchSeries,
     ],
     extras: [
